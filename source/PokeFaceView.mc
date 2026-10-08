@@ -13,27 +13,40 @@ class PokeFaceView extends WatchUi.WatchFace {
 
     hidden var _anim = null;        // ball + Pokemon animation (Animation.mc)
     // ---- layout knobs (176x176 screen) ----
-    hidden const HR_CX = 159;       // centre x of the heart-rate column (right of the time)
-    hidden const HR_Y = 97;         // centre y of the heart-rate column
-    hidden const HR_MAX_W = 30;     // number switches to the smaller font above this width
+    hidden const HR_LEFT = 7;       // heart-rate icon starts here (left of the steps bar)
+    hidden const HEART_W = 14;      // width of resources/drawables/heart.png
+    hidden const HR_GAP = 3;        // gap between heart icon / number / the bar
     hidden const BAR_Y = 138;       // centre y of the steps bar
     hidden const BAR_H = 12;        // steps bar height
     hidden const BAR_LABEL_X = 6;   // the bar starts where the old "STEPS:" label ended (keeps its size)
-    hidden const BAR_RIGHT = 168;   // right end of the steps bar (and of the numbers below it)
-    hidden const STEPS_TEXT_Y = 158;// centre y of the "steps/ goal" numbers
-    hidden const STEPS_TEXT_RIGHT = 148;  // right edge of the numbers (bar's right end - 20)
+    hidden const BAR_RIGHT = 162;   // right end of the steps bar (and of the numbers below it)
+    hidden const STEPS_TEXT_Y = 156;// centre y of the "steps/ goal" numbers
+    hidden const STEPS_TEXT_RIGHT = 142;  // right edge of the numbers (bar's right end - 20)
     hidden const STEPS_TEXT_MIN_X = 8;    // numbers must start right of this, else the small font is used
     hidden const STEPS_DIVISOR = 100;      // shown steps and goal are divided by this
     hidden const DEFAULT_GOAL = 10000;
     // battery bar on the left edge (kept away from the corners)
     hidden const BATT_X = 1;
-    hidden const BATT_W = 2;
+    hidden const BATT_TRACK_W = 2;  // thin track (was 1)
+    hidden const BATT_W = 4;        // level bar (was 2)
     hidden const BATT_TOP = 40;
     hidden const BATT_BOTTOM = 136;
     hidden const TIME_CX = 74;      // centre x of the time (88 = screen centre; lower = further left)
     hidden const TIME_Y = 96;       // centre y of the time digits
     hidden const TIME_MAX_W = 170;  // fallback built-in font must fit this width
     hidden const TIME_MAX_H = 84;   // ...and this height
+    // ---- battle-scene frames (Gen 1 HP-box style lines) ----
+    hidden const FRAME_T = 3;       // line thickness
+    hidden const FRAME_BARB_H = 4;  // height of the half-arrow above the line
+    hidden const FRAME_BARB_W = 13; // width of the half-arrow at its base
+    hidden const STEPS_FRAME_Y = 168;   // top of the bottom line under the steps (3px: 168-170)
+    hidden const STEPS_FRAME_TOP = 129; // top of the vertical line on the right of the steps
+    hidden const STEPS_FRAME_RIGHT = 170; // right edge (exclusive) of that vertical line
+    hidden const STEPS_FRAME_LEFT = 34;   // left end of the bottom line (barb included)
+    hidden const DATE_FRAME_X = 8;      // left edge of the vertical line next to the date
+    hidden const DATE_FRAME_TOP = 12;   // top of that vertical line
+    hidden const DATE_FRAME_Y = 62;     // top of the bottom line under the date/weather
+    hidden var _heartIcon = null;   // heart.png
     hidden var _timeFont = null;    // Pokemon (Gen 1) pixel font, 4x  (resources/fonts)
     hidden var _stepFont = null;    // same font, 2x
     hidden var _stepFontSmall = null; // same font, 1x - used when the numbers get too wide
@@ -44,6 +57,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     function onLayout(dc) {
+        _heartIcon = WatchUi.loadResource(Rez.Drawables.HeartIcon);
         _timeFont = WatchUi.loadResource(Rez.Fonts.TimeFont);
         _stepFont = WatchUi.loadResource(Rez.Fonts.StepFont);
         _stepFontSmall = WatchUi.loadResource(Rez.Fonts.StepFontSmall);
@@ -65,6 +79,7 @@ class PokeFaceView extends WatchUi.WatchFace {
 
         var box = subscreenBox();
         drawDate(dc, box);
+        drawDateFrame(dc, box);
         drawTime(dc, box);
         drawRows(dc);
         _anim.draw(dc, box);
@@ -118,11 +133,11 @@ class PokeFaceView extends WatchUi.WatchFace {
         return Graphics.FONT_NUMBER_MEDIUM;
     }
 
-    // ---------- heart rate (right of the time) + steps bar (bottom) ----------
+    // ---------- steps bar (bottom) with the heart rate to its left ----------
     hidden function drawRows(dc) {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        drawHeart(dc, HR_CX, HR_Y);
         drawSteps(dc);
+        drawStepsFrame(dc);
         drawBatteryBar(dc);
     }
 
@@ -140,7 +155,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     // --- weather ---
     hidden function drawWeather(dc, cx, y) {
         var text = "--";
-        var kind = 2;
+        var kind = WxIcon.CLOUD;
         if (Toybox has :Weather) {
             var cc = Weather.getCurrentConditions();
             if (cc != null) {
@@ -151,73 +166,13 @@ class PokeFaceView extends WatchUi.WatchFace {
                     }
                     text = t.toNumber().format("%d") + "°";
                 }
-                kind = weatherKind(cc.condition);
+                kind = WxIcon.kindFor(cc.condition);
             }
         }
         var font = Graphics.FONT_SMALL;
         var x0 = startX(dc, cx, text, font, 18);
-        drawWeatherIcon(dc, x0 + 9, y, kind);
+        WxIcon.draw(dc, x0 + 9, y, kind);
         drawLabel(dc, x0 + 22, y, text, font);
-    }
-
-    // 0 sun, 1 partly, 2 cloud, 3 rain, 4 snow, 5 storm, 6 fog/wind
-    hidden function weatherKind(c) {
-        if (c == null) { return 2; }
-        if ([0, 23, 40].indexOf(c) >= 0) { return 0; }
-        if ([1, 22, 52].indexOf(c) >= 0) { return 1; }
-        if ([3, 11, 13, 14, 15, 24, 25, 26, 27, 31, 45, 49].indexOf(c) >= 0) { return 3; }
-        if ([4, 7, 10, 16, 17, 18, 19, 21, 34, 43, 44, 46, 47, 48, 50, 51].indexOf(c) >= 0) { return 4; }
-        if ([6, 12, 28, 32, 36, 41, 42].indexOf(c) >= 0) { return 5; }
-        if ([5, 8, 9, 29, 30, 33, 35, 37, 38, 39].indexOf(c) >= 0) { return 6; }
-        return 2;
-    }
-
-    hidden function drawCloud(dc, x, y) {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillCircle(x - 4, y + 1, 4);
-        dc.fillCircle(x + 1, y - 2, 5);
-        dc.fillCircle(x + 5, y + 2, 4);
-        dc.fillRectangle(x - 6, y + 2, 13, 4);
-    }
-
-    hidden function drawWeatherIcon(dc, x, y, kind) {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        if (kind == 0 || kind == 1) {
-            var sx = (kind == 0) ? x : x - 4;
-            var sy = (kind == 0) ? y : y - 4;
-            var r = (kind == 0) ? 4 : 3;
-            dc.fillCircle(sx, sy, r);
-            var rays = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1]];
-            for (var i = 0; i < rays.size(); i++) {
-                var dx = rays[i][0];
-                var dy = rays[i][1];
-                dc.drawLine(sx + dx * (r + 2), sy + dy * (r + 2), sx + dx * (r + 4), sy + dy * (r + 4));
-            }
-            if (kind == 1) { drawCloud(dc, x + 2, y + 3); }
-        } else if (kind == 2) {
-            drawCloud(dc, x, y + 1);
-        } else if (kind == 3) {
-            drawCloud(dc, x, y - 3);
-            dc.drawLine(x - 4, y + 4, x - 5, y + 8);
-            dc.drawLine(x, y + 4, x - 1, y + 8);
-            dc.drawLine(x + 4, y + 4, x + 3, y + 8);
-        } else if (kind == 4) {
-            drawCloud(dc, x, y - 3);
-            dc.fillCircle(x - 4, y + 6, 1);
-            dc.fillCircle(x, y + 8, 1);
-            dc.fillCircle(x + 4, y + 6, 1);
-        } else if (kind == 5) {
-            drawCloud(dc, x, y - 3);
-            dc.drawLine(x + 1, y + 3, x - 2, y + 6);
-            dc.drawLine(x - 2, y + 6, x + 2, y + 6);
-            dc.drawLine(x + 2, y + 6, x - 1, y + 10);
-        } else {
-            dc.drawLine(x - 7, y - 4, x + 7, y - 4);
-            dc.drawLine(x - 7, y, x + 7, y);
-            dc.drawLine(x - 7, y + 4, x + 7, y + 4);
-        }
-        dc.setPenWidth(1);
     }
 
     // --- heart rate ---
@@ -236,25 +191,26 @@ class PokeFaceView extends WatchUi.WatchFace {
         return null;
     }
 
-    // heart icon stacked above the number, centred on cx
-    hidden function drawHeart(dc, cx, y) {
+    // heart icon + number, to the left of the steps bar, vertically centred on the bar.
+    // barX is the left edge of the bar; everything must fit between HR_LEFT and barX.
+    hidden function drawHeart(dc, barX) {
         var hr = currentHeartRate();
         var text = (hr != null) ? hr.format("%d") : "--";
-        var font = Graphics.FONT_TINY;
-        if (dc.getTextWidthInPixels(text, font) > HR_MAX_W) {
-            font = Graphics.FONT_XTINY;
-        }
-        var x0 = cx - 7;
-        var iy = y - 12;
+        var font = Graphics.FONT_XTINY;
+        var tw = dc.getTextWidthInPixels(text, font);
+        var gap = HR_GAP;
+        var avail = barX - HR_LEFT - 4;          // keep 4px clear of the bar
+        if (HEART_W + gap + tw > avail) { gap = 1; }  // squeeze the gap on 3-digit rates
+        var x0 = HR_LEFT;
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillCircle(x0 + 4, iy - 2, 4);
-        dc.fillCircle(x0 + 10, iy - 2, 4);
-        dc.fillPolygon([[x0, iy], [x0 + 14, iy], [x0 + 7, iy + 8]]);
-        dc.drawText(cx, y + 9, font, text,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        if (_heartIcon != null) {
+            dc.drawBitmap(x0, BAR_Y - 6, _heartIcon);   // 14 x 12 px, centred on the bar
+        }
+        dc.drawText(x0 + HEART_W + gap, BAR_Y, font, text,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
-    // --- steps: [foot] [=====----]  with "steps/ goal" underneath (like a Pokemon HP bar) ---
+    // --- steps: [heart HR] [=====----]  with "steps/ goal" underneath (like a Pokemon HP bar) ---
     hidden function drawSteps(dc) {
         var info = ActivityMonitor.getInfo();
         var steps = info.steps;
@@ -275,8 +231,8 @@ class PokeFaceView extends WatchUi.WatchFace {
         var barW = BAR_RIGHT - barX;
         var barTop = BAR_Y - BAR_H / 2;
 
-        // foot icon where the word used to be (right next to the bar)
-        drawFoot(dc, barX - 11, BAR_Y);
+        // heart rate where the foot icon used to be (left of the bar)
+        drawHeart(dc, barX);
 
         // rounded outline
         dc.setPenWidth(2);
@@ -307,25 +263,50 @@ class PokeFaceView extends WatchUi.WatchFace {
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
-    // footprint icon, about 10 x 18 px, centred on cx,cy
-    hidden function drawFoot(dc, cx, cy) {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillEllipse(cx, cy - 1, 4, 6);          // ball of the foot
-        dc.fillEllipse(cx + 1, cy + 6, 3, 3);      // heel
-        dc.fillCircle(cx - 2, cy - 9, 2);          // big toe
-        dc.fillCircle(cx + 2, cy - 9, 1);          // other toes
-        dc.fillCircle(cx + 4, cy - 7, 1);
-        dc.fillCircle(cx + 5, cy - 4, 1);
-    }
-
     // --- battery: thin level bar on the left edge ---
     hidden function drawBatteryBar(dc) {
         var pct = System.getSystemStats().battery;
         var len = BATT_BOTTOM - BATT_TOP;
         var fillLen = ((pct / 100.0) * len).toNumber();
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(BATT_X, BATT_TOP, 1, len);                           // 1px track
-        dc.fillRectangle(BATT_X, BATT_BOTTOM - fillLen, BATT_W, fillLen);     // 2px level
+        dc.fillRectangle(BATT_X, BATT_TOP, BATT_TRACK_W, len);                // track
+        dc.fillRectangle(BATT_X, BATT_BOTTOM - fillLen, BATT_W, fillLen);     // level
+    }
+
+    // ---------- battle-scene frames ----------
+    // half-arrow (right triangle, flat side towards the vertical line) built from 1px-high rows.
+    // facingLeft: barb sits at the left end of the line (player box); else at the right end (foe box).
+    // lx/rx = left/right end (exclusive) of the horizontal line, ly = top of the line.
+    hidden function drawFrameLine(dc, lx, rx, ly, facingLeft) {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(lx, ly, rx - lx, FRAME_T);
+        for (var i = 0; i < FRAME_BARB_H; i++) {
+            var w = 3 + 2 * i;                       // rows widen towards the line
+            var y = ly - FRAME_BARB_H + i;
+            if (facingLeft) {
+                // flat edge at lx + FRAME_BARB_W, point towards the left
+                dc.fillRectangle(lx + FRAME_BARB_W - w, y, w, 1);
+            } else {
+                dc.fillRectangle(rx - FRAME_BARB_W, y, w, 1);
+            }
+        }
+    }
+
+    // player-style box under the steps: line along the bottom, barb on the left, vertical line on the right
+    hidden function drawStepsFrame(dc) {
+        drawFrameLine(dc, STEPS_FRAME_LEFT, STEPS_FRAME_RIGHT, STEPS_FRAME_Y, true);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(STEPS_FRAME_RIGHT - FRAME_T, STEPS_FRAME_TOP,
+            FRAME_T, STEPS_FRAME_Y + FRAME_T - STEPS_FRAME_TOP);
+    }
+
+    // foe-style box under the date/weather: vertical line on the left, line along the bottom, barb on the right
+    hidden function drawDateFrame(dc, box) {
+        var rx = box[0] - 4;                         // stop just left of the subscreen
+        drawFrameLine(dc, DATE_FRAME_X, rx, DATE_FRAME_Y, false);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(DATE_FRAME_X, DATE_FRAME_TOP, FRAME_T,
+            DATE_FRAME_Y + FRAME_T - DATE_FRAME_TOP);
     }
 
     // ---------- the subscreen area (where the Poke Ball lives) ----------
