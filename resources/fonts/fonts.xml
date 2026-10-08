@@ -1,0 +1,5 @@
+<fonts>
+    <font id="TimeFont" filename="timefont.fnt" antialias="false" />
+    <font id="StepFont" filename="stepfont.fnt" antialias="false" />
+    <font id="StepFontSmall" filename="stepfontsmall.fnt" antialias="false" />
+</fonts>
