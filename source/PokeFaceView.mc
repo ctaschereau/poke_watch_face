@@ -12,6 +12,7 @@ import Toybox.WatchUi;
 class PokeFaceView extends WatchUi.WatchFace {
 
     hidden var _anim = null;        // ball + Pokemon animation (Animation.mc)
+    hidden var _asleep = false;     // true in low-power mode (trainer fishes instead of walking)
     // ---- layout knobs (176x176 screen) ----
     hidden const HR_LEFT = 6;       // heart-rate icon starts here (left of the steps bar)
     hidden const HEART_W = 14;      // width of resources/drawables/heart.png
@@ -35,6 +36,9 @@ class PokeFaceView extends WatchUi.WatchFace {
     hidden const TIME_Y = 96;       // centre y of the time digits
     hidden const TIME_MAX_W = 170;  // fallback built-in font must fit this width
     hidden const TIME_MAX_H = 84;   // ...and this height
+    hidden const TRAINER_GAP = 4;   // gap between the time and the trainer sprite (16x16)
+    hidden const TRAINER_SIZE = 16;
+    hidden const SCREEN_W = 176;
     // ---- battle-scene frames (Gen 1 HP-box style lines) ----
     hidden const FRAME_T = 3;       // line thickness
     hidden const FRAME_BARB_H = 4;  // height of the half-arrow above the line
@@ -64,10 +68,12 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     function onEnterSleep() {
+        _asleep = true;
         _anim.setAsleep(true);
     }
 
     function onExitSleep() {
+        _asleep = false;
         _anim.setAsleep(false);
     }
 
@@ -114,6 +120,17 @@ class PokeFaceView extends WatchUi.WatchFace {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         dc.drawText(TIME_CX, TIME_Y, font, timeStr,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        drawTrainer(dc, timeStr, font, clock.sec);
+    }
+
+    // trainer to the right of the time: walks (alternating frames, one per second) while awake, fishes asleep
+    hidden function drawTrainer(dc, timeStr, font, sec) {
+        var timeRight = TIME_CX + dc.getTextWidthInPixels(timeStr, font) / 2;
+        var x = timeRight + TRAINER_GAP;
+        if (x > SCREEN_W - TRAINER_SIZE - 2) {
+            x = SCREEN_W - TRAINER_SIZE - 2;
+        }
+        Trainer.draw(dc, x, TIME_Y - TRAINER_SIZE / 2, _asleep, sec);
     }
 
     // biggest digit font that still fits

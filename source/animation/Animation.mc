@@ -39,7 +39,6 @@ class PokeAnimation {
 
     // call once per onUpdate; only actually steps when the second has changed
     function advance() {
-        return;
         var now = Time.now().value();
         if (now == _lastSec) {
             return;
