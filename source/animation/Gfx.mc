@@ -19,6 +19,7 @@ module Gfx {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         var n = pts.size();
         for (var i = 0; i < n; i++) {
+            // TODO : Fix 3 warnings here : Cannot determine if container access is using container type.
             var a = pts[i];
             var c = pts[(i + 1) % n];
             dc.drawLine(a[0], a[1], c[0], c[1]);

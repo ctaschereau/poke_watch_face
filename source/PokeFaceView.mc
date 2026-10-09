@@ -179,15 +179,19 @@ class PokeFaceView extends WatchUi.WatchFace {
                     if (System.getDeviceSettings().temperatureUnits == System.UNIT_STATUTE) {
                         t = t * 9.0 / 5.0 + 32.0;
                     }
-                    text = t.toNumber().format("%d") + "°";
+                    text = t.toNumber().format("%d");
                 }
                 kind = WxIcon.kindFor(cc.condition);
             }
         }
-        var font = Graphics.FONT_SMALL;
+        var font = _stepFont;
         var x0 = startX(dc, cx, text, font, 18);
         WxIcon.draw(dc, x0 + 9, y, kind);
         drawLabel(dc, x0 + 22, y, text, font);
+        // TODO : Align the degree sign to the right of the temperature
+        var degSign = "°";
+        var x1 = startX(dc, cx, degSign, Graphics.FONT_SMALL, 18);
+        drawLabel(dc, x1, y, degSign, Graphics.FONT_SMALL);
     }
 
     // --- heart rate ---
