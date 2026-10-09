@@ -2,14 +2,14 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.Math;
 
-// Picks and draws one of the Pokemon sprites. To add another: write a new
-// module with draw(dc, px, py, look, tick), then bump COUNT and add a case below.
+// Picks and draws one of the Pokemon sprites (animation/sprites/). To add another: copy a sprite file,
+// change the module name, then bump COUNT and add a case in draw() below.
 module Pokemon {
 
     const COUNT = 6;
 
     // random id (0..COUNT-1), never the same as `last`
-    function pick(last) {
+    function pick(last as Number) as Number {
         var n = Math.rand() % COUNT;
         if (n < 0) {
             n = -n;
@@ -20,8 +20,8 @@ module Pokemon {
         return n;
     }
 
-    // px,py: anchor point.  look: -1 left, 0 centre, 1 right.  tick: 0..3, blinks on 3.
-    function draw(dc, id, px, py, look, tick) {
+    // px, py: anchor point.  look: -1 left, 0 centre, 1 right.  tick: seconds out (0..3), blinks on 3.
+    function draw(dc as Dc, id as Number, px as Number, py as Number, look as Number, tick as Number) as Void {
         dc.setPenWidth(2);
         if (id == 0) {
             Pikachu.draw(dc, px, py, look, tick);

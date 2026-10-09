@@ -1,2 +1,2 @@
-- check why we have so much warnings
+- rebuild and check which warnings remain (the typed refactor should have removed the "container access" ones)
 - (later) try and have better images

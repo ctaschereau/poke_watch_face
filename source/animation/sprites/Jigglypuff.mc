@@ -3,7 +3,7 @@ import Toybox.Lang;
 
 module Jigglypuff {
 
-    function draw(dc, px, py, look, tick) {
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
         var ox = look * 5;
         var white = Graphics.COLOR_WHITE;
         var black = Graphics.COLOR_BLACK;
@@ -17,8 +17,8 @@ module Jigglypuff {
         Gfx.blob(dc, px + 34, py + 22, 6, 8);
 
         // little pointy ears behind the balloon body
-        Gfx.poly(dc, Gfx.shift([[-28, 0], [-34, -32], [-12, -14]], hx, py), white);
-        Gfx.poly(dc, Gfx.shift([[28, 0], [34, -32], [12, -14]], hx, py), white);
+        Gfx.poly(dc, Gfx.shift([[-28, 0], [-34, -32], [-12, -14]], hx, py) as Array<Graphics.Point2D>, white);
+        Gfx.poly(dc, Gfx.shift([[28, 0], [34, -32], [12, -14]], hx, py) as Array<Graphics.Point2D>, white);
 
         // round body
         Gfx.blob(dc, hx, py + 14, 34, 36);

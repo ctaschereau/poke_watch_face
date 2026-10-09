@@ -5,6 +5,7 @@ import Toybox.Weather;
 // Weather icons for the date block.
 // Garmin gives a watch face the condition as an enum (Weather.CONDITION_*) and the temperature,
 // but no icon graphics, so the 7 little icons are drawn here and every CONDITION_* is grouped by name.
+// Used by DatePanel.
 module WxIcon {
 
     enum {
@@ -44,6 +45,9 @@ module WxIcon {
     ];
     // everything else (cloudy, mostly cloudy, unknown) -> CLOUD
 
+    // the 8 directions of the sun's rays
+    const RAYS as Array<Array<Number> > = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1]];
+
     function kindFor(condition as Number or Null) as Number {
         if (condition == null) { return CLOUD; }
         if (SUN_CONDITIONS.indexOf(condition) >= 0) { return SUN; }
@@ -55,6 +59,7 @@ module WxIcon {
         return CLOUD;
     }
 
+    // little cloud, about 13 x 11 px, centred on x,y
     function drawCloud(dc as Dc, x as Number, y as Number) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         dc.fillCircle(x - 4, y + 1, 4);
@@ -72,10 +77,9 @@ module WxIcon {
             var sy = (kind == SUN) ? y : y - 4;
             var r = (kind == SUN) ? 4 : 3;
             dc.fillCircle(sx, sy, r);
-            var rays = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1]];
-            for (var i = 0; i < rays.size(); i++) {
-                var dx = rays[i][0];
-                var dy = rays[i][1];
+            for (var i = 0; i < RAYS.size(); i++) {
+                var dx = RAYS[i][0];
+                var dy = RAYS[i][1];
                 dc.drawLine(sx + dx * (r + 2), sy + dy * (r + 2), sx + dx * (r + 4), sy + dy * (r + 4));
             }
             if (kind == PARTLY) { drawCloud(dc, x + 2, y + 3); }

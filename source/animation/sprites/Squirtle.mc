@@ -3,7 +3,7 @@ import Toybox.Lang;
 
 module Squirtle {
 
-    function draw(dc, px, py, look, tick) {
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
         var ox = look * 5;
         var black = Graphics.COLOR_BLACK;
         var blink = (tick == 3);

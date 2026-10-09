@@ -3,7 +3,7 @@ import Toybox.Lang;
 
 module Charmander {
 
-    function draw(dc, px, py, look, tick) {
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
         var ox = look * 5;
         var white = Graphics.COLOR_WHITE;
         var black = Graphics.COLOR_BLACK;
@@ -13,8 +13,8 @@ module Charmander {
         Gfx.blob(dc, px + 26, py + 46, 10, 6);
         Gfx.blob(dc, px + 37, py + 40, 8, 6);
         Gfx.blob(dc, px + 43, py + 30, 6, 7);
-        Gfx.poly(dc, Gfx.shift([[0, -18], [7, -8], [12, -12], [13, 2], [6, 10], [-6, 10], [-12, 2], [-8, -10], [-3, -6]], px + 46, py + 14), white);
-        Gfx.poly(dc, Gfx.shift([[0, -6], [4, 0], [2, 6], [-2, 6], [-4, 0]], px + 46, py + 14), black);
+        Gfx.poly(dc, Gfx.shift([[0, -18], [7, -8], [12, -12], [13, 2], [6, 10], [-6, 10], [-12, 2], [-8, -10], [-3, -6]], px + 46, py + 14) as Array<Graphics.Point2D>, white);
+        Gfx.poly(dc, Gfx.shift([[0, -6], [4, 0], [2, 6], [-2, 6], [-4, 0]], px + 46, py + 14) as Array<Graphics.Point2D>, black);
 
         // feet, body, arms
         Gfx.blob(dc, px - 12, py + 50, 9, 4);

@@ -2,7 +2,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.Math;
 
-// The Poke Ball drawn in the subscreen (closed, or lid swung open).
+// The Poke Ball drawn in the subscreen (closed, or with the lid swung open).
 module PokeBall {
 
     // box = [x, y, w, h] of the subscreen
@@ -39,7 +39,7 @@ module PokeBall {
             var ang = 30.0 * Math.PI / 180.0;
             var cs = Math.cos(ang);
             var sn = Math.sin(ang);
-            var pts = [];
+            var pts = [] as Array<Graphics.Point2D>;
             for (var a = 180; a <= 360; a += 15) {
                 var rad = a * Math.PI / 180.0;
                 var dx = cx + r * Math.cos(rad) - hx;

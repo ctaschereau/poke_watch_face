@@ -3,13 +3,13 @@ import Toybox.Lang;
 
 module Pikachu {
 
-    function draw(dc, px, py, look, tick) {
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
         var ox = look * 5;                    // head turns toward where it looks
         var white = Graphics.COLOR_WHITE;
         var black = Graphics.COLOR_BLACK;
 
         // tail (lightning bolt)
-        Gfx.poly(dc, Gfx.shift([[18, 46], [44, 46], [36, 32], [56, 32], [40, 6], [30, 6], [38, 20], [22, 20]], px, py), white);
+        Gfx.poly(dc, Gfx.shift([[18, 46], [44, 46], [36, 32], [56, 32], [40, 6], [30, 6], [38, 20], [22, 20]], px, py) as Array<Graphics.Point2D>, white);
 
         // feet, body, arms
         Gfx.blob(dc, px - 12, py + 50, 9, 4);
@@ -19,10 +19,10 @@ module Pikachu {
         Gfx.blob(dc, px + 22, py + 28, 5, 8);
 
         // ears (black tips), drawn before head so the head overlaps their base
-        Gfx.poly(dc, Gfx.shift([[-24, -16], [-30, -50], [-8, -26]], px + ox, py), white);
-        Gfx.poly(dc, Gfx.shift([[24, -16], [30, -50], [8, -26]], px + ox, py), white);
-        Gfx.poly(dc, Gfx.shift([[-30, -50], [-28, -41], [-24, -44]], px + ox, py), black);
-        Gfx.poly(dc, Gfx.shift([[30, -50], [28, -41], [24, -44]], px + ox, py), black);
+        Gfx.poly(dc, Gfx.shift([[-24, -16], [-30, -50], [-8, -26]], px + ox, py) as Array<Graphics.Point2D>, white);
+        Gfx.poly(dc, Gfx.shift([[24, -16], [30, -50], [8, -26]], px + ox, py) as Array<Graphics.Point2D>, white);
+        Gfx.poly(dc, Gfx.shift([[-30, -50], [-28, -41], [-24, -44]], px + ox, py) as Array<Graphics.Point2D>, black);
+        Gfx.poly(dc, Gfx.shift([[30, -50], [28, -41], [24, -44]], px + ox, py) as Array<Graphics.Point2D>, black);
 
         // head
         Gfx.blob(dc, px + ox, py - 6, 28, 22);

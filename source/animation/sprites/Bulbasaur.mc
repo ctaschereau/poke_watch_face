@@ -3,7 +3,7 @@ import Toybox.Lang;
 
 module Bulbasaur {
 
-    function draw(dc, px, py, look, tick) {
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
         var ox = look * 5;
         var white = Graphics.COLOR_WHITE;
         var black = Graphics.COLOR_BLACK;
@@ -12,7 +12,7 @@ module Bulbasaur {
 
         // bulb peeking up behind the head, with its sprout
         Gfx.blob(dc, bx, py - 34, 22, 20);
-        Gfx.poly(dc, Gfx.shift([[-5, -52], [0, -62], [5, -52]], bx, py), black);
+        Gfx.poly(dc, Gfx.shift([[-5, -52], [0, -62], [5, -52]], bx, py) as Array<Graphics.Point2D>, black);
         dc.setPenWidth(1);
         dc.drawLine(bx - 8, py - 51, bx - 12, py - 40);
         dc.drawLine(bx + 8, py - 51, bx + 12, py - 40);
@@ -33,8 +33,8 @@ module Bulbasaur {
         dc.fillEllipse(px + 3, py + 25, 3, 2);
 
         // pointy ears, then the head
-        Gfx.poly(dc, Gfx.shift([[-22, -14], [-32, -30], [-10, -20]], px + ox, py), white);
-        Gfx.poly(dc, Gfx.shift([[22, -14], [32, -30], [10, -20]], px + ox, py), white);
+        Gfx.poly(dc, Gfx.shift([[-22, -14], [-32, -30], [-10, -20]], px + ox, py) as Array<Graphics.Point2D>, white);
+        Gfx.poly(dc, Gfx.shift([[22, -14], [32, -30], [10, -20]], px + ox, py)  as Array<Graphics.Point2D>, white);
         Gfx.blob(dc, px + ox, py - 4, 26, 20);
 
         // big eyes, nostrils, wide mouth

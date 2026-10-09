@@ -4,8 +4,9 @@ import Toybox.Lang;
 // Small drawing helpers shared by the ball and all Pokemon sprites.
 module Gfx {
 
-    function shift(pts as Array<Array<Number>>, dx as Number, dy as Number) as Array<Array<Number>> {
-        var out = [];
+    // a copy of the polygon moved by (dx, dy)
+    function shift(pts as Array<Array<Number> >, dx as Number, dy as Number) as Array<Array<Number> > {
+        var out = [] as Array<Array<Number> >;
         for (var i = 0; i < pts.size(); i++) {
             out.add([pts[i][0] + dx, pts[i][1] + dy]);
         }
@@ -13,16 +14,15 @@ module Gfx {
     }
 
     // filled polygon with a black outline
-    function poly(dc as Dc, pts, fill as ColorType) as Void {
+    function poly(dc as Dc, pts as Array<Graphics.Point2D>, fill as ColorType) as Void {
         dc.setColor(fill, Graphics.COLOR_TRANSPARENT);
         dc.fillPolygon(pts);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         var n = pts.size();
         for (var i = 0; i < n; i++) {
-            // TODO : Fix 3 warnings here : Cannot determine if container access is using container type.
             var a = pts[i];
-            var c = pts[(i + 1) % n];
-            dc.drawLine(a[0], a[1], c[0], c[1]);
+            var b = pts[(i + 1) % n];
+            dc.drawLine(a[0], a[1], b[0], b[1]);
         }
     }
 

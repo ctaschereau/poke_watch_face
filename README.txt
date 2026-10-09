@@ -3,22 +3,39 @@ PokeFace - Garmin Instinct 2 watch face
 2. Open this folder, run "Monkey C: Build for Device" (product: instinct2) -> PokeFace.prg
 3. Plug the watch in via USB and copy PokeFace.prg to GARMIN/APPS/
 4. On the watch: hold UP > Watch Face > PokeFace.
-Tweak: OPEN_ODDS, OUT_SECONDS, and the layout knobs (HR_LEFT, BAR_Y, BAR_H, BAR_RIGHT, STEPS_TEXT_Y, TIME_CX, TIME_MAX_W, TIME_MAX_H) at the top of PokeFaceView.mc.
 
 Code layout (source/):
- PokeFaceView.mc  - the watch face itself: time, date, weather, steps bar + heart rate, battle-scene frame lines, battery
- WxIcon.mc        - weather condition -> icon kind (named Weather.CONDITION_* groups) + the icon drawing
+ PokeFaceApp.mc     - app entry point
+ PokeFaceView.mc    - the watch face: creates the panels and draws them in order (no layout code of its own)
+ view/              - one file per part of the screen
+   DatePanel.mc     - top left: date + weather (icon, temperature, degree ring) + the foe-style frame under it
+   TimePanel.mc     - middle: big time + the trainer sprite to its right
+   StepsPanel.mc    - bottom: heart rate (icon + number), steps bar, "steps/goal" numbers + the player-style frame
+   BatteryBar.mc    - left edge: battery level
+   BattleFrame.mc   - shared helper: the Gen 1 HP-box edge (line + half-arrow + vertical line)
+   Assets.mc        - the fonts and the heart icon, loaded once and shared by the panels
+   Subscreen.mc     - position/size of the Instinct subscreen (where the ball lives)
+   WxIcon.mc        - weather condition -> icon kind (named Weather.CONDITION_* groups) + the icon drawing
  animation/
-   Animation.mc   - ball/Pokemon state machine (OPEN_ODDS, OUT_SECONDS, where the Pokemon stands)
-   PokeBall.mc    - draws the ball in the subscreen
-   Pokemon.mc     - random pick (never the same one twice in a row) + dispatch
-   Gfx.mc         - shared drawing helpers (shift, poly, blob, eye)
-   sprites/       - Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff: one file each
-To add a Pokemon: copy one sprite file, change the module name, add it to Pokemon.draw and bump Pokemon.COUNT.
+   PokeAnimation.mc - ball/Pokemon state machine (OPEN_ODDS, OUT_SECONDS, where the Pokemon stands)
+   PokeBall.mc      - draws the ball in the subscreen
+   Pokemon.mc       - random pick (never the same one twice in a row) + dispatch
+   Gfx.mc           - shared drawing helpers (shift, poly, blob, eye)
+   sprites/         - Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff, Trainer: one file each
 (Connect IQ compiles every .mc file under source/ recursively, so no jungle change is needed for the subfolders.)
-Heart icon: resources/drawables/heart.png (14x12), loaded in PokeFaceView.onLayout.
 
-Fonts (resources/fonts): the time and the steps numbers use the original Game Boy Pokemon (Gen 1) pixel font,
-taken from the pret/pokered project and scaled with no smoothing: timefont = 4x, stepfont = 2x, stepfontsmall = 1x
-(used automatically when the steps numbers would run off the left side).
-Steps numbers are divided by STEPS_DIVISOR (10); the bar still shows the real progress.
+Tweaking: each panel has its layout knobs (positions, sizes) as constants at the top of its file.
+ - PokeAnimation.mc: OPEN_ODDS (how often the ball opens), OUT_SECONDS (how long the Pokemon stays out)
+ - TimePanel.mc:     CENTER_X, CENTER_Y, TRAINER_GAP
+ - StepsPanel.mc:    BAR_*, NUMBERS_*, HR_*, HEART_*, STEPS_DIVISOR, FRAME_*
+ - DatePanel.mc:     DATE_DY, WEATHER_DY, DEGREE_*, FRAME_*
+
+To add a Pokemon: copy one sprite file, change the module name, add it to Pokemon.draw and bump Pokemon.COUNT.
+Heart icon: resources/drawables/heart.png (14x12), loaded in Assets.
+
+Fonts (resources/fonts): the time, steps and temperature numbers use the original Game Boy Pokemon (Gen 1) pixel font,
+taken from the pret/pokered project and scaled with no smoothing: timefont = 4x, stepfont = 2x, stepfontsmall = 1x.
+The font only has the digits, "/" and "-" (no degree sign: the degree ring is drawn by DatePanel).
+Assets.fitStepFont picks the 1x font automatically when 2x text would run off its space
+(steps numbers on the left side, 3-digit heart rate next to the heart icon).
+Steps numbers are shown in hundreds of steps (STEPS_DIVISOR in StepsPanel.mc); the bar still shows the real progress.
