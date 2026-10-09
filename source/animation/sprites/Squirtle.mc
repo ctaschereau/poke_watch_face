@@ -5,7 +5,6 @@ module Squirtle {
 
     function draw(dc, px, py, look, tick) {
         var ox = look * 5;
-        var white = Graphics.COLOR_WHITE;
         var black = Graphics.COLOR_BLACK;
         var blink = (tick == 3);
 

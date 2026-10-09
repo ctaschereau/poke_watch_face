@@ -92,7 +92,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     // ---------- date + weather, centred between left edge and the subscreen ----------
-    hidden function drawDate(dc, box) {
+    hidden function drawDate(dc as Dc, box as Array<Number>) as Void {
         var d = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var cx = box[0] / 2;
         var cy = box[1] + box[3] / 2;
@@ -108,7 +108,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     // ---------- big time ----------
-    hidden function drawTime(dc, box) {
+    hidden function drawTime(dc as Dc, box as Array<Number>) as Void {
         var clock = System.getClockTime();
         var hour = clock.hour;
         if (!System.getDeviceSettings().is24Hour) {
@@ -133,21 +133,19 @@ class PokeFaceView extends WatchUi.WatchFace {
         Trainer.draw(dc, x, TIME_Y - TRAINER_SIZE / 2, _asleep, sec);
     }
 
-    // biggest digit font that still fits
-    hidden function pickTimeFont(dc, text) {
-        var fonts = [];
-        if (Graphics has :FONT_NUMBER_THAI_HOT) {
-            fonts.add(Graphics.FONT_NUMBER_THAI_HOT);
+    // biggest built-in digit font that still fits (fallback only, the Pokemon font is used normally)
+    hidden function pickTimeFont(dc as Dc, text as String) as Graphics.FontType {
+        if (Graphics has :FONT_NUMBER_THAI_HOT && fits(dc, text, Graphics.FONT_NUMBER_THAI_HOT)) {
+            return Graphics.FONT_NUMBER_THAI_HOT;
         }
-        fonts.add(Graphics.FONT_NUMBER_HOT);
-        fonts.add(Graphics.FONT_NUMBER_MEDIUM);
-        for (var i = 0; i < fonts.size(); i++) {
-            var f = fonts[i];
-            if (dc.getTextWidthInPixels(text, f) <= TIME_MAX_W && dc.getFontHeight(f) <= TIME_MAX_H) {
-                return f;
-            }
+        if (fits(dc, text, Graphics.FONT_NUMBER_HOT)) {
+            return Graphics.FONT_NUMBER_HOT;
         }
         return Graphics.FONT_NUMBER_MEDIUM;
+    }
+
+    hidden function fits(dc as Dc, text as String, font as Graphics.FontType) as Boolean {
+        return dc.getTextWidthInPixels(text, font) <= TIME_MAX_W && dc.getFontHeight(font) <= TIME_MAX_H;
     }
 
     // ---------- steps bar (bottom) with the heart rate to its left ----------
@@ -316,7 +314,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     // foe-style box under the date/weather: vertical line on the left, line along the bottom, barb on the right
-    hidden function drawDateFrame(dc, box) {
+    hidden function drawDateFrame(dc as Dc, box as Array<Number>) as Void {
         var rx = box[0] - 12;                         // stop just left of the subscreen
         drawFrameLine(dc, DATE_FRAME_X, rx, DATE_FRAME_Y, false);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
@@ -325,7 +323,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     }
 
     // ---------- the subscreen area (where the Poke Ball lives) ----------
-    hidden function subscreenBox() {
+    hidden function subscreenBox() as Array<Number> {
         var x = 112;
         var y = 6;
         var w = 58;

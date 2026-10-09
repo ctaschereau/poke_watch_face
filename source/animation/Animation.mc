@@ -24,7 +24,7 @@ class PokeAnimation {
     hidden var _pokemon = -1;
 
     // where it looks on each second it's out: centre, left, right, centre(blink)
-    hidden var _look = [0, -1, 1, 0];
+    hidden var _look as Array<Number> = [0, -1, 1, 0];
 
     function initialize() {
         Math.srand(Time.now().value());
@@ -69,7 +69,7 @@ class PokeAnimation {
     }
 
     // box = subscreen [x, y, w, h]
-    function draw(dc, box) {
+    function draw(dc as Dc, box as Array<Number>) as Void {
         PokeBall.draw(dc, box, _state == CLOSED);
         if (_state == OUT) {
             Pokemon.draw(dc, _pokemon, POKE_X, POKE_Y, _look[_tick % 4], _tick);

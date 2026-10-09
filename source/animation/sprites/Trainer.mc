@@ -10,7 +10,7 @@ module Trainer {
     const SIZE = 16;
 
     // walk frame 1
-    const WALK_A = [
+    const WALK_A as Array<Number> = [
         0x07E0,
         0x0D50,
         0x1AA8,
@@ -30,7 +30,7 @@ module Trainer {
     ];
 
     // walk frame 2
-    const WALK_B = [
+    const WALK_B as Array<Number> = [
         0x0000,
         0x07E0,
         0x0AB0,
@@ -50,7 +50,7 @@ module Trainer {
     ];
 
     // fishing (watch asleep)
-    const FISH = [
+    const FISH as Array<Number> = [
         0x07E0,
         0x0D50,
         0x1AA8,
@@ -70,7 +70,7 @@ module Trainer {
     ];
 
     // x,y = top-left corner. asleep -> fishing sprite; otherwise walk frame chosen by `tick` (even/odd).
-    function draw(dc, x, y, asleep, tick) {
+    function draw(dc as Dc, x as Number, y as Number, asleep as Boolean, tick as Number) as Void {
         var sprite = FISH;
         if (!asleep) {
             sprite = (tick % 2 == 0) ? WALK_A : WALK_B;

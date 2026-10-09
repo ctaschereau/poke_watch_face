@@ -7,7 +7,7 @@ class PokeFaceApp extends Application.AppBase {
         AppBase.initialize();
     }
 
-    function getInitialView() {
+    function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new PokeFaceView() ];
     }
 }

@@ -4,7 +4,7 @@ import Toybox.Lang;
 // Small drawing helpers shared by the ball and all Pokemon sprites.
 module Gfx {
 
-    function shift(pts, dx, dy) {
+    function shift(pts as Array<Array<Number>>, dx as Number, dy as Number) as Array<Array<Number>> {
         var out = [];
         for (var i = 0; i < pts.size(); i++) {
             out.add([pts[i][0] + dx, pts[i][1] + dy]);
@@ -13,7 +13,7 @@ module Gfx {
     }
 
     // filled polygon with a black outline
-    function poly(dc, pts, fill) {
+    function poly(dc as Dc, pts, fill as ColorType) as Void {
         dc.setColor(fill, Graphics.COLOR_TRANSPARENT);
         dc.fillPolygon(pts);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
@@ -26,7 +26,7 @@ module Gfx {
     }
 
     // white ellipse with a black outline
-    function blob(dc, x, y, rx, ry) {
+    function blob(dc as Dc, x as Number, y as Number, rx as Number, ry as Number) as Void {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.fillEllipse(x, y, rx, ry);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
@@ -34,7 +34,7 @@ module Gfx {
     }
 
     // black round eye with a white highlight; a short line when blinking
-    function eye(dc, x, y, r, blink) {
+    function eye(dc as Dc, x as Number, y as Number, r as Number, blink as Boolean) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         if (blink) {
             dc.drawLine(x - r, y, x + r, y);

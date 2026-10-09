@@ -20,11 +20,7 @@ module Charmander {
         Gfx.blob(dc, px - 12, py + 50, 9, 4);
         Gfx.blob(dc, px + 12, py + 50, 9, 4);
         Gfx.blob(dc, px, py + 30, 20, 20);
-        Gfx.blob(dc, px, py + 34, 12, 14);                 // belly
-        dc.setPenWidth(1);
-        dc.drawLine(px - 9, py + 28, px + 9, py + 28);
-        dc.drawLine(px - 10, py + 34, px + 10, py + 34);
-        dc.drawLine(px - 9, py + 40, px + 9, py + 40);
+        Gfx.blob(dc, px, py + 34, 12, 14);
         dc.setPenWidth(2);
         Gfx.blob(dc, px - 22, py + 28, 5, 8);
         Gfx.blob(dc, px + 22, py + 28, 5, 8);

@@ -6,7 +6,7 @@ import Toybox.Math;
 module PokeBall {
 
     // box = [x, y, w, h] of the subscreen
-    function draw(dc, box, closed) {
+    function draw(dc as Dc, box as Array<Number>, closed as Boolean) as Void {
         var cx = box[0] + box[2] / 2;
         var cy = box[1] + box[3] / 2;
         var r = ((box[2] < box[3]) ? box[2] : box[3]) / 2 - 7;
