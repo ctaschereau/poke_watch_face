@@ -24,10 +24,6 @@ class PokeFaceView extends WatchUi.WatchFace {
         _anim = new PokeAnimation();
     }
 
-    function onLayout(dc as Dc) as Void {
-        _stepsPanel.layout(dc);
-    }
-
     function onEnterSleep() as Void {
         _timePanel.setAsleep(true);
         _anim.setAsleep(true);

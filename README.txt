@@ -8,9 +8,9 @@ Code layout (source/):
  PokeFaceApp.mc     - app entry point
  PokeFaceView.mc    - the watch face: creates the panels and draws them in order (no layout code of its own)
  view/              - one file per part of the screen
-   DatePanel.mc     - top left: date + weather (icon, temperature, degree ring) + the foe-style frame under it
+   DatePanel.mc     - top left: date + weather (icon, temperature, degree ring) + notification count (envelope) + the foe-style frame under it
    TimePanel.mc     - middle: big time + the trainer sprite to its right
-   StepsPanel.mc    - bottom: heart rate (icon + number), steps bar, "steps/goal" numbers + the player-style frame
+   StepsPanel.mc    - bottom: heart rate (icon + number, always the big font), steps bar, "steps/goal" numbers + the player-style frame
    BatteryBar.mc    - left edge: battery level
    BattleFrame.mc   - shared helper: the Gen 1 HP-box edge (line + half-arrow + vertical line)
    Assets.mc        - the fonts and the heart icon, loaded once and shared by the panels
@@ -27,15 +27,16 @@ Code layout (source/):
 Tweaking: each panel has its layout knobs (positions, sizes) as constants at the top of its file.
  - PokeAnimation.mc: OPEN_ODDS (how often the ball opens), OUT_SECONDS (how long the Pokemon stays out)
  - TimePanel.mc:     CENTER_X, CENTER_Y, TRAINER_GAP
- - StepsPanel.mc:    BAR_*, NUMBERS_*, HR_*, HEART_*, STEPS_DIVISOR, FRAME_*
- - DatePanel.mc:     DATE_DY, WEATHER_DY, DEGREE_*, FRAME_*
+ - StepsPanel.mc:    BAR_* (BAR_X = left end of the bar; keep it >= 74 so a 3-digit heart rate fits), NUMBERS_*, HR_*, HEART_*, STEPS_DIVISOR, FRAME_*
+ - DatePanel.mc:     DATE_DY, WEATHER_DY, WEATHER_DX, NOTIF_*, DEGREE_*, FRAME_*
 
 To add a Pokemon: copy one sprite file, change the module name, add it to Pokemon.draw and bump Pokemon.COUNT.
-Heart icon: resources/drawables/heart.png (14x12), loaded in Assets.
+Heart icon: resources/drawables/heart.png (14x12); notification envelope: resources/drawables/notif.png (12x9); both loaded in Assets.
+Trainer: the 16x16 sprite data is drawn at 2x = 32x32 on screen (Trainer.SCALE).
 
 Fonts (resources/fonts): the time, steps and temperature numbers use the original Game Boy Pokemon (Gen 1) pixel font,
 taken from the pret/pokered project and scaled with no smoothing: timefont = 4x, stepfont = 2x, stepfontsmall = 1x.
 The font only has the digits, "/" and "-" (no degree sign: the degree ring is drawn by DatePanel).
-Assets.fitStepFont picks the 1x font automatically when 2x text would run off its space
-(steps numbers on the left side, 3-digit heart rate next to the heart icon).
+Assets.fitStepFont picks the 1x font automatically when the 2x steps numbers would run off their space.
+The 1x font is also used for the notification count; the heart rate always uses the 2x font.
 Steps numbers are shown in hundreds of steps (STEPS_DIVISOR in StepsPanel.mc); the bar still shows the real progress.
