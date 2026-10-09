@@ -13,7 +13,7 @@ class PokeFaceView extends WatchUi.WatchFace {
 
     hidden var _anim = null;        // ball + Pokemon animation (Animation.mc)
     // ---- layout knobs (176x176 screen) ----
-    hidden const HR_LEFT = 7;       // heart-rate icon starts here (left of the steps bar)
+    hidden const HR_LEFT = 6;       // heart-rate icon starts here (left of the steps bar)
     hidden const HEART_W = 14;      // width of resources/drawables/heart.png
     hidden const HR_GAP = 3;        // gap between heart icon / number / the bar
     hidden const BAR_Y = 138;       // centre y of the steps bar
@@ -27,8 +27,8 @@ class PokeFaceView extends WatchUi.WatchFace {
     hidden const DEFAULT_GOAL = 10000;
     // battery bar on the left edge (kept away from the corners)
     hidden const BATT_X = 1;
-    hidden const BATT_TRACK_W = 2;  // thin track (was 1)
-    hidden const BATT_W = 4;        // level bar (was 2)
+    hidden const BATT_TRACK_W = 2;  // thin track
+    hidden const BATT_W = 3;        // level bar
     hidden const BATT_TOP = 40;
     hidden const BATT_BOTTOM = 136;
     hidden const TIME_CX = 74;      // centre x of the time (88 = screen centre; lower = further left)
@@ -42,7 +42,7 @@ class PokeFaceView extends WatchUi.WatchFace {
     hidden const STEPS_FRAME_Y = 168;   // top of the bottom line under the steps (3px: 168-170)
     hidden const STEPS_FRAME_TOP = 129; // top of the vertical line on the right of the steps
     hidden const STEPS_FRAME_RIGHT = 170; // right edge (exclusive) of that vertical line
-    hidden const STEPS_FRAME_LEFT = 34;   // left end of the bottom line (barb included)
+    hidden const STEPS_FRAME_LEFT = 45;   // left end of the bottom line (barb included)
     hidden const DATE_FRAME_X = 8;      // left edge of the vertical line next to the date
     hidden const DATE_FRAME_TOP = 12;   // top of that vertical line
     hidden const DATE_FRAME_Y = 62;     // top of the bottom line under the date/weather
@@ -196,18 +196,16 @@ class PokeFaceView extends WatchUi.WatchFace {
     hidden function drawHeart(dc, barX) {
         var hr = currentHeartRate();
         var text = (hr != null) ? hr.format("%d") : "--";
-        var font = Graphics.FONT_XTINY;
-        var tw = dc.getTextWidthInPixels(text, font);
-        var gap = HR_GAP;
-        var avail = barX - HR_LEFT - 4;          // keep 4px clear of the bar
-        if (HEART_W + gap + tw > avail) { gap = 1; }  // squeeze the gap on 3-digit rates
-        var x0 = HR_LEFT;
+        var heartIconLeft = barX - HEART_W - 6;
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        
+        // TODO : this does not fit for 3 digit HR...
+        var textLeft = HR_LEFT;
+        dc.drawText(textLeft, BAR_Y, _stepFont, text, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+
         if (_heartIcon != null) {
-            dc.drawBitmap(x0, BAR_Y - 6, _heartIcon);   // 14 x 12 px, centred on the bar
+            dc.drawBitmap(heartIconLeft, BAR_Y - 6, _heartIcon);   // 14 x 12 px, centred on the bar
         }
-        dc.drawText(x0 + HEART_W + gap, BAR_Y, font, text,
-            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     // --- steps: [heart HR] [=====----]  with "steps/ goal" underneath (like a Pokemon HP bar) ---
@@ -302,7 +300,7 @@ class PokeFaceView extends WatchUi.WatchFace {
 
     // foe-style box under the date/weather: vertical line on the left, line along the bottom, barb on the right
     hidden function drawDateFrame(dc, box) {
-        var rx = box[0] - 4;                         // stop just left of the subscreen
+        var rx = box[0] - 12;                         // stop just left of the subscreen
         drawFrameLine(dc, DATE_FRAME_X, rx, DATE_FRAME_Y, false);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(DATE_FRAME_X, DATE_FRAME_TOP, FRAME_T,
