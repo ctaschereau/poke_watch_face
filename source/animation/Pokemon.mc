@@ -6,12 +6,12 @@ import Toybox.Math;
 // change the module name, then bump SHAPE_COUNT and add a case in draw() below.
 module Pokemon {
 
-    // true  = bitmap sprites (resources/drawables/poke_*.png, 4 head-bob frames each) - Pikachu, Charmander, Bulbasaur, Squirtle only
-    // false = the shape-drawn Pokemon (animation/sprites/*.mc) - all 6
+    // true  = bitmap sprites (resources/drawables/poke_*.png, 4 look-around frames each) - all 7, including Gyarados
+    // false = the shape-drawn Pokemon (animation/sprites/*.mc) - 6, no Gyarados
     const USE_IMAGES = true;
 
     const SHAPE_COUNT = 6;   // Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff
-    const IMAGE_COUNT = 4;   // ids 0..3 above (no images for Eevee / Jigglypuff yet)
+    const IMAGE_COUNT = 7;   // ids 0..5 as above + 6 Gyarados (bitmap only)
 
     function count() as Number {
         return USE_IMAGES ? IMAGE_COUNT : SHAPE_COUNT;

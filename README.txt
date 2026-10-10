@@ -1,7 +1,7 @@
 PokeFace - Garmin Instinct 2 watch face
 1. Install VS Code + the "Monkey C" extension (it downloads the Connect IQ SDK).
 2. Open this folder, run "Monkey C: Build for Device" (product: instinct2) -> PokeFace.prg
-3. Plug the watch in via USB and copy PokeFace.prg to GARMIN/APPS/
+3. Plug the watch in via USB: "npm run build" builds and copies the .prg onto the watch
 4. On the watch: hold UP > Watch Face > PokeFace.
 
 Code layout (source/):
@@ -23,12 +23,12 @@ Code layout (source/):
    Pokemon.mc       - random pick (never the same one twice in a row) + dispatch
    Gfx.mc           - shared drawing helpers (shift, poly, blob, eye)
    SleepingPokemon.mc - night mode: a sleeping Snorlax (snorlax_sleep.png) with floating Zs replaces the ball in the subscreen
-   BattleIntro.mc   - the Gen 1 flash + spiral played once a day, on the first wrist raise after the step goal is reached
+   BattleIntro.mc   - the Gen 1 flash + spiral + fullscreen "10000!" played once a day, on the first wrist raise after the step goal is reached
    sprites/         - Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff, Trainer: one file each
 (Connect IQ compiles every .mc file under source/ recursively, so no jungle change is needed for the subfolders.)
 
 Night mode: SleepingPokemon.mc, NIGHT_START / NIGHT_END (default 22 -> 6). The ball does not open at night.
-Step-goal animation: BattleIntro.mc, FLASH_TICKS / CLOSE_TICKS / HOLD_TICKS / OPEN_TICKS (one tick = TICK_MS = 100 ms).
+Step-goal animation: BattleIntro.mc, FLASH_TICKS / CLOSE_TICKS / GOAL_TICKS / OPEN_TICKS (one tick = TICK_MS = 70 ms).
  It plays once per day (the day is kept in Application.Storage under "goalDay"); if the wrist goes down mid-animation it plays again next time.
 Fishing trainer: Trainer.mc, ROD_* / LINE_DROP / BOBBER_R place the rod, line and bobber (drawn with lines over the 16x16 sprite).
 
@@ -39,7 +39,7 @@ Tweaking: each panel has its layout knobs (positions, sizes) as constants at the
  - DatePanel.mc:     DATE_DY, WEATHER_DY, WEATHER_DX, NOTIF_* (NOTIF_RIGHT_GAP = how far left of the subscreen the envelope sits), DEGREE_*, FRAME_*
 
 Shape-drawn vs image Pokemon: Pokemon.USE_IMAGES (top of animation/Pokemon.mc). true = bitmaps from resources/drawables/poke_<name>_<1-4>.png
-(Pikachu, Charmander, Bulbasaur, Squirtle only; frames = Head Bob animation, one per second), false = the shape-drawn ones (all 6).
+(Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff, Gyarados; frames = look forward / left / forward bob / right, one per second), false = the shape-drawn ones (6, no Gyarados).
 The bitmaps are 1-bit with a transparent background; grey areas are dithered. Position: SPRITE_X / SPRITE_BOTTOM in PokeAnimation.mc.
 
 To add a Pokemon: copy one sprite file, change the module name, add it to Pokemon.draw and bump Pokemon.COUNT.

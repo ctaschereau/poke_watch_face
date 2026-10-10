@@ -11,7 +11,7 @@ import Toybox.WatchUi;
 //   view/StepsPanel.mc  bottom: heart rate + steps bar + steps numbers
 //   view/BatteryBar.mc  left edge: battery level (blinks when low)
 //   animation/          subscreen: Poke Ball + Pokemon (a sleeping Snorlax at night)
-//   animation/BattleIntro.mc  the flash + spiral played once a day when the step goal is reached
+//   animation/BattleIntro.mc  the flash + spiral + "goal!" screen played once a day when the step goal is reached
 class PokeFaceView extends WatchUi.WatchFace {
 
     hidden const KEY_GOAL_DAY = "goalDay";   // Storage: the day (midnight timestamp) the goal animation last played
@@ -30,7 +30,7 @@ class PokeFaceView extends WatchUi.WatchFace {
         _timePanel = new TimePanel(assets);
         _stepsPanel = new StepsPanel(assets);
         _anim = new PokeAnimation();
-        _intro = new BattleIntro();
+        _intro = new BattleIntro(assets);
     }
 
     function onEnterSleep() as Void {
@@ -87,6 +87,6 @@ class PokeFaceView extends WatchUi.WatchFace {
             return;
         }
         Storage.setValue(KEY_GOAL_DAY, today);
-        _intro.start();
+        _intro.start(goal);
     }
 }

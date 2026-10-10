@@ -18,5 +18,17 @@
     <bitmap id="SquirtleImg2" filename="poke_squirtle_2.png" />
     <bitmap id="SquirtleImg3" filename="poke_squirtle_3.png" />
     <bitmap id="SquirtleImg4" filename="poke_squirtle_4.png" />
+    <bitmap id="EeveeImg1" filename="poke_eevee_1.png" />
+    <bitmap id="EeveeImg2" filename="poke_eevee_2.png" />
+    <bitmap id="EeveeImg3" filename="poke_eevee_3.png" />
+    <bitmap id="EeveeImg4" filename="poke_eevee_4.png" />
+    <bitmap id="JigglypuffImg1" filename="poke_jigglypuff_1.png" />
+    <bitmap id="JigglypuffImg2" filename="poke_jigglypuff_2.png" />
+    <bitmap id="JigglypuffImg3" filename="poke_jigglypuff_3.png" />
+    <bitmap id="JigglypuffImg4" filename="poke_jigglypuff_4.png" />
+    <bitmap id="GyaradosImg1" filename="poke_gyarados_1.png" />
+    <bitmap id="GyaradosImg2" filename="poke_gyarados_2.png" />
+    <bitmap id="GyaradosImg3" filename="poke_gyarados_3.png" />
+    <bitmap id="GyaradosImg4" filename="poke_gyarados_4.png" />
     <bitmap id="SnorlaxSleep" filename="snorlax_sleep.png" />
 </drawables>

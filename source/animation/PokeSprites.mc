@@ -4,7 +4,7 @@ import Toybox.WatchUi;
 
 // The bitmap Pokemon (used when Pokemon.USE_IMAGES is true).
 // 4 head-bob frames per Pokemon: resources/drawables/poke_<name>_<1-4>.png, declared in drawables.xml as <Name>Img<1-4>.
-// Pokemon ids match Pokemon.mc: 0 Pikachu, 1 Charmander, 2 Bulbasaur, 3 Squirtle.
+// Pokemon ids match Pokemon.mc: 0 Pikachu, 1 Charmander, 2 Bulbasaur, 3 Squirtle, 4 Eevee, 5 Jigglypuff, 6 Gyarados.
 // Only the frame being shown is kept in memory (a watch face has very little of it).
 class PokeSprites {
 
@@ -41,7 +41,10 @@ class PokeSprites {
             [Rez.Drawables.PikachuImg1, Rez.Drawables.PikachuImg2, Rez.Drawables.PikachuImg3, Rez.Drawables.PikachuImg4],
             [Rez.Drawables.CharmanderImg1, Rez.Drawables.CharmanderImg2, Rez.Drawables.CharmanderImg3, Rez.Drawables.CharmanderImg4],
             [Rez.Drawables.BulbasaurImg1, Rez.Drawables.BulbasaurImg2, Rez.Drawables.BulbasaurImg3, Rez.Drawables.BulbasaurImg4],
-            [Rez.Drawables.SquirtleImg1, Rez.Drawables.SquirtleImg2, Rez.Drawables.SquirtleImg3, Rez.Drawables.SquirtleImg4]
+            [Rez.Drawables.SquirtleImg1, Rez.Drawables.SquirtleImg2, Rez.Drawables.SquirtleImg3, Rez.Drawables.SquirtleImg4],
+            [Rez.Drawables.EeveeImg1, Rez.Drawables.EeveeImg2, Rez.Drawables.EeveeImg3, Rez.Drawables.EeveeImg4],
+            [Rez.Drawables.JigglypuffImg1, Rez.Drawables.JigglypuffImg2, Rez.Drawables.JigglypuffImg3, Rez.Drawables.JigglypuffImg4],
+            [Rez.Drawables.GyaradosImg1, Rez.Drawables.GyaradosImg2, Rez.Drawables.GyaradosImg3, Rez.Drawables.GyaradosImg4]
         ];
         return ids[pokemon][frame];
     }

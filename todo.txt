@@ -1,1 +1,1 @@
-- Make step animation look more like https://www.youtube.com/watch?v=YbDCXJ0xH2g&t=7s
+- Compare the step animation (BattleIntro.mc) against https://www.youtube.com/watch?v=YbDCXJ0xH2g&t=7s and tune the timing constants / spiral tile size
