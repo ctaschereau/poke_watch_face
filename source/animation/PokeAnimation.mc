@@ -16,7 +16,7 @@ class PokeAnimation {
 
     // where the Pokemon stands (centre of its head area)
     hidden const POKE_X = 88;
-    hidden const POKE_Y = 112;
+    hidden const POKE_Y = 110;
 
     // where it looks on each second it is out: centre, left, right, centre (blink on the last one)
     hidden const LOOK as Array<Number> = [0, -1, 1, 0];
