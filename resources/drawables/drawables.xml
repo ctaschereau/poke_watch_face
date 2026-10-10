@@ -2,4 +2,20 @@
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="HeartIcon" filename="heart.png" />
     <bitmap id="NotifIcon" filename="notif.png" />
+    <bitmap id="PikachuImg1" filename="poke_pikachu_1.png" />
+    <bitmap id="PikachuImg2" filename="poke_pikachu_2.png" />
+    <bitmap id="PikachuImg3" filename="poke_pikachu_3.png" />
+    <bitmap id="PikachuImg4" filename="poke_pikachu_4.png" />
+    <bitmap id="CharmanderImg1" filename="poke_charmander_1.png" />
+    <bitmap id="CharmanderImg2" filename="poke_charmander_2.png" />
+    <bitmap id="CharmanderImg3" filename="poke_charmander_3.png" />
+    <bitmap id="CharmanderImg4" filename="poke_charmander_4.png" />
+    <bitmap id="BulbasaurImg1" filename="poke_bulbasaur_1.png" />
+    <bitmap id="BulbasaurImg2" filename="poke_bulbasaur_2.png" />
+    <bitmap id="BulbasaurImg3" filename="poke_bulbasaur_3.png" />
+    <bitmap id="BulbasaurImg4" filename="poke_bulbasaur_4.png" />
+    <bitmap id="SquirtleImg1" filename="poke_squirtle_1.png" />
+    <bitmap id="SquirtleImg2" filename="poke_squirtle_2.png" />
+    <bitmap id="SquirtleImg3" filename="poke_squirtle_3.png" />
+    <bitmap id="SquirtleImg4" filename="poke_squirtle_4.png" />
 </drawables>

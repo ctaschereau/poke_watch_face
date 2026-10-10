@@ -1,5 +1,2 @@
-- Arrows look weird
-- Bottom steps bar is not large enough : push the arrow line a bit more in the corner
-- Lower trainer and time by 1px
 - Fix fishing rod of trainer (you can modify the sprite to make it wider)
 - (later) try and have better images

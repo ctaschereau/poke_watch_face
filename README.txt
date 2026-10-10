@@ -19,6 +19,7 @@ Code layout (source/):
  animation/
    PokeAnimation.mc - ball/Pokemon state machine (OPEN_ODDS, OUT_SECONDS, where the Pokemon stands)
    PokeBall.mc      - draws the ball in the subscreen
+   PokeSprites.mc   - the bitmap Pokemon (4 head-bob frames each, loaded one at a time)
    Pokemon.mc       - random pick (never the same one twice in a row) + dispatch
    Gfx.mc           - shared drawing helpers (shift, poly, blob, eye)
    sprites/         - Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff, Trainer: one file each
@@ -28,7 +29,11 @@ Tweaking: each panel has its layout knobs (positions, sizes) as constants at the
  - PokeAnimation.mc: OPEN_ODDS (how often the ball opens), OUT_SECONDS (how long the Pokemon stays out)
  - TimePanel.mc:     CENTER_X, CENTER_Y, TRAINER_GAP
  - StepsPanel.mc:    BAR_* (BAR_X = left end of the bar; keep it >= 74 so a 3-digit heart rate fits), NUMBERS_*, HR_*, HEART_*, STEPS_DIVISOR, FRAME_*
- - DatePanel.mc:     DATE_DY, WEATHER_DY, WEATHER_DX, NOTIF_*, DEGREE_*, FRAME_*
+ - DatePanel.mc:     DATE_DY, WEATHER_DY, WEATHER_DX, NOTIF_* (NOTIF_RIGHT_GAP = how far left of the subscreen the envelope sits), DEGREE_*, FRAME_*
+
+Shape-drawn vs image Pokemon: Pokemon.USE_IMAGES (top of animation/Pokemon.mc). true = bitmaps from resources/drawables/poke_<name>_<1-4>.png
+(Pikachu, Charmander, Bulbasaur, Squirtle only; frames = Head Bob animation, one per second), false = the shape-drawn ones (all 6).
+The bitmaps are 1-bit with a transparent background; grey areas are dithered. Position: SPRITE_X / SPRITE_BOTTOM in PokeAnimation.mc.
 
 To add a Pokemon: copy one sprite file, change the module name, add it to Pokemon.draw and bump Pokemon.COUNT.
 Heart icon: resources/drawables/heart.png (14x12); notification envelope: resources/drawables/notif.png (12x9); both loaded in Assets.

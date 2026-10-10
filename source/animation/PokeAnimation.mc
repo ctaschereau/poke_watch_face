@@ -18,6 +18,10 @@ class PokeAnimation {
     hidden const POKE_X = 88;
     hidden const POKE_Y = 112;
 
+    // where the bitmap Pokemon stands (Pokemon.USE_IMAGES): bottom-centre of the sprite box
+    hidden const SPRITE_X = 88;
+    hidden const SPRITE_BOTTOM = 166;
+
     // where it looks on each second it is out: centre, left, right, centre (blink on the last one)
     hidden const LOOK as Array<Number> = [0, -1, 1, 0];
 
@@ -26,6 +30,7 @@ class PokeAnimation {
     hidden var _lastSec as Number;     // last second we advanced on
     hidden var _asleep as Boolean;
     hidden var _pokemon as Number;     // id of the current Pokemon (see Pokemon.mc)
+    hidden var _sprites as PokeSprites;
 
     function initialize() {
         _state = CLOSED;
@@ -33,6 +38,7 @@ class PokeAnimation {
         _lastSec = -1;
         _asleep = false;
         _pokemon = -1;
+        _sprites = new PokeSprites();
         Math.srand(Time.now().value());
     }
 
@@ -40,6 +46,7 @@ class PokeAnimation {
         _asleep = asleep;
         if (asleep) {
             _state = CLOSED;
+            _sprites.release();
         }
     }
 
@@ -53,6 +60,7 @@ class PokeAnimation {
 
         if (_asleep) {
             _state = CLOSED;
+            _sprites.release();
             return;
         }
 
@@ -70,6 +78,7 @@ class PokeAnimation {
             if (_tick >= OUT_SECONDS) {
                 _state = CLOSED;
                 _tick = 0;
+                _sprites.release();
             }
         }
     }
@@ -78,7 +87,11 @@ class PokeAnimation {
     function draw(dc as Dc, box as Array<Number>) as Void {
         PokeBall.draw(dc, box, _state == CLOSED);
         if (_state == OUT) {
-            Pokemon.draw(dc, _pokemon, POKE_X, POKE_Y, LOOK[_tick % LOOK.size()], _tick);
+            if (Pokemon.USE_IMAGES) {
+                _sprites.draw(dc, _pokemon, _tick, SPRITE_X, SPRITE_BOTTOM);
+            } else {
+                Pokemon.draw(dc, _pokemon, POKE_X, POKE_Y, LOOK[_tick % LOOK.size()], _tick);
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ class DatePanel {
     hidden const DEGREE_GAP = 1;        // gap between the last digit and the degree ring
     hidden const WEATHER_DX = -6;       // weather block shifted left of centre to leave room for the notification
     // notification: envelope icon (12x9) with the count under it in the 1x pixel font
-    hidden const NOTIF_RIGHT_GAP = 6;   // the notification column is centred this + 8 px left of the subscreen
+    hidden const NOTIF_RIGHT_GAP = 11;  // the notification column is centred this + 8 px left of the subscreen (was 6)
     hidden const NOTIF_TOP_DY = -11;    // top of the envelope, relative to the weather line's centre
     hidden const NOTIF_NUMBER_DY = 3;   // centre of the number, relative to the weather line's centre
     hidden const NOTIF_MAX = 99;        // counts above this are shown as this

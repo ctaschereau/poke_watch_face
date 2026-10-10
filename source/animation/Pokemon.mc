@@ -3,24 +3,34 @@ import Toybox.Lang;
 import Toybox.Math;
 
 // Picks and draws one of the Pokemon sprites (animation/sprites/). To add another: copy a sprite file,
-// change the module name, then bump COUNT and add a case in draw() below.
+// change the module name, then bump SHAPE_COUNT and add a case in draw() below.
 module Pokemon {
 
-    const COUNT = 6;
+    // true  = bitmap sprites (resources/drawables/poke_*.png, 4 head-bob frames each) - Pikachu, Charmander, Bulbasaur, Squirtle only
+    // false = the shape-drawn Pokemon (animation/sprites/*.mc) - all 6
+    const USE_IMAGES = true;
 
-    // random id (0..COUNT-1), never the same as `last`
+    const SHAPE_COUNT = 6;   // Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff
+    const IMAGE_COUNT = 4;   // ids 0..3 above (no images for Eevee / Jigglypuff yet)
+
+    function count() as Number {
+        return USE_IMAGES ? IMAGE_COUNT : SHAPE_COUNT;
+    }
+
+    // random id (0..count()-1), never the same as `last`
     function pick(last as Number) as Number {
-        var n = Math.rand() % COUNT;
+        var total = count();
+        var n = Math.rand() % total;
         if (n < 0) {
             n = -n;
         }
         if (n == last) {
-            n = (n + 1) % COUNT;
+            n = (n + 1) % total;
         }
         return n;
     }
 
-    // px, py: anchor point.  look: -1 left, 0 centre, 1 right.  tick: seconds out (0..3), blinks on 3.
+    // Shape-drawn version (USE_IMAGES = false).  px, py: anchor point.  look: -1 left, 0 centre, 1 right.  tick: seconds out (0..3), blinks on 3.
     function draw(dc as Dc, id as Number, px as Number, py as Number, look as Number, tick as Number) as Void {
         dc.setPenWidth(2);
         if (id == 0) {
