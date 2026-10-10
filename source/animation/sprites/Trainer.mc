@@ -5,13 +5,23 @@ import Toybox.Lang;
 // so every sprite pixel becomes a 2x2 block). Each sprite is 16 row masks; bit 15 = leftmost pixel,
 // a set bit = black pixel (white / transparent pixels are simply not drawn, the face background is white).
 // Walking while the watch is awake (the two walk frames alternate each second),
-// fishing while it sleeps.
+// fishing while it sleeps: the fishing sprite is the trainer holding a fist forward, and the rod itself
+// (a long diagonal pole, the line and a bobber) is drawn on top with lines, because it is wider and taller than
+// the 16x16 sprite. The rod leans up and to the left, just clear of the clock digits.
 module Trainer {
 
     const SIZE = 32;          // size on screen
     const SPRITE = 16;        // size of the sprite data below
     const SCALE = 2;          // SIZE / SPRITE
     const RIGHT_BLANK = 4;    // empty pixels at the right of the 32x32 box (sprite columns 14-15 are never used)
+
+    // fishing rod, in screen pixels relative to the top-left of the 32x32 box
+    const ROD_GRIP_X = 4;     // where the fist holds the rod
+    const ROD_GRIP_Y = 17;
+    const ROD_TIP_X = -9;     // the rod tip (left of the box, above it: clear of the clock digits)
+    const ROD_TIP_Y = -16;
+    const LINE_DROP = 15;     // the line hangs this far below the tip, ending in the bobber
+    const BOBBER_R = 3;
 
     // walk frame 1
     const WALK_A as Array<Number> = [
@@ -63,8 +73,8 @@ module Trainer {
         0x35FC,
         0x14FC,
         0x1498,
-        0xD010,
-        0xFC60,
+        0x7010,
+        0x7C60,
         0x3FB0,
         0x2570,
         0x27F0,
@@ -80,6 +90,9 @@ module Trainer {
             sprite = (tick % 2 == 0) ? WALK_A : WALK_B;
         }
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        if (asleep) {
+            drawRod(dc, x, y);
+        }
         for (var row = 0; row < SPRITE; row++) {
             var bits = sprite[row];
             var col = 0;
@@ -95,5 +108,24 @@ module Trainer {
                 }
             }
         }
+    }
+
+    // the rod: 2px pole from the fist up to the tip, 1px line hanging down, black-and-white bobber at its end
+    function drawRod(dc as Dc, x as Number, y as Number) as Void {
+        var tipX = x + ROD_TIP_X;
+        var tipY = y + ROD_TIP_Y;
+        var bobberY = tipY + LINE_DROP;
+
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        dc.drawLine(x + ROD_GRIP_X, y + ROD_GRIP_Y, tipX, tipY);
+        dc.setPenWidth(1);
+        dc.drawLine(tipX, tipY, tipX, bobberY);
+
+        dc.fillCircle(tipX, bobberY, BOBBER_R);                              // bobber: black ...
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(tipX - BOBBER_R + 1, bobberY - BOBBER_R + 1, 2 * BOBBER_R - 1, 2);  // ... with a white top
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(tipX, bobberY, BOBBER_R);
     }
 }

@@ -4,6 +4,7 @@ import Toybox.Math;
 import Toybox.Time;
 
 // The ball / Pokemon animation: a tiny state machine that advances once per second.
+// At night (see SleepingPokemon.mc) the ball is replaced by a sleeping Pokemon and nothing else happens.
 class PokeAnimation {
 
     // states
@@ -31,6 +32,8 @@ class PokeAnimation {
     hidden var _asleep as Boolean;
     hidden var _pokemon as Number;     // id of the current Pokemon (see Pokemon.mc)
     hidden var _sprites as PokeSprites;
+    hidden var _sleeper as SleepingPokemon;
+    hidden var _night as Boolean;
 
     function initialize() {
         _state = CLOSED;
@@ -39,6 +42,8 @@ class PokeAnimation {
         _asleep = false;
         _pokemon = -1;
         _sprites = new PokeSprites();
+        _sleeper = new SleepingPokemon();
+        _night = false;
         Math.srand(Time.now().value());
     }
 
@@ -57,6 +62,14 @@ class PokeAnimation {
             return;
         }
         _lastSec = now;
+
+        _night = _sleeper.isNight();
+        if (_night) {
+            _state = CLOSED;
+            _sprites.release();
+            return;
+        }
+        _sleeper.release();
 
         if (_asleep) {
             _state = CLOSED;
@@ -85,6 +98,10 @@ class PokeAnimation {
 
     // box = subscreen [x, y, w, h]
     function draw(dc as Dc, box as Array<Number>) as Void {
+        if (_night) {
+            _sleeper.draw(dc, box, _asleep);
+            return;
+        }
         PokeBall.draw(dc, box, _state == CLOSED);
         if (_state == OUT) {
             if (Pokemon.USE_IMAGES) {

@@ -1,2 +1,1 @@
-- Fix fishing rod of trainer (you can modify the sprite to make it wider)
-- (later) try and have better images
+- Make step animation look more like https://www.youtube.com/watch?v=YbDCXJ0xH2g&t=7s

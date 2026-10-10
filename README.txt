@@ -11,7 +11,7 @@ Code layout (source/):
    DatePanel.mc     - top left: date + weather (icon, temperature, degree ring) + notification count (envelope) + the foe-style frame under it
    TimePanel.mc     - middle: big time + the trainer sprite to its right
    StepsPanel.mc    - bottom: heart rate (icon + number, always the big font), steps bar, "steps/goal" numbers + the player-style frame
-   BatteryBar.mc    - left edge: battery level
+   BatteryBar.mc    - left edge: battery level (the whole bar blinks at or below LOW_PERCENT while the watch is awake)
    BattleFrame.mc   - shared helper: the Gen 1 HP-box edge (line + half-arrow + vertical line)
    Assets.mc        - the fonts and the heart icon, loaded once and shared by the panels
    Subscreen.mc     - position/size of the Instinct subscreen (where the ball lives)
@@ -22,8 +22,15 @@ Code layout (source/):
    PokeSprites.mc   - the bitmap Pokemon (4 head-bob frames each, loaded one at a time)
    Pokemon.mc       - random pick (never the same one twice in a row) + dispatch
    Gfx.mc           - shared drawing helpers (shift, poly, blob, eye)
+   SleepingPokemon.mc - night mode: a sleeping Snorlax (snorlax_sleep.png) with floating Zs replaces the ball in the subscreen
+   BattleIntro.mc   - the Gen 1 flash + spiral played once a day, on the first wrist raise after the step goal is reached
    sprites/         - Pikachu, Charmander, Bulbasaur, Squirtle, Eevee, Jigglypuff, Trainer: one file each
 (Connect IQ compiles every .mc file under source/ recursively, so no jungle change is needed for the subfolders.)
+
+Night mode: SleepingPokemon.mc, NIGHT_START / NIGHT_END (default 22 -> 6). The ball does not open at night.
+Step-goal animation: BattleIntro.mc, FLASH_TICKS / CLOSE_TICKS / HOLD_TICKS / OPEN_TICKS (one tick = TICK_MS = 100 ms).
+ It plays once per day (the day is kept in Application.Storage under "goalDay"); if the wrist goes down mid-animation it plays again next time.
+Fishing trainer: Trainer.mc, ROD_* / LINE_DROP / BOBBER_R place the rod, line and bobber (drawn with lines over the 16x16 sprite).
 
 Tweaking: each panel has its layout knobs (positions, sizes) as constants at the top of its file.
  - PokeAnimation.mc: OPEN_ODDS (how often the ball opens), OUT_SECONDS (how long the Pokemon stays out)

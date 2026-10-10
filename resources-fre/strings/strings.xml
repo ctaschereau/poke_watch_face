@@ -1,4 +1,5 @@
 <strings>
+    <string id="AppName">PokeFace</string>
     <!-- date line: $1$ = day name, $2$ = month, $3$ = day of month (caps only: the Gen 1 date font has A-Z and digits) -->
     <string id="DateFormat">$1$ $3$ $2$</string>
     <string id="Day1">DIM</string>

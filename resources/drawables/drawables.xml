@@ -18,4 +18,5 @@
     <bitmap id="SquirtleImg2" filename="poke_squirtle_2.png" />
     <bitmap id="SquirtleImg3" filename="poke_squirtle_3.png" />
     <bitmap id="SquirtleImg4" filename="poke_squirtle_4.png" />
+    <bitmap id="SnorlaxSleep" filename="snorlax_sleep.png" />
 </drawables>
