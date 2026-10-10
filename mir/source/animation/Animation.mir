@@ -1,0 +1,347 @@
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Math,3,14,18]; ]
+import Toybox.Math;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Time,4,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 7; @symbol_classdef = [PokeAnimation,7,6,19]; ]
+class PokeAnimation {
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 7; ]
+    <init> {
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 27 15 ]
+        %tmp.1 = newa 4;
+        %tmp.2 = 0;
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = -1;
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = 1;
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = 0;
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        putv self :_look %tmp.13;
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 9; @position = 17; @symbol_constdef = [CLOSED,9,17,23]; ]
+    protected
+    const CLOSED = 0;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 10; @position = 17; @symbol_constdef = [OPENING,10,17,24]; ]
+    protected
+    const OPENING = 1;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 11; @position = 17; @symbol_constdef = [OUT,11,17,20]; ]
+    protected
+    const OUT = 2;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 13; @position = 17; @symbol_constdef = [OUT_SECONDS,13,17,28]; ]
+    protected
+    const OUT_SECONDS = 4;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 14; @position = 17; @symbol_constdef = [OPEN_ODDS,14,17,26]; ]
+    protected
+    const OPEN_ODDS = 15;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 17; @position = 17; @symbol_constdef = [POKE_X,17,17,23]; ]
+    protected
+    const POKE_X = 88;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 18; @position = 17; @symbol_constdef = [POKE_Y,18,17,23]; ]
+    protected
+    const POKE_Y = 112;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 20; @position = 15; @symbol_vardef = [_state,20,15,21]; ]
+    protected
+    var _state = 0;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 21; @position = 15; @symbol_vardef = [_tick,21,15,20]; ]
+    protected
+    var _tick = 0;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 22; @position = 15; @symbol_vardef = [_lastSec,22,15,23]; ]
+    protected
+    var _lastSec = -1;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 23; @position = 15; @symbol_vardef = [_asleep,23,15,22]; ]
+    protected
+    var _asleep = false;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 24; @position = 15; @symbol_vardef = [_pokemon,24,15,23]; ]
+    protected
+    var _pokemon = -1;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 27; @position = 15; @symbol_vardef = [_look,27,15,20]; ]
+    protected
+    var _look;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 29; @symbol_functiondef = [initialize,29,13,23]; ]
+    function initialize() as Void {
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_29_26_31_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 30 8 ]
+        symbol [ Math %tmp.1 30 8 12 ];
+        %tmp.1 = getm $.Toybox.Math;
+        symbol [ srand %tmp.2 30 13 18 ];
+        %tmp.2 = getv function %tmp.1 :srand;
+        symbol [ Time %tmp.3 30 19 23 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 30 24 27 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ value %tmp.6 30 30 35 ];
+        %tmp.6 = getv function %tmp.5 :value;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        invoke %tmp.1 %tmp.2(%tmp.7);
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_29_26_31_4_stop:
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 33; @symbol_functiondef = [setAsleep,33,13,22]; @symbol_param<0> = [asleep,33,23,29]; ]
+    function setAsleep(asleep) {
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_33_31_38_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 34 8 ]
+        %tmp.1 = lgetv %asleep;
+        symbol [ asleep %tmp.1 34 18 24 ];
+        symbol [ _asleep ? 34 8 15 ];
+        putv self :_asleep %tmp.1;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 35 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_8_37_8_if_stmt:
+        %tmp.2 = lgetv %asleep;
+        symbol [ asleep %tmp.2 35 12 18 ];
+        bf %tmp.2 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_8_37_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_8_37_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_20_37_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 36 12 ]
+        symbol [ CLOSED %tmp.4 36 21 27 ];
+        %tmp.4 = getv ? :CLOSED;
+        symbol [ _state ? 36 12 18 ];
+        putv self :_state %tmp.4;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_20_37_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_8_37_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_35_8_37_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_33_31_38_4_stop:
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 41; @symbol_functiondef = [advance,41,13,20]; ]
+    function advance() {
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_41_23_69_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 42 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_41_23_69_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_41_23_69_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 42 12 15 ];
+        symbol [ Time %tmp.1 42 18 22 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 42 23 26 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ value %tmp.4 42 29 34 ];
+        %tmp.4 = getv function %tmp.3 :value;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %now.1 %tmp.5;
+        symbol [ now %now.1 42 12 15 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 43 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_8_45_8_if_stmt:
+        %tmp.6 = lgetv %now.1;
+        symbol [ now %tmp.6 43 12 15 ];
+        symbol [ _lastSec %tmp.8 43 19 27 ];
+        %tmp.8 = getv ? :_lastSec;
+        %tmp.9 = eq %tmp.6 %tmp.8;
+        bf %tmp.9 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_8_45_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_8_45_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_29_45_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 44 12 ]
+        ret ?;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_29_45_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_8_45_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_43_8_45_8_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 46 8 ]
+        %tmp.10 = lgetv %now.1;
+        symbol [ now %tmp.10 46 19 22 ];
+        symbol [ _lastSec ? 46 8 16 ];
+        putv self :_lastSec %tmp.10;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 48 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_8_51_8_if_stmt:
+        symbol [ _asleep %tmp.12 48 12 19 ];
+        %tmp.12 = getv ? :_asleep;
+        bf %tmp.12 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_8_51_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_8_51_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_21_51_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 49 12 ]
+        symbol [ CLOSED %tmp.14 49 21 27 ];
+        %tmp.14 = getv ? :CLOSED;
+        symbol [ _state ? 49 12 18 ];
+        putv self :_state %tmp.14;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 50 12 ]
+        ret ?;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_21_51_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_8_51_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_48_8_51_8_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 53 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_stmt:
+        symbol [ _state %tmp.16 53 12 18 ];
+        %tmp.16 = getv ? :_state;
+        symbol [ CLOSED %tmp.18 53 22 28 ];
+        %tmp.18 = getv ? :CLOSED;
+        %tmp.19 = eq %tmp.16 %tmp.18;
+        bf %tmp.19 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_30_59_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 54 12 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_12_58_12_if_stmt:
+        symbol [ Math %tmp.20 54 16 20 ];
+        %tmp.20 = getm $.Toybox.Math;
+        symbol [ rand %tmp.21 54 21 25 ];
+        %tmp.21 = getv function %tmp.20 :rand;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        symbol [ OPEN_ODDS %tmp.24 54 30 39 ];
+        %tmp.24 = getv ? :OPEN_ODDS;
+        %tmp.25 = mod %tmp.22 %tmp.24;
+        %tmp.26 = 0;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_12_58_12_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_12_58_12_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_46_58_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 55 16 ]
+        symbol [ OPENING %tmp.29 55 25 32 ];
+        %tmp.29 = getv ? :OPENING;
+        symbol [ _state ? 55 16 22 ];
+        putv self :_state %tmp.29;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 56 16 ]
+        %tmp.30 = 0;
+        symbol [ _tick ? 56 16 21 ];
+        putv self :_tick %tmp.30;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 57 16 ]
+        symbol [ Pokemon %tmp.32 57 27 34 ];
+        %tmp.32 = getv ? :Pokemon;
+        symbol [ pick %tmp.33 57 35 39 ];
+        %tmp.33 = getv function %tmp.32 :pick;
+        symbol [ _pokemon %tmp.35 57 40 48 ];
+        %tmp.35 = getv ? :_pokemon;
+        %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
+        symbol [ _pokemon ? 57 16 24 ];
+        putv self :_pokemon %tmp.36;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_46_58_12_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_12_58_12_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_54_12_58_12_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_30_59_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 59 15 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_stmt:
+        symbol [ _state %tmp.38 59 19 25 ];
+        %tmp.38 = getv ? :_state;
+        symbol [ OPENING %tmp.40 59 29 36 ];
+        %tmp.40 = getv ? :OPENING;
+        %tmp.41 = eq %tmp.38 %tmp.40;
+        bf %tmp.41 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_38_62_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 60 12 ]
+        symbol [ OUT %tmp.43 60 21 24 ];
+        %tmp.43 = getv ? :OUT;
+        symbol [ _state ? 60 12 18 ];
+        putv self :_state %tmp.43;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 61 12 ]
+        %tmp.44 = 0;
+        symbol [ _tick ? 61 12 17 ];
+        putv self :_tick %tmp.44;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_38_62_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 62 15 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_15_68_8_if_stmt:
+        symbol [ _state %tmp.46 62 19 25 ];
+        %tmp.46 = getv ? :_state;
+        symbol [ OUT %tmp.48 62 29 32 ];
+        %tmp.48 = getv ? :OUT;
+        %tmp.49 = eq %tmp.46 %tmp.48;
+        bf %tmp.49 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_15_68_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_15_68_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_34_68_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 63 12 ]
+        symbol [ _tick %tmp.50 63 12 17 ];
+        %tmp.50 = getv self :_tick;
+        %tmp.51 = 1;
+        %tmp.52 = add %tmp.50 %tmp.51;
+        symbol [ _tick ? 63 12 17 ];
+        putv self :_tick dup %tmp.52;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 64 12 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_12_67_12_if_stmt:
+        symbol [ _tick %tmp.54 64 16 21 ];
+        %tmp.54 = getv ? :_tick;
+        symbol [ OUT_SECONDS %tmp.56 64 25 36 ];
+        %tmp.56 = getv ? :OUT_SECONDS;
+        %tmp.57 = gte %tmp.54 %tmp.56;
+        bf %tmp.57 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_12_67_12_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_12_67_12_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_38_67_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 65 16 ]
+        symbol [ CLOSED %tmp.59 65 25 31 ];
+        %tmp.59 = getv ? :CLOSED;
+        symbol [ _state ? 65 16 22 ];
+        putv self :_state %tmp.59;
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 66 16 ]
+        %tmp.60 = 0;
+        symbol [ _tick ? 66 16 21 ];
+        putv self :_tick %tmp.60;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_38_67_12_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_12_67_12_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_64_12_67_12_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_34_68_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_15_68_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_62_15_68_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_59_15_68_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_53_8_68_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_41_23_69_4_stop:
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 72; @symbol_functiondef = [draw,72,13,17]; @symbol_param<0> = [dc,72,18,20]; @symbol_param<1> = [box,72,22,25]; ]
+    function draw(dc, box) {
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_72_27_77_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 73 8 ]
+        symbol [ PokeBall %tmp.2 73 8 16 ];
+        %tmp.2 = getv ? :PokeBall;
+        symbol [ draw %tmp.3 73 17 21 ];
+        %tmp.3 = getv function %tmp.2 :draw;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 73 22 24 ];
+        %tmp.5 = lgetv %box;
+        symbol [ box %tmp.5 73 26 29 ];
+        symbol [ _state %tmp.7 73 31 37 ];
+        %tmp.7 = getv ? :_state;
+        symbol [ CLOSED %tmp.9 73 41 47 ];
+        %tmp.9 = getv ? :CLOSED;
+        %tmp.10 = eq %tmp.7 %tmp.9;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5, %tmp.10);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 74 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_8_76_8_if_stmt:
+        symbol [ _state %tmp.12 74 12 18 ];
+        %tmp.12 = getv ? :_state;
+        symbol [ OUT %tmp.14 74 22 25 ];
+        %tmp.14 = getv ? :OUT;
+        %tmp.15 = eq %tmp.12 %tmp.14;
+        bf %tmp.15 @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_8_76_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_8_76_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_27_76_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc" 75 12 ]
+        symbol [ Pokemon %tmp.17 75 12 19 ];
+        %tmp.17 = getv ? :Pokemon;
+        symbol [ draw %tmp.18 75 20 24 ];
+        %tmp.18 = getv function %tmp.17 :draw;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 75 25 27 ];
+        symbol [ _pokemon %tmp.21 75 29 37 ];
+        %tmp.21 = getv ? :_pokemon;
+        symbol [ POKE_X %tmp.23 75 39 45 ];
+        %tmp.23 = getv ? :POKE_X;
+        symbol [ POKE_Y %tmp.25 75 47 53 ];
+        %tmp.25 = getv ? :POKE_Y;
+        symbol [ _look %tmp.27 75 55 60 ];
+        %tmp.27 = getv ? :_look;
+        symbol [ _tick %tmp.29 75 61 66 ];
+        %tmp.29 = getv ? :_tick;
+        %tmp.30 = 4;
+        %tmp.31 = mod %tmp.29 %tmp.30;
+        %tmp.32 = agetv %tmp.27 %tmp.31;
+        symbol [ _tick %tmp.34 75 73 78 ];
+        %tmp.34 = getv ? :_tick;
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.21, %tmp.23, %tmp.25, %tmp.32, %tmp.34);
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_27_76_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_8_76_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_74_8_76_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_Animation_mc_72_27_77_4_stop:
+    }
+}
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\Animation.mc"; @line = 1; ]
+<init> {
+}

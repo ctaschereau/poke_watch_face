@@ -1,0 +1,201 @@
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 5; @symbol_moduledef = [BattleFrame,5,7,18]; ]
+module BattleFrame {
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 7; @position = 10; @symbol_constdef = [THICKNESS,7,10,19]; ]
+    const THICKNESS = 3;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 8; @position = 10; @symbol_constdef = [ARROW_H,8,10,17]; ]
+    const ARROW_H = 4;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 9; @position = 10; @symbol_constdef = [ARROW_W,9,10,17]; ]
+    const ARROW_W = 13;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 16; @symbol_functiondef = [drawEdge,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; @symbol_param<1> = [left,16,32,36]; @symbol_param<1>_type<0> = [Number,16,40,46]; @symbol_param<2> = [right,16,48,53]; @symbol_param<2>_type<0> = [Number,16,57,63]; @symbol_param<3> = [top,16,65,68]; @symbol_param<3>_type<0> = [Number,16,72,78]; @symbol_param<4> = [lineY,16,80,85]; @symbol_param<4>_type<0> = [Number,16,89,95]; @symbol_param<5> = [arrowOnLeft,17,22,33]; @symbol_param<5>_type<0> = [Boolean,17,37,44]; ]
+    function drawEdge(dc as Dc, left as Number, right as Number, top as Number, lineY as Number, arrowOnLeft as Boolean) as Void {
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_17_54_33_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 18 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 18 8 10 ];
+        symbol [ setColor %tmp.2 18 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 18 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 18 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 18 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 18 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 19 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 19 8 10 ];
+        symbol [ fillRectangle %tmp.8 19 11 24 ];
+        %tmp.8 = getv function %tmp.7 :fillRectangle;
+        %tmp.9 = lgetv %left;
+        symbol [ left %tmp.9 19 25 29 ];
+        %tmp.10 = lgetv %lineY;
+        symbol [ lineY %tmp.10 19 31 36 ];
+        %tmp.11 = lgetv %right;
+        symbol [ right %tmp.11 19 38 43 ];
+        %tmp.12 = lgetv %left;
+        symbol [ left %tmp.12 19 46 50 ];
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        symbol [ THICKNESS %tmp.15 19 52 61 ];
+        %tmp.15 = getv ? :THICKNESS;
+        invoke %tmp.7 %tmp.8(%tmp.9, %tmp.10, %tmp.13, %tmp.15);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 21 8 ]
+        for @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_test @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_incr @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_end;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_init:
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_begin" "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 21 17 18 ];
+        %tmp.16 = 0;
+        lputv %i.1 %tmp.16;
+        symbol [ i %i.1 21 17 18 ];
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_test:
+        %tmp.17 = lgetv %i.1;
+        symbol [ i %tmp.17 21 24 25 ];
+        symbol [ ARROW_H %tmp.19 21 28 35 ];
+        %tmp.19 = getv ? :ARROW_H;
+        %tmp.20 = lt %tmp.17 %tmp.19;
+        bf %tmp.20 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_end;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_begin:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 22 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_start" "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_stop" ]
+        %w.2 = local;
+        symbol [ w %w.2 22 16 17 ];
+        %tmp.21 = 3;
+        %tmp.22 = 2;
+        %tmp.23 = lgetv %i.1;
+        symbol [ i %tmp.23 22 28 29 ];
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = add %tmp.21 %tmp.24;
+        lputv %w.2 %tmp.25;
+        symbol [ w %w.2 22 16 17 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 23 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_start" "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_stop" ]
+        %y.3 = local;
+        symbol [ y %y.3 23 16 17 ];
+        %tmp.26 = lgetv %lineY;
+        symbol [ lineY %tmp.26 23 20 25 ];
+        symbol [ ARROW_H %tmp.28 23 28 35 ];
+        %tmp.28 = getv ? :ARROW_H;
+        %tmp.29 = sub %tmp.26 %tmp.28;
+        %tmp.30 = lgetv %i.1;
+        symbol [ i %tmp.30 23 38 39 ];
+        %tmp.31 = add %tmp.29 %tmp.30;
+        lputv %y.3 %tmp.31;
+        symbol [ y %y.3 23 16 17 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 24 12 ]
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_stmt:
+        %tmp.32 = lgetv %arrowOnLeft;
+        symbol [ arrowOnLeft %tmp.32 24 16 27 ];
+        bf %tmp.32 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_29_26_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 25 16 ]
+        %tmp.33 = lgetv %dc;
+        symbol [ dc %tmp.33 25 16 18 ];
+        symbol [ fillRectangle %tmp.34 25 19 32 ];
+        %tmp.34 = getv function %tmp.33 :fillRectangle;
+        %tmp.35 = lgetv %left;
+        symbol [ left %tmp.35 25 33 37 ];
+        symbol [ ARROW_W %tmp.37 25 40 47 ];
+        %tmp.37 = getv ? :ARROW_W;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        %tmp.39 = lgetv %w.2;
+        symbol [ w %tmp.39 25 50 51 ];
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.41 = lgetv %y.3;
+        symbol [ y %tmp.41 25 53 54 ];
+        %tmp.42 = lgetv %w.2;
+        symbol [ w %tmp.42 25 56 57 ];
+        %tmp.43 = 1;
+        invoke %tmp.33 %tmp.34(%tmp.40, %tmp.41, %tmp.42, %tmp.43);
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_29_26_12_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_else_false:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_26_19_28_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 27 16 ]
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 27 16 18 ];
+        symbol [ fillRectangle %tmp.45 27 19 32 ];
+        %tmp.45 = getv function %tmp.44 :fillRectangle;
+        %tmp.46 = lgetv %right;
+        symbol [ right %tmp.46 27 33 38 ];
+        symbol [ ARROW_W %tmp.48 27 41 48 ];
+        %tmp.48 = getv ? :ARROW_W;
+        %tmp.49 = sub %tmp.46 %tmp.48;
+        %tmp.50 = lgetv %y.3;
+        symbol [ y %tmp.50 27 50 51 ];
+        %tmp.51 = lgetv %w.2;
+        symbol [ w %tmp.51 27 53 54 ];
+        %tmp.52 = 1;
+        invoke %tmp.44 %tmp.45(%tmp.49, %tmp.50, %tmp.51, %tmp.52);
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_26_19_28_12_stop:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_24_12_28_12_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_42_29_8_stop:
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_incr:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 21 ]
+        %tmp.55 = lgetv %i.1;
+        symbol [ i %tmp.55 21 37 38 ];
+        %tmp.56 = add %tmp.55 1;
+        lputv %i.1 %tmp.56;
+        symbol [ i %i.1 21 37 38 ];
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_test;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_21_8_29_8_for_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 31 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_17_54_33_4_start" "C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_17_54_33_4_stop" ]
+        %verticalX.4 = local;
+        symbol [ verticalX %verticalX.4 31 12 21 ];
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_begin:
+        %tmp.57 = lgetv %arrowOnLeft;
+        symbol [ arrowOnLeft %tmp.57 31 24 35 ];
+        bf %tmp.57 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_true:
+        %tmp.58 = lgetv %right;
+        symbol [ right %tmp.58 31 38 43 ];
+        symbol [ THICKNESS %tmp.60 31 46 55 ];
+        %tmp.60 = getv ? :THICKNESS;
+        %tmp.61 = sub %tmp.58 %tmp.60;
+        push %tmp.61;
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_end;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_else_false:
+        %tmp.62 = lgetv %left;
+        symbol [ left %tmp.62 31 58 62 ];
+        push %tmp.62;
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_end:
+        %tmp.63 = phi [%tmp.57 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_begin] [%tmp.61 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_true] [%tmp.62 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_else_false] [%tmp.63 @C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_31_24_31_58_end];
+        lputv %verticalX.4 %tmp.63;
+        symbol [ verticalX %verticalX.4 31 12 21 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc" 32 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 32 8 10 ];
+        symbol [ fillRectangle %tmp.65 32 11 24 ];
+        %tmp.65 = getv function %tmp.64 :fillRectangle;
+        %tmp.66 = lgetv %verticalX.4;
+        symbol [ verticalX %tmp.66 32 25 34 ];
+        %tmp.67 = lgetv %top;
+        symbol [ top %tmp.67 32 36 39 ];
+        symbol [ THICKNESS %tmp.69 32 41 50 ];
+        %tmp.69 = getv ? :THICKNESS;
+        %tmp.70 = lgetv %lineY;
+        symbol [ lineY %tmp.70 32 52 57 ];
+        symbol [ THICKNESS %tmp.72 32 60 69 ];
+        %tmp.72 = getv ? :THICKNESS;
+        %tmp.73 = add %tmp.70 %tmp.72;
+        %tmp.74 = lgetv %top;
+        symbol [ top %tmp.74 32 72 75 ];
+        %tmp.75 = sub %tmp.73 %tmp.74;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.67, %tmp.69, %tmp.75);
+C__Users_manon_cedric_poke_watch_face_source_view_BattleFrame_mc_17_54_33_4_stop:
+    }
+}
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\BattleFrame.mc"; @line = 1; ]
+<init> {
+}

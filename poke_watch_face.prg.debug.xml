@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\manon\cedric\poke_watch_face\manifest.xml"/>
+<pcToLineNum>
+<entry filename="c:\\Users\\manon\\cedric\\poke_watch_face\\gen\\006-B3888-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435457" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="2" lineNum="13" parent="globals/Trainer" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="2" lineNum="33" parent="globals/Trainer" pc="268435703" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="2" lineNum="53" parent="globals/Trainer" pc="268435925" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="15" parent="globals/WxIcon" pc="268436148" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="18" parent="globals/WxIcon" pc="268436201" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="21" parent="globals/WxIcon" pc="268436254" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="28" parent="globals/WxIcon" pc="268436424" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="36" parent="globals/WxIcon" pc="268436646" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="41" parent="globals/WxIcon" pc="268436751" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="3" lineNum="49" parent="globals/WxIcon" pc="268436895" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="4" lineNum="22" parent="globals/PokeAnimation" pc="268437230" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="5" lineNum="11" parent="globals/PokeFaceView" pc="268437297" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceApp.mc" id="6" lineNum="5" parent="globals/PokeFaceApp" pc="268437316" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="6" parent="globals/Jigglypuff" pc="268437335" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="7" parent="globals/Jigglypuff" pc="268437347" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="8" parent="globals/Jigglypuff" pc="268437357" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="9" parent="globals/Jigglypuff" pc="268437364" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="10" parent="globals/Jigglypuff" pc="268437371" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="11" parent="globals/Jigglypuff" pc="268437381" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="14" parent="globals/Jigglypuff" pc="268437394" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="15" parent="globals/Jigglypuff" pc="268437438" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="16" parent="globals/Jigglypuff" pc="268437482" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="17" parent="globals/Jigglypuff" pc="268437526" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="20" parent="globals/Jigglypuff" pc="268437570" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="21" parent="globals/Jigglypuff" pc="268437735" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="24" parent="globals/Jigglypuff" pc="268437900" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="27" parent="globals/Jigglypuff" pc="268437938" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="28" parent="globals/Jigglypuff" pc="268437957" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="29" parent="globals/Jigglypuff" pc="268437999" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="32" parent="globals/Jigglypuff" pc="268438047" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="33" parent="globals/Jigglypuff" pc="268438060" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="34" parent="globals/Jigglypuff" pc="268438078" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="35" parent="globals/Jigglypuff" pc="268438091" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="36" parent="globals/Jigglypuff" pc="268438096" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="37" parent="globals/Jigglypuff" pc="268438115" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="39" parent="globals/Jigglypuff" pc="268438162" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="40" parent="globals/Jigglypuff" pc="268438181" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="41" parent="globals/Jigglypuff" pc="268438208" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="42" parent="globals/Jigglypuff" pc="268438227" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="43" parent="globals/Jigglypuff" pc="268438254" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="44" parent="globals/Jigglypuff" pc="268438290" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="45" parent="globals/Jigglypuff" pc="268438309" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="50" parent="globals/Jigglypuff" pc="268438364" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="51" parent="globals/Jigglypuff" pc="268438383" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Jigglypuff.mc" id="7" lineNum="52" parent="globals/Jigglypuff" pc="268438400" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="6" parent="globals/Charmander" pc="268438443" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="7" parent="globals/Charmander" pc="268438455" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="8" parent="globals/Charmander" pc="268438465" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="9" parent="globals/Charmander" pc="268438472" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="10" parent="globals/Charmander" pc="268438479" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="13" parent="globals/Charmander" pc="268438489" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="14" parent="globals/Charmander" pc="268438533" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="15" parent="globals/Charmander" pc="268438577" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="16" parent="globals/Charmander" pc="268438621" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="17" parent="globals/Charmander" pc="268439038" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="20" parent="globals/Charmander" pc="268439295" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="21" parent="globals/Charmander" pc="268439339" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="22" parent="globals/Charmander" pc="268439383" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="23" parent="globals/Charmander" pc="268439421" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="24" parent="globals/Charmander" pc="268439459" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="25" parent="globals/Charmander" pc="268439476" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="26" parent="globals/Charmander" pc="268439520" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="29" parent="globals/Charmander" pc="268439564" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="30" parent="globals/Charmander" pc="268439605" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="31" parent="globals/Charmander" pc="268439621" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="32" parent="globals/Charmander" pc="268439662" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="35" parent="globals/Charmander" pc="268439703" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="36" parent="globals/Charmander" pc="268439722" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="37" parent="globals/Charmander" pc="268439758" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="38" parent="globals/Charmander" pc="268439794" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Charmander.mc" id="8" lineNum="39" parent="globals/Charmander" pc="268439811" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="6" parent="globals/Squirtle" pc="268439857" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="7" parent="globals/Squirtle" pc="268439869" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="8" parent="globals/Squirtle" pc="268439879" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="9" parent="globals/Squirtle" pc="268439886" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="12" parent="globals/Squirtle" pc="268439896" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="13" parent="globals/Squirtle" pc="268439915" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="14" parent="globals/Squirtle" pc="268439932" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="15" parent="globals/Squirtle" pc="268439980" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="18" parent="globals/Squirtle" pc="268439997" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="19" parent="globals/Squirtle" pc="268440041" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="20" parent="globals/Squirtle" pc="268440085" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="21" parent="globals/Squirtle" pc="268440104" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="22" parent="globals/Squirtle" pc="268440136" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="23" parent="globals/Squirtle" pc="268440174" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="24" parent="globals/Squirtle" pc="268440191" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="25" parent="globals/Squirtle" pc="268440235" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="26" parent="globals/Squirtle" pc="268440279" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="27" parent="globals/Squirtle" pc="268440323" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="28" parent="globals/Squirtle" pc="268440355" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="31" parent="globals/Squirtle" pc="268440372" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="32" parent="globals/Squirtle" pc="268440416" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="35" parent="globals/Squirtle" pc="268440460" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="36" parent="globals/Squirtle" pc="268440501" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="37" parent="globals/Squirtle" pc="268440517" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="38" parent="globals/Squirtle" pc="268440558" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="41" parent="globals/Squirtle" pc="268440599" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="42" parent="globals/Squirtle" pc="268440618" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="43" parent="globals/Squirtle" pc="268440654" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="44" parent="globals/Squirtle" pc="268440690" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Squirtle.mc" id="9" lineNum="45" parent="globals/Squirtle" pc="268440707" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="124" parent="globals/StepsPanel" pc="268440753" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="125" parent="globals/StepsPanel" pc="268440757" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="126" parent="globals/StepsPanel" pc="268440770" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="127" parent="globals/StepsPanel" pc="268440803" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="128" parent="globals/StepsPanel" pc="268440825" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="129" parent="globals/StepsPanel" pc="268440835" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="131" parent="globals/StepsPanel" pc="268440866" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="132" parent="globals/StepsPanel" pc="268440888" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="10" lineNum="134" parent="globals/StepsPanel" pc="268440916" symbol="drawHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="107" parent="globals/StepsPanel" pc="268440950" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="108" parent="globals/StepsPanel" pc="268440954" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="109" parent="globals/StepsPanel" pc="268440971" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="110" parent="globals/StepsPanel" pc="268440991" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="112" parent="globals/StepsPanel" pc="268441000" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="113" parent="globals/StepsPanel" pc="268441015" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="114" parent="globals/StepsPanel" pc="268441039" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="115" parent="globals/StepsPanel" pc="268441052" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="116" parent="globals/StepsPanel" pc="268441076" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="11" lineNum="119" parent="globals/StepsPanel" pc="268441085" symbol="currentHeartRate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="77" parent="globals/StepsPanel" pc="268441087" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="78" parent="globals/StepsPanel" pc="268441091" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="79" parent="globals/StepsPanel" pc="268441107" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="81" parent="globals/StepsPanel" pc="268441114" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="82" parent="globals/StepsPanel" pc="268441131" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="83" parent="globals/StepsPanel" pc="268441165" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="85" parent="globals/StepsPanel" pc="268441182" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="86" parent="globals/StepsPanel" pc="268441192" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="87" parent="globals/StepsPanel" pc="268441208" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="88" parent="globals/StepsPanel" pc="268441219" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="89" parent="globals/StepsPanel" pc="268441226" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="90" parent="globals/StepsPanel" pc="268441236" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="91" parent="globals/StepsPanel" pc="268441250" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="12" lineNum="93" parent="globals/StepsPanel" pc="268441260" symbol="drawBar"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="51" parent="globals/StepsPanel" pc="268441301" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="52" parent="globals/StepsPanel" pc="268441305" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="53" parent="globals/StepsPanel" pc="268441322" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="54" parent="globals/StepsPanel" pc="268441332" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="55" parent="globals/StepsPanel" pc="268441342" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="56" parent="globals/StepsPanel" pc="268441349" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="57" parent="globals/StepsPanel" pc="268441367" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="60" parent="globals/StepsPanel" pc="268441371" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="61" parent="globals/StepsPanel" pc="268441393" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="62" parent="globals/StepsPanel" pc="268441407" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="63" parent="globals/StepsPanel" pc="268441436" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="13" lineNum="64" parent="globals/StepsPanel" pc="268441454" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="14" lineNum="45" parent="globals/StepsPanel" pc="268441495" symbol="layout"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="14" lineNum="48" parent="globals/StepsPanel" pc="268441497" symbol="layout"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="15" lineNum="68" parent="globals/StepsPanel" pc="268441539" symbol="progress"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="15" lineNum="69" parent="globals/StepsPanel" pc="268441543" symbol="progress"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="15" lineNum="70" parent="globals/StepsPanel" pc="268441549" symbol="progress"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="15" lineNum="72" parent="globals/StepsPanel" pc="268441555" symbol="progress"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="15" lineNum="73" parent="globals/StepsPanel" pc="268441580" symbol="progress"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="16" lineNum="98" parent="globals/StepsPanel" pc="268441602" symbol="drawNumbers"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="16" lineNum="99" parent="globals/StepsPanel" pc="268441606" symbol="drawNumbers"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="16" lineNum="100" parent="globals/StepsPanel" pc="268441645" symbol="drawNumbers"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="16" lineNum="101" parent="globals/StepsPanel" pc="268441678" symbol="drawNumbers"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="16" lineNum="102" parent="globals/StepsPanel" pc="268441706" symbol="drawNumbers"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="17" lineNum="40" parent="globals/StepsPanel" pc="268441738" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\StepsPanel.mc" id="17" lineNum="41" parent="globals/StepsPanel" pc="268441740" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="73" parent="globals/Trainer" pc="268441751" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="74" parent="globals/Trainer" pc="268441763" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="75" parent="globals/Trainer" pc="268441773" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="76" parent="globals/Trainer" pc="268441779" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="78" parent="globals/Trainer" pc="268441817" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="79" parent="globals/Trainer" pc="268441839" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="80" parent="globals/Trainer" pc="268441857" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="81" parent="globals/Trainer" pc="268441864" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="82" parent="globals/Trainer" pc="268441871" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="83" parent="globals/Trainer" pc="268441882" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="84" parent="globals/Trainer" pc="268441902" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="85" parent="globals/Trainer" pc="268441906" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="86" parent="globals/Trainer" pc="268441940" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="88" parent="globals/Trainer" pc="268441953" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Trainer.mc" id="18" lineNum="90" parent="globals/Trainer" pc="268441988" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="63" parent="globals/WxIcon" pc="268442015" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="64" parent="globals/WxIcon" pc="268442025" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="65" parent="globals/WxIcon" pc="268442047" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="66" parent="globals/WxIcon" pc="268442080" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="67" parent="globals/WxIcon" pc="268442113" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="19" lineNum="68" parent="globals/WxIcon" pc="268442146" symbol="drawCloud"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="72" parent="globals/WxIcon" pc="268442185" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="73" parent="globals/WxIcon" pc="268442197" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="74" parent="globals/WxIcon" pc="268442219" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="75" parent="globals/WxIcon" pc="268442236" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="76" parent="globals/WxIcon" pc="268442258" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="77" parent="globals/WxIcon" pc="268442284" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="78" parent="globals/WxIcon" pc="268442310" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="79" parent="globals/WxIcon" pc="268442336" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="80" parent="globals/WxIcon" pc="268442354" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="81" parent="globals/WxIcon" pc="268442384" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="82" parent="globals/WxIcon" pc="268442403" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="83" parent="globals/WxIcon" pc="268442422" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="85" parent="globals/WxIcon" pc="268442503" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="85" parent="globals/WxIcon" pc="268442514" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="86" parent="globals/WxIcon" pc="268442547" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="87" parent="globals/WxIcon" pc="268442558" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="88" parent="globals/WxIcon" pc="268442585" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="89" parent="globals/WxIcon" pc="268442596" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="90" parent="globals/WxIcon" pc="268442620" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="91" parent="globals/WxIcon" pc="268442664" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="92" parent="globals/WxIcon" pc="268442702" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="93" parent="globals/WxIcon" pc="268442749" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="94" parent="globals/WxIcon" pc="268442760" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="95" parent="globals/WxIcon" pc="268442784" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="96" parent="globals/WxIcon" pc="268442817" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="97" parent="globals/WxIcon" pc="268442844" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="98" parent="globals/WxIcon" pc="268442880" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="99" parent="globals/WxIcon" pc="268442891" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="100" parent="globals/WxIcon" pc="268442915" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="101" parent="globals/WxIcon" pc="268442959" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="102" parent="globals/WxIcon" pc="268443003" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="104" parent="globals/WxIcon" pc="268443050" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="105" parent="globals/WxIcon" pc="268443094" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="106" parent="globals/WxIcon" pc="268443126" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="20" lineNum="108" parent="globals/WxIcon" pc="268443170" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="51" parent="globals/WxIcon" pc="268443188" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="52" parent="globals/WxIcon" pc="268443198" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="52" parent="globals/WxIcon" pc="268443204" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="53" parent="globals/WxIcon" pc="268443210" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="53" parent="globals/WxIcon" pc="268443238" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="54" parent="globals/WxIcon" pc="268443244" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="54" parent="globals/WxIcon" pc="268443272" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="55" parent="globals/WxIcon" pc="268443278" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="55" parent="globals/WxIcon" pc="268443306" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="56" parent="globals/WxIcon" pc="268443312" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="56" parent="globals/WxIcon" pc="268443340" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="57" parent="globals/WxIcon" pc="268443346" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="57" parent="globals/WxIcon" pc="268443374" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="58" parent="globals/WxIcon" pc="268443380" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="58" parent="globals/WxIcon" pc="268443408" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\WxIcon.mc" id="21" lineNum="59" parent="globals/WxIcon" pc="268443414" symbol="kindFor"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="6" parent="globals/Eevee" pc="268443420" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="7" parent="globals/Eevee" pc="268443432" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="8" parent="globals/Eevee" pc="268443442" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="9" parent="globals/Eevee" pc="268443449" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="10" parent="globals/Eevee" pc="268443456" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="13" parent="globals/Eevee" pc="268443466" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="14" parent="globals/Eevee" pc="268443510" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="15" parent="globals/Eevee" pc="268443554" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="18" parent="globals/Eevee" pc="268443931" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="19" parent="globals/Eevee" pc="268443975" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="20" parent="globals/Eevee" pc="268444019" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="23" parent="globals/Eevee" pc="268444057" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="26" parent="globals/Eevee" pc="268444548" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="27" parent="globals/Eevee" pc="268444716" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="28" parent="globals/Eevee" pc="268444884" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="29" parent="globals/Eevee" pc="268445052" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="32" parent="globals/Eevee" pc="268445220" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="33" parent="globals/Eevee" pc="268445261" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="34" parent="globals/Eevee" pc="268445429" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="37" parent="globals/Eevee" pc="268445597" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="38" parent="globals/Eevee" pc="268445613" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="39" parent="globals/Eevee" pc="268445654" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="40" parent="globals/Eevee" pc="268445695" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="41" parent="globals/Eevee" pc="268445714" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="42" parent="globals/Eevee" pc="268445744" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="43" parent="globals/Eevee" pc="268445761" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="44" parent="globals/Eevee" pc="268445811" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="45" parent="globals/Eevee" pc="268445855" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Eevee.mc" id="22" lineNum="46" parent="globals/Eevee" pc="268445899" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="16" parent="globals/BattleFrame" pc="268445950" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="18" parent="globals/BattleFrame" pc="268445962" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="19" parent="globals/BattleFrame" pc="268445984" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="21" parent="globals/BattleFrame" pc="268446010" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="22" parent="globals/BattleFrame" pc="268446028" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="23" parent="globals/BattleFrame" pc="268446044" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="24" parent="globals/BattleFrame" pc="268446057" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="25" parent="globals/BattleFrame" pc="268446062" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="27" parent="globals/BattleFrame" pc="268446097" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="31" parent="globals/BattleFrame" pc="268446139" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BattleFrame.mc" id="23" lineNum="32" parent="globals/BattleFrame" pc="268446159" symbol="drawEdge"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="24" lineNum="39" parent="globals/PokeAnimation" pc="268446192" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="24" lineNum="40" parent="globals/PokeAnimation" pc="268446194" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="24" lineNum="41" parent="globals/PokeAnimation" pc="268446204" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="24" lineNum="42" parent="globals/PokeAnimation" pc="268446209" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="25" lineNum="78" parent="globals/PokeAnimation" pc="268446223" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="25" lineNum="79" parent="globals/PokeAnimation" pc="268446225" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="25" lineNum="80" parent="globals/PokeAnimation" pc="268446259" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="25" lineNum="81" parent="globals/PokeAnimation" pc="268446276" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="47" parent="globals/PokeAnimation" pc="268446356" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="48" parent="globals/PokeAnimation" pc="268446360" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="49" parent="globals/PokeAnimation" pc="268446386" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="50" parent="globals/PokeAnimation" pc="268446400" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="52" parent="globals/PokeAnimation" pc="268446401" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="54" parent="globals/PokeAnimation" pc="268446411" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="55" parent="globals/PokeAnimation" pc="268446422" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="56" parent="globals/PokeAnimation" pc="268446435" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="59" parent="globals/PokeAnimation" pc="268446436" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="60" parent="globals/PokeAnimation" pc="268446453" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="61" parent="globals/PokeAnimation" pc="268446483" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="62" parent="globals/PokeAnimation" pc="268446496" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="63" parent="globals/PokeAnimation" pc="268446509" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="65" parent="globals/PokeAnimation" pc="268446541" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="66" parent="globals/PokeAnimation" pc="268446558" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="67" parent="globals/PokeAnimation" pc="268446571" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="68" parent="globals/PokeAnimation" pc="268446585" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="69" parent="globals/PokeAnimation" pc="268446602" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="70" parent="globals/PokeAnimation" pc="268446621" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="71" parent="globals/PokeAnimation" pc="268446638" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="26" lineNum="72" parent="globals/PokeAnimation" pc="268446651" symbol="advance"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="30" parent="globals/PokeAnimation" pc="268446665" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="31" parent="globals/PokeAnimation" pc="268446667" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="32" parent="globals/PokeAnimation" pc="268446680" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="33" parent="globals/PokeAnimation" pc="268446693" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="34" parent="globals/PokeAnimation" pc="268446706" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="35" parent="globals/PokeAnimation" pc="268446716" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeAnimation.mc" id="27" lineNum="36" parent="globals/PokeAnimation" pc="268446729" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="14" parent="globals/Subscreen" pc="268446770" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="15" parent="globals/Subscreen" pc="268446782" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="16" parent="globals/Subscreen" pc="268446797" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="17" parent="globals/Subscreen" pc="268446814" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="18" parent="globals/Subscreen" pc="268446821" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Subscreen.mc" id="28" lineNum="21" parent="globals/Subscreen" pc="268446892" symbol="bounds"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="29" lineNum="36" parent="globals/PokeFaceView" pc="268446951" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="29" lineNum="37" parent="globals/PokeFaceView" pc="268446953" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="29" lineNum="38" parent="globals/PokeFaceView" pc="268446973" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="30" lineNum="27" parent="globals/PokeFaceView" pc="268446994" symbol="onLayout"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="30" lineNum="28" parent="globals/PokeFaceView" pc="268446996" symbol="onLayout"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="31" lineNum="31" parent="globals/PokeFaceView" pc="268447017" symbol="onEnterSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="31" lineNum="32" parent="globals/PokeFaceView" pc="268447019" symbol="onEnterSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="31" lineNum="33" parent="globals/PokeFaceView" pc="268447039" symbol="onEnterSleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="18" parent="globals/PokeFaceView" pc="268447060" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="19" parent="globals/PokeFaceView" pc="268447064" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="20" parent="globals/PokeFaceView" pc="268447082" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="21" parent="globals/PokeFaceView" pc="268447106" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="22" parent="globals/PokeFaceView" pc="268447138" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="23" parent="globals/PokeFaceView" pc="268447170" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="32" lineNum="24" parent="globals/PokeFaceView" pc="268447202" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="41" parent="globals/PokeFaceView" pc="268447233" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="42" parent="globals/PokeFaceView" pc="268447237" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="44" parent="globals/PokeFaceView" pc="268447255" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="45" parent="globals/PokeFaceView" pc="268447277" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="47" parent="globals/PokeFaceView" pc="268447289" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="48" parent="globals/PokeFaceView" pc="268447306" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="49" parent="globals/PokeFaceView" pc="268447328" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="50" parent="globals/PokeFaceView" pc="268447348" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="51" parent="globals/PokeFaceView" pc="268447368" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceView.mc" id="33" lineNum="52" parent="globals/PokeFaceView" pc="268447386" symbol="onUpdate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="9" parent="globals/PokeBall" pc="268447409" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="10" parent="globals/PokeBall" pc="268447421" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="11" parent="globals/PokeBall" pc="268447446" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="12" parent="globals/PokeBall" pc="268447471" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="13" parent="globals/PokeBall" pc="268447524" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="14" parent="globals/PokeBall" pc="268447531" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="16" parent="globals/PokeBall" pc="268447538" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="18" parent="globals/PokeBall" pc="268447555" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="19" parent="globals/PokeBall" pc="268447560" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="20" parent="globals/PokeBall" pc="268447579" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="21" parent="globals/PokeBall" pc="268447597" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="22" parent="globals/PokeBall" pc="268447616" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="23" parent="globals/PokeBall" pc="268447669" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="24" parent="globals/PokeBall" pc="268447688" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="25" parent="globals/PokeBall" pc="268447706" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="26" parent="globals/PokeBall" pc="268447750" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="27" parent="globals/PokeBall" pc="268447780" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="28" parent="globals/PokeBall" pc="268447799" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="29" parent="globals/PokeBall" pc="268447829" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="32" parent="globals/PokeBall" pc="268447871" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="33" parent="globals/PokeBall" pc="268447890" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="34" parent="globals/PokeBall" pc="268447923" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="37" parent="globals/PokeBall" pc="268447949" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="38" parent="globals/PokeBall" pc="268447956" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="39" parent="globals/PokeBall" pc="268447960" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="40" parent="globals/PokeBall" pc="268447967" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="41" parent="globals/PokeBall" pc="268447986" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="42" parent="globals/PokeBall" pc="268448005" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="43" parent="globals/PokeBall" pc="268448013" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="44" parent="globals/PokeBall" pc="268448031" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="45" parent="globals/PokeBall" pc="268448047" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="46" parent="globals/PokeBall" pc="268448075" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="47" parent="globals/PokeBall" pc="268448097" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="50" parent="globals/PokeBall" pc="268448190" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\PokeBall.mc" id="34" lineNum="52" parent="globals/PokeBall" pc="268448204" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="6" parent="globals/Pikachu" pc="268448222" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="7" parent="globals/Pikachu" pc="268448234" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="8" parent="globals/Pikachu" pc="268448244" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="9" parent="globals/Pikachu" pc="268448251" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="12" parent="globals/Pikachu" pc="268448258" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="15" parent="globals/Pikachu" pc="268448623" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="16" parent="globals/Pikachu" pc="268448667" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="17" parent="globals/Pikachu" pc="268448711" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="18" parent="globals/Pikachu" pc="268448749" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="19" parent="globals/Pikachu" pc="268448793" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="22" parent="globals/Pikachu" pc="268448837" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="23" parent="globals/Pikachu" pc="268449005" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="24" parent="globals/Pikachu" pc="268449173" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="25" parent="globals/Pikachu" pc="268449341" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="28" parent="globals/Pikachu" pc="268449509" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="31" parent="globals/Pikachu" pc="268449550" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="32" parent="globals/Pikachu" pc="268449566" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="33" parent="globals/Pikachu" pc="268449585" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="34" parent="globals/Pikachu" pc="268449596" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="35" parent="globals/Pikachu" pc="268449640" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="37" parent="globals/Pikachu" pc="268449687" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="38" parent="globals/Pikachu" pc="268449720" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="39" parent="globals/Pikachu" pc="268449753" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="40" parent="globals/Pikachu" pc="268449772" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="41" parent="globals/Pikachu" pc="268449805" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="45" parent="globals/Pikachu" pc="268449838" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="46" parent="globals/Pikachu" pc="268449857" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="47" parent="globals/Pikachu" pc="268449887" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="48" parent="globals/Pikachu" pc="268449917" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="49" parent="globals/Pikachu" pc="268449947" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="50" parent="globals/Pikachu" pc="268449964" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="51" parent="globals/Pikachu" pc="268450008" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="52" parent="globals/Pikachu" pc="268450046" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Pikachu.mc" id="35" lineNum="53" parent="globals/Pikachu" pc="268450084" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="36" lineNum="21" parent="globals/TimePanel" pc="268450129" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="36" lineNum="22" parent="globals/TimePanel" pc="268450131" symbol="setAsleep"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="44" parent="globals/TimePanel" pc="268450142" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="45" parent="globals/TimePanel" pc="268450146" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="46" parent="globals/TimePanel" pc="268450187" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="47" parent="globals/TimePanel" pc="268450197" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="48" parent="globals/TimePanel" pc="268450222" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="49" parent="globals/TimePanel" pc="268450230" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="37" lineNum="51" parent="globals/TimePanel" pc="268450234" symbol="drawTrainer"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="34" parent="globals/TimePanel" pc="268450270" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="35" parent="globals/TimePanel" pc="268450274" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="36" parent="globals/TimePanel" pc="268450284" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="37" parent="globals/TimePanel" pc="268450309" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="38" parent="globals/TimePanel" pc="268450319" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="38" parent="globals/TimePanel" pc="268450330" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="38" lineNum="40" parent="globals/TimePanel" pc="268450337" symbol="formatTime"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="39" lineNum="17" parent="globals/TimePanel" pc="268450383" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="39" lineNum="18" parent="globals/TimePanel" pc="268450385" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="25" parent="globals/TimePanel" pc="268450396" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="26" parent="globals/TimePanel" pc="268450400" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="27" parent="globals/TimePanel" pc="268450417" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="28" parent="globals/TimePanel" pc="268450432" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="29" parent="globals/TimePanel" pc="268450454" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\TimePanel.mc" id="40" lineNum="31" parent="globals/TimePanel" pc="268450497" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="6" parent="globals/Bulbasaur" pc="268450522" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="7" parent="globals/Bulbasaur" pc="268450534" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="8" parent="globals/Bulbasaur" pc="268450544" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="9" parent="globals/Bulbasaur" pc="268450551" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="10" parent="globals/Bulbasaur" pc="268450558" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="11" parent="globals/Bulbasaur" pc="268450568" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="14" parent="globals/Bulbasaur" pc="268450581" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="15" parent="globals/Bulbasaur" pc="268450619" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="16" parent="globals/Bulbasaur" pc="268450784" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="17" parent="globals/Bulbasaur" pc="268450801" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="18" parent="globals/Bulbasaur" pc="268450845" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="19" parent="globals/Bulbasaur" pc="268450889" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="20" parent="globals/Bulbasaur" pc="268450921" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="23" parent="globals/Bulbasaur" pc="268450938" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="24" parent="globals/Bulbasaur" pc="268450982" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="25" parent="globals/Bulbasaur" pc="268451026" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="26" parent="globals/Bulbasaur" pc="268451070" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="27" parent="globals/Bulbasaur" pc="268451114" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="30" parent="globals/Bulbasaur" pc="268451152" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="31" parent="globals/Bulbasaur" pc="268451171" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="32" parent="globals/Bulbasaur" pc="268451209" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="33" parent="globals/Bulbasaur" pc="268451247" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="36" parent="globals/Bulbasaur" pc="268451285" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="37" parent="globals/Bulbasaur" pc="268451453" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="38" parent="globals/Bulbasaur" pc="268451621" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="41" parent="globals/Bulbasaur" pc="268451662" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="42" parent="globals/Bulbasaur" pc="268451678" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="43" parent="globals/Bulbasaur" pc="268451719" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="44" parent="globals/Bulbasaur" pc="268451760" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="45" parent="globals/Bulbasaur" pc="268451779" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="46" parent="globals/Bulbasaur" pc="268451815" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="47" parent="globals/Bulbasaur" pc="268451851" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="48" parent="globals/Bulbasaur" pc="268451868" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="49" parent="globals/Bulbasaur" pc="268451918" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\sprites\\Bulbasaur.mc" id="41" lineNum="50" parent="globals/Bulbasaur" pc="268451968" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceApp.mc" id="42" lineNum="10" parent="globals/PokeFaceApp" pc="268452019" symbol="getInitialView"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceApp.mc" id="42" lineNum="11" parent="globals/PokeFaceApp" pc="268452021" symbol="getInitialView"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceApp.mc" id="43" lineNum="6" parent="globals/PokeFaceApp" pc="268452058" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\PokeFaceApp.mc" id="43" lineNum="7" parent="globals/PokeFaceApp" pc="268452060" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="44" lineNum="22" parent="globals/Assets" pc="268452079" symbol="fitStepFont"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="44" lineNum="23" parent="globals/Assets" pc="268452081" symbol="fitStepFont"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="44" lineNum="24" parent="globals/Assets" pc="268452108" symbol="fitStepFont"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="44" lineNum="26" parent="globals/Assets" pc="268452117" symbol="fitStepFont"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="45" lineNum="14" parent="globals/Assets" pc="268452126" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="45" lineNum="15" parent="globals/Assets" pc="268452128" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="45" lineNum="16" parent="globals/Assets" pc="268452175" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="45" lineNum="17" parent="globals/Assets" pc="268452222" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\Assets.mc" id="45" lineNum="18" parent="globals/Assets" pc="268452269" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="14" parent="globals/BatteryBar" pc="268452317" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="15" parent="globals/BatteryBar" pc="268452329" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="16" parent="globals/BatteryBar" pc="268452352" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="17" parent="globals/BatteryBar" pc="268452359" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="18" parent="globals/BatteryBar" pc="268452381" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="19" parent="globals/BatteryBar" pc="268452403" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\BatteryBar.mc" id="46" lineNum="20" parent="globals/BatteryBar" pc="268452432" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="34" parent="globals/DatePanel" pc="268452465" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="35" parent="globals/DatePanel" pc="268452469" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="36" parent="globals/DatePanel" pc="268452485" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="37" parent="globals/DatePanel" pc="268452510" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="38" parent="globals/DatePanel" pc="268452548" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="47" lineNum="39" parent="globals/DatePanel" pc="268452572" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="54" parent="globals/DatePanel" pc="268452622" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="55" parent="globals/DatePanel" pc="268452626" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="56" parent="globals/DatePanel" pc="268452633" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="57" parent="globals/DatePanel" pc="268452640" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="58" parent="globals/DatePanel" pc="268452655" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="59" parent="globals/DatePanel" pc="268452672" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="60" parent="globals/DatePanel" pc="268452679" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="61" parent="globals/DatePanel" pc="268452692" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="62" parent="globals/DatePanel" pc="268452702" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="63" parent="globals/DatePanel" pc="268452732" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="65" parent="globals/DatePanel" pc="268452754" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="67" parent="globals/DatePanel" pc="268452781" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="72" parent="globals/DatePanel" pc="268452806" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="73" parent="globals/DatePanel" pc="268452835" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="74" parent="globals/DatePanel" pc="268452842" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="75" parent="globals/DatePanel" pc="268452861" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="76" parent="globals/DatePanel" pc="268452874" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="78" parent="globals/DatePanel" pc="268452890" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="80" parent="globals/DatePanel" pc="268452920" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="81" parent="globals/DatePanel" pc="268452942" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="85" parent="globals/DatePanel" pc="268452979" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="86" parent="globals/DatePanel" pc="268453004" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="87" parent="globals/DatePanel" pc="268453026" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="88" parent="globals/DatePanel" pc="268453043" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="48" lineNum="89" parent="globals/DatePanel" pc="268453064" symbol="drawWeather"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="49" lineNum="29" parent="globals/DatePanel" pc="268453082" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="49" lineNum="30" parent="globals/DatePanel" pc="268453084" symbol="initialize"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="42" parent="globals/DatePanel" pc="268453095" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="43" parent="globals/DatePanel" pc="268453099" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="44" parent="globals/DatePanel" pc="268453136" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="45" parent="globals/DatePanel" pc="268453212" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="46" parent="globals/DatePanel" pc="268453219" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="47" parent="globals/DatePanel" pc="268453240" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="49" parent="globals/DatePanel" pc="268453247" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\view\\DatePanel.mc" id="50" lineNum="50" parent="globals/DatePanel" pc="268453269" symbol="drawDate"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="38" parent="globals/Gfx" pc="268453295" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="39" parent="globals/Gfx" pc="268453305" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="40" parent="globals/Gfx" pc="268453327" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="41" parent="globals/Gfx" pc="268453332" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="43" parent="globals/Gfx" pc="268453359" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="44" parent="globals/Gfx" pc="268453377" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="51" lineNum="45" parent="globals/Gfx" pc="268453399" symbol="eye"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="52" lineNum="30" parent="globals/Gfx" pc="268453452" symbol="blob"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="52" lineNum="31" parent="globals/Gfx" pc="268453462" symbol="blob"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="52" lineNum="32" parent="globals/Gfx" pc="268453484" symbol="blob"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="52" lineNum="33" parent="globals/Gfx" pc="268453504" symbol="blob"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="52" lineNum="34" parent="globals/Gfx" pc="268453526" symbol="blob"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="53" lineNum="8" parent="globals/Gfx" pc="268453547" symbol="shift"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="53" lineNum="9" parent="globals/Gfx" pc="268453559" symbol="shift"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="53" lineNum="10" parent="globals/Gfx" pc="268453567" symbol="shift"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="53" lineNum="11" parent="globals/Gfx" pc="268453591" symbol="shift"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="53" lineNum="13" parent="globals/Gfx" pc="268453666" symbol="shift"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="17" parent="globals/Gfx" pc="268453669" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="18" parent="globals/Gfx" pc="268453681" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="19" parent="globals/Gfx" pc="268453700" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="20" parent="globals/Gfx" pc="268453714" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="21" parent="globals/Gfx" pc="268453736" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="22" parent="globals/Gfx" pc="268453749" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="23" parent="globals/Gfx" pc="268453764" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="24" parent="globals/Gfx" pc="268453771" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Gfx.mc" id="54" lineNum="25" parent="globals/Gfx" pc="268453787" symbol="poly"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="12" parent="globals/Pokemon" pc="268453845" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="13" parent="globals/Pokemon" pc="268453857" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="14" parent="globals/Pokemon" pc="268453880" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="15" parent="globals/Pokemon" pc="268453891" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="17" parent="globals/Pokemon" pc="268453901" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="18" parent="globals/Pokemon" pc="268453909" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="55" lineNum="20" parent="globals/Pokemon" pc="268453925" symbol="pick"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="24" parent="globals/Pokemon" pc="268453928" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="25" parent="globals/Pokemon" pc="268453938" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="26" parent="globals/Pokemon" pc="268453955" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="27" parent="globals/Pokemon" pc="268453966" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="28" parent="globals/Pokemon" pc="268453995" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="29" parent="globals/Pokemon" pc="268454006" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="30" parent="globals/Pokemon" pc="268454035" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="31" parent="globals/Pokemon" pc="268454046" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="32" parent="globals/Pokemon" pc="268454075" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="33" parent="globals/Pokemon" pc="268454086" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="34" parent="globals/Pokemon" pc="268454115" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="35" parent="globals/Pokemon" pc="268454126" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="36" parent="globals/Pokemon" pc="268454155" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="37" parent="globals/Pokemon" pc="268454166" symbol="draw"/>
+<entry filename="C:\\Users\\manon\\cedric\\poke_watch_face\\source\\animation\\Pokemon.mc" id="56" lineNum="39" parent="globals/Pokemon" pc="268454192" symbol="draw"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="44" method="true" symbol="drawHeartRate"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="56" symbol="STORM_CONDITIONS"/>
+<entry id="4" module="true" symbol="globals/Bulbasaur"/>
+<entry id="46" method="true" symbol="layout"/>
+<entry id="7" module="true" symbol="globals/Gfx"/>
+<entry id="24" module="true" symbol="Charmander"/>
+<entry field="true" id="91" symbol="StepFontSmall"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="67" method="true" symbol="advance"/>
+<entry id="81" method="true" symbol="drawDate"/>
+<entry id="82" method="true" symbol="drawWeather"/>
+<entry field="true" id="57" symbol="SUN_CONDITIONS"/>
+<entry id="28" module="true" symbol="Jigglypuff"/>
+<entry id="32" object="true" symbol="PokeFaceApp"/>
+<entry id="23" module="true" symbol="Bulbasaur"/>
+<entry field="true" id="78" symbol="stepFont"/>
+<entry field="true" id="77" symbol="heartIcon"/>
+<entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+<entry id="22" module="true" symbol="BattleFrame"/>
+<entry id="21" module="true" symbol="BatteryBar"/>
+<entry id="11" module="true" symbol="globals/Pokemon"/>
+<entry field="true" id="41" symbol="_assets"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="47" method="true" symbol="progress"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="62" symbol="_asleep"/>
+<entry id="18" module="true" symbol="globals/Trainer"/>
+<entry field="true" id="52" symbol="PARTLY_CONDITIONS"/>
+<entry id="59" method="true" symbol="kindFor"/>
+<entry id="17" module="true" symbol="globals/Subscreen"/>
+<entry field="true" id="53" symbol="RAIN_CONDITIONS"/>
+<entry field="true" id="93" symbol="AppName"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="83" method="true" symbol="blob"/>
+<entry field="true" id="64" symbol="_pokemon"/>
+<entry id="15" module="true" symbol="globals/Rez/Strings"/>
+<entry id="75" method="true" symbol="formatTime"/>
+<entry field="true" id="65" symbol="_state"/>
+<entry field="true" id="50" symbol="WALK_B"/>
+<entry field="true" id="49" symbol="WALK_A"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="43" method="true" symbol="drawBar"/>
+<entry id="29" module="true" symbol="Pikachu"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="79" symbol="stepFontSmall"/>
+<entry id="74" method="true" symbol="drawTrainer"/>
+<entry id="12" module="true" symbol="globals/Rez"/>
+<entry field="true" id="55" symbol="SNOW_CONDITIONS"/>
+<entry id="38" object="true" symbol="TimePanel"/>
+<entry id="27" module="true" symbol="Gfx"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8391489" module="true" symbol="Weather"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="92" symbol="TimeFont"/>
+<entry id="45" method="true" symbol="drawNumbers"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="40" module="true" symbol="WxIcon"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry id="69" method="true" symbol="bounds"/>
+<entry field="true" id="66" symbol="_tick"/>
+<entry id="5" module="true" symbol="globals/Charmander"/>
+<entry id="13" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="37" module="true" symbol="Subscreen"/>
+<entry field="true" id="73" symbol="_timePanel"/>
+<entry field="true" id="51" symbol="FOG_CONDITIONS"/>
+<entry id="8" module="true" symbol="globals/Jigglypuff"/>
+<entry id="84" method="true" symbol="eye"/>
+<entry field="true" id="88" symbol="HeartIcon"/>
+<entry id="25" object="true" symbol="DatePanel"/>
+<entry id="35" module="true" symbol="Squirtle"/>
+<entry id="34" module="true" symbol="Pokemon"/>
+<entry id="8391802" method="true" symbol="getSubscreen"/>
+<entry id="33" object="true" symbol="PokeFaceView"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="80" symbol="timeFont"/>
+<entry id="31" module="true" symbol="PokeBall"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="68" method="true" symbol="setAsleep"/>
+<entry id="39" module="true" symbol="Trainer"/>
+<entry field="true" id="61" symbol="LOOK"/>
+<entry id="2" module="true" symbol="globals/BatteryBar"/>
+<entry id="3" module="true" symbol="globals/BattleFrame"/>
+<entry field="true" id="48" symbol="FISH"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="54" symbol="RAYS"/>
+<entry field="true" id="89" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="16" module="true" symbol="globals/Squirtle"/>
+<entry id="10" module="true" symbol="globals/PokeBall"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="76" method="true" symbol="fitStepFont"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="71" symbol="_datePanel"/>
+<entry id="20" object="true" symbol="Assets"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="70" symbol="_anim"/>
+<entry id="60" method="true" symbol="drawEdge"/>
+<entry field="true" id="8388747" method="true" symbol="currentHeartRate"/>
+<entry id="30" object="true" symbol="PokeAnimation"/>
+<entry id="19" module="true" symbol="globals/WxIcon"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="9" module="true" symbol="globals/Pikachu"/>
+<entry field="true" id="90" symbol="StepFont"/>
+<entry id="87" method="true" symbol="pick"/>
+<entry field="true" id="72" symbol="_stepsPanel"/>
+<entry id="86" method="true" symbol="shift"/>
+<entry id="85" method="true" symbol="poly"/>
+<entry id="14" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="26" module="true" symbol="Eevee"/>
+<entry field="true" id="42" symbol="_barX"/>
+<entry id="6" module="true" symbol="globals/Eevee"/>
+<entry field="true" id="63" symbol="_lastSec"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="36" object="true" symbol="StepsPanel"/>
+<entry id="58" method="true" symbol="drawCloud"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268438442" name="dc" stackId="1" startPc="268437335"/>
+<entry arg="true" endPc="268438442" name="px" stackId="2" startPc="268437335"/>
+<entry arg="true" endPc="268438442" name="py" stackId="3" startPc="268437335"/>
+<entry arg="true" endPc="268438442" name="look" stackId="4" startPc="268437335"/>
+<entry arg="true" endPc="268438442" name="tick" stackId="5" startPc="268437335"/>
+<entry endPc="268438441" name="ox" stackId="6" startPc="268437347"/>
+<entry endPc="268438441" name="white" stackId="7" startPc="268437347"/>
+<entry endPc="268438441" name="black" stackId="8" startPc="268437347"/>
+<entry endPc="268438441" name="blink" stackId="9" startPc="268437347"/>
+<entry endPc="268438441" name="hx" stackId="10" startPc="268437347"/>
+<entry endPc="268438441" name="ex" stackId="11" startPc="268437347"/>
+<entry endPc="268438363" name="s" stackId="12" startPc="268438078"/>
+<entry endPc="268438350" name="cx" stackId="13" startPc="268438078"/>
+<entry arg="true" endPc="268439856" name="dc" stackId="1" startPc="268438443"/>
+<entry arg="true" endPc="268439856" name="px" stackId="2" startPc="268438443"/>
+<entry arg="true" endPc="268439856" name="py" stackId="3" startPc="268438443"/>
+<entry arg="true" endPc="268439856" name="look" stackId="4" startPc="268438443"/>
+<entry arg="true" endPc="268439856" name="tick" stackId="5" startPc="268438443"/>
+<entry endPc="268439855" name="ox" stackId="6" startPc="268438455"/>
+<entry endPc="268439855" name="white" stackId="7" startPc="268438455"/>
+<entry endPc="268439855" name="black" stackId="8" startPc="268438455"/>
+<entry endPc="268439855" name="blink" stackId="9" startPc="268438455"/>
+<entry endPc="268439855" name="ex" stackId="10" startPc="268438455"/>
+<entry arg="true" endPc="268440752" name="dc" stackId="1" startPc="268439857"/>
+<entry arg="true" endPc="268440752" name="px" stackId="2" startPc="268439857"/>
+<entry arg="true" endPc="268440752" name="py" stackId="3" startPc="268439857"/>
+<entry arg="true" endPc="268440752" name="look" stackId="4" startPc="268439857"/>
+<entry arg="true" endPc="268440752" name="tick" stackId="5" startPc="268439857"/>
+<entry endPc="268440751" name="ox" stackId="6" startPc="268439869"/>
+<entry endPc="268440751" name="black" stackId="7" startPc="268439869"/>
+<entry endPc="268440751" name="blink" stackId="8" startPc="268439869"/>
+<entry endPc="268440751" name="ex" stackId="9" startPc="268439869"/>
+<entry arg="true" endPc="268440949" name="dc" stackId="1" startPc="268440753"/>
+<entry endPc="268440948" name="hr" stackId="2" startPc="268440757"/>
+<entry endPc="268440948" name="text" stackId="3" startPc="268440757"/>
+<entry endPc="268440948" name="iconLeft" stackId="4" startPc="268440757"/>
+<entry endPc="268440948" name="textRight" stackId="5" startPc="268440757"/>
+<entry endPc="268440948" name="font" stackId="6" startPc="268440757"/>
+<entry arg="true" endPc="268441300" name="dc" stackId="1" startPc="268441087"/>
+<entry arg="true" endPc="268441300" name="frac" stackId="2" startPc="268441087"/>
+<entry endPc="268441299" name="barW" stackId="3" startPc="268441091"/>
+<entry endPc="268441299" name="barTop" stackId="4" startPc="268441091"/>
+<entry endPc="268441299" name="innerW" stackId="5" startPc="268441091"/>
+<entry endPc="268441299" name="fillW" stackId="6" startPc="268441091"/>
+<entry endPc="268441299" name="fillH" stackId="7" startPc="268441219"/>
+<entry endPc="268441299" name="radius" stackId="8" startPc="268441219"/>
+<entry arg="true" endPc="268441494" name="dc" stackId="1" startPc="268441301"/>
+<entry endPc="268441493" name="info" stackId="2" startPc="268441305"/>
+<entry endPc="268441493" name="steps" stackId="3" startPc="268441305"/>
+<entry endPc="268441493" name="rawGoal" stackId="4" startPc="268441305"/>
+<entry endPc="268441493" name="goal" stackId="5" startPc="268441305"/>
+<entry arg="true" endPc="268441538" name="dc" stackId="1" startPc="268441495"/>
+<entry arg="true" endPc="268441601" name="steps" stackId="1" startPc="268441539"/>
+<entry arg="true" endPc="268441601" name="goal" stackId="2" startPc="268441539"/>
+<entry arg="true" endPc="268441737" name="dc" stackId="1" startPc="268441602"/>
+<entry arg="true" endPc="268441737" name="steps" stackId="2" startPc="268441602"/>
+<entry arg="true" endPc="268441737" name="goal" stackId="3" startPc="268441602"/>
+<entry endPc="268441736" name="shown" stackId="4" startPc="268441606"/>
+<entry endPc="268441736" name="text" stackId="5" startPc="268441606"/>
+<entry endPc="268441736" name="font" stackId="6" startPc="268441606"/>
+<entry arg="true" endPc="268441750" name="assets" stackId="1" startPc="268441738"/>
+<entry arg="true" endPc="268442014" name="dc" stackId="1" startPc="268441751"/>
+<entry arg="true" endPc="268442014" name="x" stackId="2" startPc="268441751"/>
+<entry arg="true" endPc="268442014" name="y" stackId="3" startPc="268441751"/>
+<entry arg="true" endPc="268442014" name="asleep" stackId="4" startPc="268441751"/>
+<entry arg="true" endPc="268442014" name="tick" stackId="5" startPc="268441751"/>
+<entry endPc="268442013" name="sprite" stackId="6" startPc="268441763"/>
+<entry endPc="268442013" name="row" stackId="7" startPc="268441857"/>
+<entry endPc="268442000" name="bits" stackId="8" startPc="268441857"/>
+<entry endPc="268442000" name="col" stackId="9" startPc="268441857"/>
+<entry endPc="268441984" name="start" stackId="10" startPc="268441902"/>
+<entry arg="true" endPc="268442184" name="dc" stackId="1" startPc="268442015"/>
+<entry arg="true" endPc="268442184" name="x" stackId="2" startPc="268442015"/>
+<entry arg="true" endPc="268442184" name="y" stackId="3" startPc="268442015"/>
+<entry arg="true" endPc="268443187" name="dc" stackId="1" startPc="268442185"/>
+<entry arg="true" endPc="268443187" name="x" stackId="2" startPc="268442185"/>
+<entry arg="true" endPc="268443187" name="y" stackId="3" startPc="268442185"/>
+<entry arg="true" endPc="268443187" name="kind" stackId="4" startPc="268442185"/>
+<entry endPc="268442543" name="sx" stackId="5" startPc="268442258"/>
+<entry endPc="268442543" name="sy" stackId="6" startPc="268442258"/>
+<entry endPc="268442543" name="r" stackId="7" startPc="268442258"/>
+<entry endPc="268442502" name="i" stackId="8" startPc="268442384"/>
+<entry endPc="268442489" name="dx" stackId="9" startPc="268442384"/>
+<entry endPc="268442489" name="dy" stackId="10" startPc="268442384"/>
+<entry arg="true" endPc="268443419" name="condition" stackId="1" startPc="268443188"/>
+<entry arg="true" endPc="268445949" name="dc" stackId="1" startPc="268443420"/>
+<entry arg="true" endPc="268445949" name="px" stackId="2" startPc="268443420"/>
+<entry arg="true" endPc="268445949" name="py" stackId="3" startPc="268443420"/>
+<entry arg="true" endPc="268445949" name="look" stackId="4" startPc="268443420"/>
+<entry arg="true" endPc="268445949" name="tick" stackId="5" startPc="268443420"/>
+<entry endPc="268445948" name="ox" stackId="6" startPc="268443432"/>
+<entry endPc="268445948" name="white" stackId="7" startPc="268443432"/>
+<entry endPc="268445948" name="black" stackId="8" startPc="268443432"/>
+<entry endPc="268445948" name="blink" stackId="9" startPc="268443432"/>
+<entry endPc="268445948" name="ex" stackId="10" startPc="268443432"/>
+<entry arg="true" endPc="268446191" name="dc" stackId="1" startPc="268445950"/>
+<entry arg="true" endPc="268446191" name="left" stackId="2" startPc="268445950"/>
+<entry arg="true" endPc="268446191" name="right" stackId="3" startPc="268445950"/>
+<entry arg="true" endPc="268446191" name="top" stackId="4" startPc="268445950"/>
+<entry arg="true" endPc="268446191" name="lineY" stackId="5" startPc="268445950"/>
+<entry arg="true" endPc="268446191" name="arrowOnLeft" stackId="6" startPc="268445950"/>
+<entry endPc="268446138" name="i" stackId="7" startPc="268446028"/>
+<entry endPc="268446125" name="w" stackId="8" startPc="268446028"/>
+<entry endPc="268446125" name="y" stackId="9" startPc="268446028"/>
+<entry endPc="268446190" name="verticalX" stackId="10" startPc="268445962"/>
+<entry arg="true" endPc="268446222" name="asleep" stackId="1" startPc="268446192"/>
+<entry arg="true" endPc="268446355" name="dc" stackId="1" startPc="268446223"/>
+<entry arg="true" endPc="268446355" name="box" stackId="2" startPc="268446223"/>
+<entry endPc="268446663" name="now" stackId="1" startPc="268446360"/>
+<entry arg="true" endPc="268447016" name="dc" stackId="1" startPc="268446994"/>
+<entry endPc="268447231" name="assets" stackId="1" startPc="268447064"/>
+<entry arg="true" endPc="268447408" name="dc" stackId="1" startPc="268447233"/>
+<entry endPc="268447407" name="box" stackId="2" startPc="268447237"/>
+<entry arg="true" endPc="268448221" name="dc" stackId="1" startPc="268447409"/>
+<entry arg="true" endPc="268448221" name="box" stackId="2" startPc="268447409"/>
+<entry arg="true" endPc="268448221" name="closed" stackId="3" startPc="268447409"/>
+<entry endPc="268448220" name="cx" stackId="4" startPc="268447421"/>
+<entry endPc="268448220" name="cy" stackId="5" startPc="268447421"/>
+<entry endPc="268448220" name="r" stackId="6" startPc="268447421"/>
+<entry endPc="268448220" name="black" stackId="7" startPc="268447421"/>
+<entry endPc="268448220" name="white" stackId="8" startPc="268447421"/>
+<entry endPc="268448203" name="hx" stackId="9" startPc="268447871"/>
+<entry endPc="268448203" name="hy" stackId="10" startPc="268447871"/>
+<entry endPc="268448203" name="ang" stackId="11" startPc="268447871"/>
+<entry endPc="268448203" name="cs" stackId="12" startPc="268447871"/>
+<entry endPc="268448203" name="sn" stackId="13" startPc="268447871"/>
+<entry endPc="268448203" name="pts" stackId="14" startPc="268447871"/>
+<entry endPc="268448189" name="a" stackId="15" startPc="268448031"/>
+<entry endPc="268448176" name="rad" stackId="16" startPc="268448031"/>
+<entry endPc="268448176" name="dx" stackId="17" startPc="268448031"/>
+<entry endPc="268448176" name="dy" stackId="18" startPc="268448031"/>
+<entry arg="true" endPc="268450128" name="dc" stackId="1" startPc="268448222"/>
+<entry arg="true" endPc="268450128" name="px" stackId="2" startPc="268448222"/>
+<entry arg="true" endPc="268450128" name="py" stackId="3" startPc="268448222"/>
+<entry arg="true" endPc="268450128" name="look" stackId="4" startPc="268448222"/>
+<entry arg="true" endPc="268450128" name="tick" stackId="5" startPc="268448222"/>
+<entry endPc="268450127" name="ox" stackId="6" startPc="268448234"/>
+<entry endPc="268450127" name="white" stackId="7" startPc="268448234"/>
+<entry endPc="268450127" name="black" stackId="8" startPc="268448234"/>
+<entry endPc="268450127" name="ex" stackId="9" startPc="268448234"/>
+<entry arg="true" endPc="268450141" name="asleep" stackId="1" startPc="268450129"/>
+<entry arg="true" endPc="268450269" name="dc" stackId="1" startPc="268450142"/>
+<entry arg="true" endPc="268450269" name="text" stackId="2" startPc="268450142"/>
+<entry arg="true" endPc="268450269" name="sec" stackId="3" startPc="268450142"/>
+<entry endPc="268450268" name="timeRight" stackId="4" startPc="268450146"/>
+<entry endPc="268450268" name="x" stackId="5" startPc="268450146"/>
+<entry endPc="268450268" name="maxX" stackId="6" startPc="268450146"/>
+<entry arg="true" endPc="268450382" name="clock" stackId="1" startPc="268450270"/>
+<entry arg="true" endPc="268450395" name="assets" stackId="1" startPc="268450383"/>
+<entry arg="true" endPc="268450521" name="dc" stackId="1" startPc="268450396"/>
+<entry endPc="268450520" name="clock" stackId="2" startPc="268450400"/>
+<entry endPc="268450520" name="text" stackId="3" startPc="268450400"/>
+<entry arg="true" endPc="268452018" name="dc" stackId="1" startPc="268450522"/>
+<entry arg="true" endPc="268452018" name="px" stackId="2" startPc="268450522"/>
+<entry arg="true" endPc="268452018" name="py" stackId="3" startPc="268450522"/>
+<entry arg="true" endPc="268452018" name="look" stackId="4" startPc="268450522"/>
+<entry arg="true" endPc="268452018" name="tick" stackId="5" startPc="268450522"/>
+<entry endPc="268452017" name="ox" stackId="6" startPc="268450534"/>
+<entry endPc="268452017" name="white" stackId="7" startPc="268450534"/>
+<entry endPc="268452017" name="black" stackId="8" startPc="268450534"/>
+<entry endPc="268452017" name="blink" stackId="9" startPc="268450534"/>
+<entry endPc="268452017" name="bx" stackId="10" startPc="268450534"/>
+<entry endPc="268452017" name="ex" stackId="11" startPc="268450534"/>
+<entry arg="true" endPc="268452125" name="dc" stackId="1" startPc="268452079"/>
+<entry arg="true" endPc="268452125" name="text" stackId="2" startPc="268452079"/>
+<entry arg="true" endPc="268452125" name="maxWidth" stackId="3" startPc="268452079"/>
+<entry arg="true" endPc="268452464" name="dc" stackId="1" startPc="268452317"/>
+<entry endPc="268452463" name="percent" stackId="2" startPc="268452329"/>
+<entry endPc="268452463" name="length" stackId="3" startPc="268452329"/>
+<entry endPc="268452463" name="levelLength" stackId="4" startPc="268452329"/>
+<entry arg="true" endPc="268452621" name="dc" stackId="1" startPc="268452465"/>
+<entry arg="true" endPc="268452621" name="box" stackId="2" startPc="268452465"/>
+<entry endPc="268452620" name="cx" stackId="3" startPc="268452469"/>
+<entry endPc="268452620" name="cy" stackId="4" startPc="268452469"/>
+<entry arg="true" endPc="268453081" name="dc" stackId="1" startPc="268452622"/>
+<entry arg="true" endPc="268453081" name="cx" stackId="2" startPc="268452622"/>
+<entry arg="true" endPc="268453081" name="y" stackId="3" startPc="268452622"/>
+<entry endPc="268453080" name="text" stackId="4" startPc="268452626"/>
+<entry endPc="268453080" name="kind" stackId="5" startPc="268452626"/>
+<entry endPc="268452805" name="cc" stackId="6" startPc="268452655"/>
+<entry endPc="268452780" name="t" stackId="7" startPc="268452692"/>
+<entry endPc="268453080" name="textW" stackId="8" startPc="268452626"/>
+<entry endPc="268453080" name="degreeW" stackId="9" startPc="268452626"/>
+<entry endPc="268453080" name="totalW" stackId="10" startPc="268452626"/>
+<entry endPc="268453080" name="left" stackId="11" startPc="268452626"/>
+<entry endPc="268453080" name="textLeft" stackId="12" startPc="268452626"/>
+<entry endPc="268453080" name="ringX" stackId="13" startPc="268452626"/>
+<entry endPc="268453080" name="ringY" stackId="14" startPc="268452626"/>
+<entry arg="true" endPc="268453094" name="assets" stackId="1" startPc="268453082"/>
+<entry arg="true" endPc="268453294" name="dc" stackId="1" startPc="268453095"/>
+<entry arg="true" endPc="268453294" name="cx" stackId="2" startPc="268453095"/>
+<entry arg="true" endPc="268453294" name="y" stackId="3" startPc="268453095"/>
+<entry arg="true" endPc="268453294" name="maxWidth" stackId="4" startPc="268453095"/>
+<entry endPc="268453293" name="d" stackId="5" startPc="268453099"/>
+<entry endPc="268453293" name="text" stackId="6" startPc="268453099"/>
+<entry endPc="268453293" name="font" stackId="7" startPc="268453099"/>
+<entry arg="true" endPc="268453451" name="dc" stackId="1" startPc="268453295"/>
+<entry arg="true" endPc="268453451" name="x" stackId="2" startPc="268453295"/>
+<entry arg="true" endPc="268453451" name="y" stackId="3" startPc="268453295"/>
+<entry arg="true" endPc="268453451" name="r" stackId="4" startPc="268453295"/>
+<entry arg="true" endPc="268453451" name="blink" stackId="5" startPc="268453295"/>
+<entry arg="true" endPc="268453546" name="dc" stackId="1" startPc="268453452"/>
+<entry arg="true" endPc="268453546" name="x" stackId="2" startPc="268453452"/>
+<entry arg="true" endPc="268453546" name="y" stackId="3" startPc="268453452"/>
+<entry arg="true" endPc="268453546" name="rx" stackId="4" startPc="268453452"/>
+<entry arg="true" endPc="268453546" name="ry" stackId="5" startPc="268453452"/>
+<entry arg="true" endPc="268453668" name="pts" stackId="1" startPc="268453547"/>
+<entry arg="true" endPc="268453668" name="dx" stackId="2" startPc="268453547"/>
+<entry arg="true" endPc="268453668" name="dy" stackId="3" startPc="268453547"/>
+<entry endPc="268453665" name="i" stackId="5" startPc="268453591"/>
+<entry arg="true" endPc="268453844" name="dc" stackId="1" startPc="268453669"/>
+<entry arg="true" endPc="268453844" name="pts" stackId="2" startPc="268453669"/>
+<entry arg="true" endPc="268453844" name="fill" stackId="3" startPc="268453669"/>
+<entry endPc="268453843" name="n" stackId="4" startPc="268453681"/>
+<entry endPc="268453843" name="i" stackId="5" startPc="268453764"/>
+<entry endPc="268453830" name="a" stackId="6" startPc="268453764"/>
+<entry endPc="268453830" name="b" stackId="7" startPc="268453764"/>
+<entry arg="true" endPc="268453927" name="last" stackId="1" startPc="268453845"/>
+<entry arg="true" endPc="268454209" name="dc" stackId="1" startPc="268453928"/>
+<entry arg="true" endPc="268454209" name="id" stackId="2" startPc="268453928"/>
+<entry arg="true" endPc="268454209" name="px" stackId="3" startPc="268453928"/>
+<entry arg="true" endPc="268454209" name="py" stackId="4" startPc="268453928"/>
+<entry arg="true" endPc="268454209" name="look" stackId="5" startPc="268453928"/>
+<entry arg="true" endPc="268454209" name="tick" stackId="6" startPc="268453928"/>
+</localVars>
+<deviceInfo deviceVersion="3d0fb192a2cf01699aefd0f384af3f527e5885bd" partNumber="006-B3888-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TimeFont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="StepFont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="StepFontSmall"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HeartIcon"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="175" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Jigglypuff" offset="390" parentId="globals" symbolId="Jigglypuff" type="module"/>
+<dataEntry label="globals/Charmander" offset="429" parentId="globals" symbolId="Charmander" type="module"/>
+<dataEntry label="globals/Rez" offset="468" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Squirtle" offset="523" parentId="globals" symbolId="Squirtle" type="module"/>
+<dataEntry label="globals/StepsPanel" offset="562" parentId="globals" symbolId="StepsPanel" type="class"/>
+<dataEntry label="globals/Trainer" offset="681" parentId="globals" symbolId="Trainer" type="module"/>
+<dataEntry label="globals/WxIcon" offset="744" parentId="globals" symbolId="WxIcon" type="module"/>
+<dataEntry label="globals/Eevee" offset="855" parentId="globals" symbolId="Eevee" type="module"/>
+<dataEntry label="globals/BattleFrame" offset="894" parentId="globals" symbolId="BattleFrame" type="module"/>
+<dataEntry label="globals/PokeAnimation" offset="933" parentId="globals" symbolId="PokeAnimation" type="class"/>
+<dataEntry label="globals/Subscreen" offset="1052" parentId="globals" symbolId="Subscreen" type="module"/>
+<dataEntry label="globals/PokeFaceView" offset="1091" parentId="globals" symbolId="PokeFaceView" type="class"/>
+<dataEntry label="globals/PokeBall" offset="1202" parentId="globals" symbolId="PokeBall" type="module"/>
+<dataEntry label="globals/Pikachu" offset="1241" parentId="globals" symbolId="Pikachu" type="module"/>
+<dataEntry label="globals/TimePanel" offset="1280" parentId="globals" symbolId="TimePanel" type="class"/>
+<dataEntry label="globals/Bulbasaur" offset="1375" parentId="globals" symbolId="Bulbasaur" type="module"/>
+<dataEntry label="globals/PokeFaceApp" offset="1414" parentId="globals" symbolId="PokeFaceApp" type="class"/>
+<dataEntry label="globals/Assets" offset="1469" parentId="globals" symbolId="Assets" type="class"/>
+<dataEntry label="globals/BatteryBar" offset="1556" parentId="globals" symbolId="BatteryBar" type="module"/>
+<dataEntry label="globals/DatePanel" offset="1595" parentId="globals" symbolId="DatePanel" type="class"/>
+<dataEntry label="globals/Gfx" offset="1674" parentId="globals" symbolId="Gfx" type="module"/>
+<dataEntry label="globals/Pokemon" offset="1737" parentId="globals" symbolId="Pokemon" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="1784" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1831" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1886" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Jigglypuff">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Charmander">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="Rez" startPc="268435457">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Squirtle">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="StepsPanel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436147" name="&lt;init&gt;" parent="Trainer" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437229" name="&lt;init&gt;" parent="WxIcon" startPc="268436148">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Eevee">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="BattleFrame">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437296" name="&lt;init&gt;" parent="PokeAnimation" startPc="268437230">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Subscreen">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437315" name="&lt;init&gt;" parent="PokeFaceView" startPc="268437297">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="PokeBall">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Pikachu">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="TimePanel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Bulbasaur">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437334" name="&lt;init&gt;" parent="PokeFaceApp" startPc="268437316">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Assets">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="BatteryBar">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="DatePanel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Gfx">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Pokemon">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438442" name="draw" parent="Jigglypuff" startPc="268437335">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439856" name="draw" parent="Charmander" startPc="268438443">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440752" name="draw" parent="Squirtle" startPc="268439857">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268440949" name="drawHeartRate" parent="StepsPanel" startPc="268440753">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441086" name="currentHeartRate" parent="StepsPanel" startPc="268440950">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441300" name="drawBar" parent="StepsPanel" startPc="268441087">
+<param id="dc"/>
+<param id="frac"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441494" name="draw" parent="StepsPanel" startPc="268441301">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441538" name="layout" parent="StepsPanel" startPc="268441495">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441601" name="progress" parent="StepsPanel" startPc="268441539">
+<param id="steps"/>
+<param id="goal"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441737" name="drawNumbers" parent="StepsPanel" startPc="268441602">
+<param id="dc"/>
+<param id="steps"/>
+<param id="goal"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441750" name="initialize" parent="StepsPanel" startPc="268441738">
+<param id="assets"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442014" name="draw" parent="Trainer" startPc="268441751">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="asleep"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442184" name="drawCloud" parent="WxIcon" startPc="268442015">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443187" name="draw" parent="WxIcon" startPc="268442185">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="kind"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443419" name="kindFor" parent="WxIcon" startPc="268443188">
+<param id="condition"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445949" name="draw" parent="Eevee" startPc="268443420">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446191" name="drawEdge" parent="BattleFrame" startPc="268445950">
+<param id="dc"/>
+<param id="left"/>
+<param id="right"/>
+<param id="top"/>
+<param id="lineY"/>
+<param id="arrowOnLeft"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446222" name="setAsleep" parent="PokeAnimation" startPc="268446192">
+<param id="asleep"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446355" name="draw" parent="PokeAnimation" startPc="268446223">
+<param id="dc"/>
+<param id="box"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446664" name="advance" parent="PokeAnimation" startPc="268446356">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446769" name="initialize" parent="PokeAnimation" startPc="268446665">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446950" name="bounds" parent="Subscreen" startPc="268446770">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446993" name="onExitSleep" parent="PokeFaceView" startPc="268446951">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268447016" name="onLayout" parent="PokeFaceView" startPc="268446994">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268447059" name="onEnterSleep" parent="PokeFaceView" startPc="268447017">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268447232" name="initialize" parent="PokeFaceView" startPc="268447060">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268447408" name="onUpdate" parent="PokeFaceView" startPc="268447233">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268448221" name="draw" parent="PokeBall" startPc="268447409">
+<param id="dc"/>
+<param id="box"/>
+<param id="closed"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450128" name="draw" parent="Pikachu" startPc="268448222">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450141" name="setAsleep" parent="TimePanel" startPc="268450129">
+<param id="asleep"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268450269" name="drawTrainer" parent="TimePanel" startPc="268450142">
+<param id="dc"/>
+<param id="text"/>
+<param id="sec"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268450382" name="formatTime" parent="TimePanel" startPc="268450270">
+<param id="clock"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450395" name="initialize" parent="TimePanel" startPc="268450383">
+<param id="assets"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450521" name="draw" parent="TimePanel" startPc="268450396">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452018" name="draw" parent="Bulbasaur" startPc="268450522">
+<param id="dc"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452057" name="getInitialView" parent="PokeFaceApp" startPc="268452019">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452078" name="initialize" parent="PokeFaceApp" startPc="268452058">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452125" name="fitStepFont" parent="Assets" startPc="268452079">
+<param id="dc"/>
+<param id="text"/>
+<param id="maxWidth"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452316" name="initialize" parent="Assets" startPc="268452126">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452464" name="draw" parent="BatteryBar" startPc="268452317">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268452621" name="draw" parent="DatePanel" startPc="268452465">
+<param id="dc"/>
+<param id="box"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268453081" name="drawWeather" parent="DatePanel" startPc="268452622">
+<param id="dc"/>
+<param id="cx"/>
+<param id="y"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453094" name="initialize" parent="DatePanel" startPc="268453082">
+<param id="assets"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268453294" name="drawDate" parent="DatePanel" startPc="268453095">
+<param id="dc"/>
+<param id="cx"/>
+<param id="y"/>
+<param id="maxWidth"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453451" name="eye" parent="Gfx" startPc="268453295">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="r"/>
+<param id="blink"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453546" name="blob" parent="Gfx" startPc="268453452">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="rx"/>
+<param id="ry"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453668" name="shift" parent="Gfx" startPc="268453547">
+<param id="pts"/>
+<param id="dx"/>
+<param id="dy"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453844" name="poly" parent="Gfx" startPc="268453669">
+<param id="dc"/>
+<param id="pts"/>
+<param id="fill"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268453927" name="pick" parent="Pokemon" startPc="268453845">
+<param id="last"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268454209" name="draw" parent="Pokemon" startPc="268453928">
+<param id="dc"/>
+<param id="id"/>
+<param id="px"/>
+<param id="py"/>
+<param id="look"/>
+<param id="tick"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

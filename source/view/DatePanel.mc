@@ -7,6 +7,7 @@ import Toybox.Weather;
 
 // Top-left block: "Thu Oct 8" with the weather (icon + temperature) underneath,
 // centred between the left edge and the subscreen, inside a foe-style battle frame.
+// A tiny envelope + notification count sits right of the weather (hidden when there are no notifications).
 class DatePanel {
 
     // ---- layout knobs (176x176 screen) ----
@@ -18,6 +19,13 @@ class DatePanel {
     hidden const DIGIT_H = 14;          // height of the temperature digits (2x pixel font)
     hidden const DEGREE_R = 2;          // radius of the degree ring (drawn with a 2px pen, so 6px wide)
     hidden const DEGREE_GAP = 1;        // gap between the last digit and the degree ring
+    hidden const WEATHER_DX = -6;       // weather block shifted left of centre to leave room for the notification
+    // notification: envelope icon (12x9) with the count under it in the 1x pixel font
+    hidden const NOTIF_RIGHT_GAP = 6;   // the notification column is centred this + 8 px left of the subscreen
+    hidden const NOTIF_TOP_DY = -11;    // top of the envelope, relative to the weather line's centre
+    hidden const NOTIF_NUMBER_DY = 3;   // centre of the number, relative to the weather line's centre
+    hidden const NOTIF_MAX = 99;        // counts above this are shown as this
+    hidden const NOTIF_SHOW_ZERO = false; // true = keep the envelope visible with a 0
     // frame: vertical line on the left, line under the weather, arrow on the right
     hidden const FRAME_X = 8;           // left edge of the vertical line
     hidden const FRAME_TOP = 12;        // top of the vertical line
@@ -35,7 +43,8 @@ class DatePanel {
         var cx = box[0] / 2;
         var cy = box[1] + box[3] / 2;
         drawDate(dc, cx, cy + DATE_DY, box[0] - TEXT_MARGIN);
-        drawWeather(dc, cx, cy + WEATHER_DY);
+        drawWeather(dc, cx + WEATHER_DX, cy + WEATHER_DY);
+        drawNotifications(dc, box[0] - NOTIF_RIGHT_GAP - 8, cy + WEATHER_DY);
         BattleFrame.drawEdge(dc, FRAME_X, box[0] - FRAME_RIGHT_GAP, FRAME_TOP, FRAME_LINE_Y, false);
     }
 
@@ -48,6 +57,21 @@ class DatePanel {
         }
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, font, text, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    // envelope with the count underneath, both centred on cx; y = centre of the weather line
+    hidden function drawNotifications(dc as Dc, cx as Number, y as Number) as Void {
+        var count = System.getDeviceSettings().notificationCount;
+        if (count <= 0 && !NOTIF_SHOW_ZERO) {
+            return;
+        }
+        if (count > NOTIF_MAX) {
+            count = NOTIF_MAX;
+        }
+        dc.drawBitmap(cx - _assets.notifIcon.getWidth() / 2, y + NOTIF_TOP_DY, _assets.notifIcon);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(cx, y + NOTIF_NUMBER_DY, _assets.stepFontSmall, count.format("%d"),
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     // [icon] [temperature]° centred on cx

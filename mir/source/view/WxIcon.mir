@@ -1,0 +1,1296 @@
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Weather,3,14,21]; ]
+import Toybox.Weather;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 9; @symbol_moduledef = [WxIcon,9,7,13]; ]
+module WxIcon {
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 9; ]
+    <init> {
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 15 10 ]
+        %tmp.1 = newa 3;
+        symbol [ Weather %tmp.2 16 8 15 ];
+        %tmp.2 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CLEAR %tmp.3 16 16 31 ];
+        %tmp.3 = getv %tmp.2 :CONDITION_CLEAR;
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        symbol [ Weather %tmp.6 16 33 40 ];
+        %tmp.6 = getm $.Toybox.Weather;
+        symbol [ CONDITION_MOSTLY_CLEAR %tmp.7 16 41 63 ];
+        %tmp.7 = getv %tmp.6 :CONDITION_MOSTLY_CLEAR;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 1 %tmp.7;
+        symbol [ Weather %tmp.10 16 65 72 ];
+        %tmp.10 = getm $.Toybox.Weather;
+        symbol [ CONDITION_FAIR %tmp.11 16 73 87 ];
+        %tmp.11 = getv %tmp.10 :CONDITION_FAIR;
+        %tmp.12 = dup %tmp.9;
+        %tmp.13 = aputv %tmp.12 2 %tmp.11;
+        putv self :SUN_CONDITIONS %tmp.13;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 18 10 ]
+        %tmp.14 = newa 3;
+        symbol [ Weather %tmp.15 19 8 15 ];
+        %tmp.15 = getm $.Toybox.Weather;
+        symbol [ CONDITION_PARTLY_CLOUDY %tmp.16 19 16 39 ];
+        %tmp.16 = getv %tmp.15 :CONDITION_PARTLY_CLOUDY;
+        %tmp.17 = dup %tmp.14;
+        %tmp.18 = aputv %tmp.17 0 %tmp.16;
+        symbol [ Weather %tmp.19 19 41 48 ];
+        %tmp.19 = getm $.Toybox.Weather;
+        symbol [ CONDITION_PARTLY_CLEAR %tmp.20 19 49 71 ];
+        %tmp.20 = getv %tmp.19 :CONDITION_PARTLY_CLEAR;
+        %tmp.21 = dup %tmp.18;
+        %tmp.22 = aputv %tmp.21 1 %tmp.20;
+        symbol [ Weather %tmp.23 19 73 80 ];
+        %tmp.23 = getm $.Toybox.Weather;
+        symbol [ CONDITION_THIN_CLOUDS %tmp.24 19 81 102 ];
+        %tmp.24 = getv %tmp.23 :CONDITION_THIN_CLOUDS;
+        %tmp.25 = dup %tmp.22;
+        %tmp.26 = aputv %tmp.25 2 %tmp.24;
+        putv self :PARTLY_CONDITIONS %tmp.26;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 21 10 ]
+        %tmp.27 = newa 12;
+        symbol [ Weather %tmp.28 22 8 15 ];
+        %tmp.28 = getm $.Toybox.Weather;
+        symbol [ CONDITION_RAIN %tmp.29 22 16 30 ];
+        %tmp.29 = getv %tmp.28 :CONDITION_RAIN;
+        %tmp.30 = dup %tmp.27;
+        %tmp.31 = aputv %tmp.30 0 %tmp.29;
+        symbol [ Weather %tmp.32 22 32 39 ];
+        %tmp.32 = getm $.Toybox.Weather;
+        symbol [ CONDITION_LIGHT_RAIN %tmp.33 22 40 60 ];
+        %tmp.33 = getv %tmp.32 :CONDITION_LIGHT_RAIN;
+        %tmp.34 = dup %tmp.31;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        symbol [ Weather %tmp.36 22 62 69 ];
+        %tmp.36 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HEAVY_RAIN %tmp.37 22 70 90 ];
+        %tmp.37 = getv %tmp.36 :CONDITION_HEAVY_RAIN;
+        %tmp.38 = dup %tmp.35;
+        %tmp.39 = aputv %tmp.38 2 %tmp.37;
+        symbol [ Weather %tmp.40 23 8 15 ];
+        %tmp.40 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SCATTERED_SHOWERS %tmp.41 23 16 43 ];
+        %tmp.41 = getv %tmp.40 :CONDITION_SCATTERED_SHOWERS;
+        %tmp.42 = dup %tmp.39;
+        %tmp.43 = aputv %tmp.42 3 %tmp.41;
+        symbol [ Weather %tmp.44 23 45 52 ];
+        %tmp.44 = getm $.Toybox.Weather;
+        symbol [ CONDITION_LIGHT_SHOWERS %tmp.45 23 53 76 ];
+        %tmp.45 = getv %tmp.44 :CONDITION_LIGHT_SHOWERS;
+        %tmp.46 = dup %tmp.43;
+        %tmp.47 = aputv %tmp.46 4 %tmp.45;
+        symbol [ Weather %tmp.48 23 78 85 ];
+        %tmp.48 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SHOWERS %tmp.49 23 86 103 ];
+        %tmp.49 = getv %tmp.48 :CONDITION_SHOWERS;
+        %tmp.50 = dup %tmp.47;
+        %tmp.51 = aputv %tmp.50 5 %tmp.49;
+        symbol [ Weather %tmp.52 24 8 15 ];
+        %tmp.52 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HEAVY_SHOWERS %tmp.53 24 16 39 ];
+        %tmp.53 = getv %tmp.52 :CONDITION_HEAVY_SHOWERS;
+        %tmp.54 = dup %tmp.51;
+        %tmp.55 = aputv %tmp.54 6 %tmp.53;
+        symbol [ Weather %tmp.56 24 41 48 ];
+        %tmp.56 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CHANCE_OF_SHOWERS %tmp.57 24 49 76 ];
+        %tmp.57 = getv %tmp.56 :CONDITION_CHANCE_OF_SHOWERS;
+        %tmp.58 = dup %tmp.55;
+        %tmp.59 = aputv %tmp.58 7 %tmp.57;
+        symbol [ Weather %tmp.60 24 78 85 ];
+        %tmp.60 = getm $.Toybox.Weather;
+        symbol [ CONDITION_DRIZZLE %tmp.61 24 86 103 ];
+        %tmp.61 = getv %tmp.60 :CONDITION_DRIZZLE;
+        %tmp.62 = dup %tmp.59;
+        %tmp.63 = aputv %tmp.62 8 %tmp.61;
+        symbol [ Weather %tmp.64 25 8 15 ];
+        %tmp.64 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CLOUDY_CHANCE_OF_RAIN %tmp.65 25 16 47 ];
+        %tmp.65 = getv %tmp.64 :CONDITION_CLOUDY_CHANCE_OF_RAIN;
+        %tmp.66 = dup %tmp.63;
+        %tmp.67 = aputv %tmp.66 9 %tmp.65;
+        symbol [ Weather %tmp.68 25 49 56 ];
+        %tmp.68 = getm $.Toybox.Weather;
+        symbol [ CONDITION_FREEZING_RAIN %tmp.69 25 57 80 ];
+        %tmp.69 = getv %tmp.68 :CONDITION_FREEZING_RAIN;
+        %tmp.70 = dup %tmp.67;
+        %tmp.71 = aputv %tmp.70 10 %tmp.69;
+        symbol [ Weather %tmp.72 26 8 15 ];
+        %tmp.72 = getm $.Toybox.Weather;
+        symbol [ CONDITION_UNKNOWN_PRECIPITATION %tmp.73 26 16 47 ];
+        %tmp.73 = getv %tmp.72 :CONDITION_UNKNOWN_PRECIPITATION;
+        %tmp.74 = dup %tmp.71;
+        %tmp.75 = aputv %tmp.74 11 %tmp.73;
+        putv self :RAIN_CONDITIONS %tmp.75;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 28 10 ]
+        %tmp.76 = newa 16;
+        symbol [ Weather %tmp.77 29 8 15 ];
+        %tmp.77 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SNOW %tmp.78 29 16 30 ];
+        %tmp.78 = getv %tmp.77 :CONDITION_SNOW;
+        %tmp.79 = dup %tmp.76;
+        %tmp.80 = aputv %tmp.79 0 %tmp.78;
+        symbol [ Weather %tmp.81 29 32 39 ];
+        %tmp.81 = getm $.Toybox.Weather;
+        symbol [ CONDITION_LIGHT_SNOW %tmp.82 29 40 60 ];
+        %tmp.82 = getv %tmp.81 :CONDITION_LIGHT_SNOW;
+        %tmp.83 = dup %tmp.80;
+        %tmp.84 = aputv %tmp.83 1 %tmp.82;
+        symbol [ Weather %tmp.85 29 62 69 ];
+        %tmp.85 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HEAVY_SNOW %tmp.86 29 70 90 ];
+        %tmp.86 = getv %tmp.85 :CONDITION_HEAVY_SNOW;
+        %tmp.87 = dup %tmp.84;
+        %tmp.88 = aputv %tmp.87 2 %tmp.86;
+        symbol [ Weather %tmp.89 30 8 15 ];
+        %tmp.89 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CHANCE_OF_SNOW %tmp.90 30 16 40 ];
+        %tmp.90 = getv %tmp.89 :CONDITION_CHANCE_OF_SNOW;
+        %tmp.91 = dup %tmp.88;
+        %tmp.92 = aputv %tmp.91 3 %tmp.90;
+        symbol [ Weather %tmp.93 30 42 49 ];
+        %tmp.93 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CLOUDY_CHANCE_OF_SNOW %tmp.94 30 50 81 ];
+        %tmp.94 = getv %tmp.93 :CONDITION_CLOUDY_CHANCE_OF_SNOW;
+        %tmp.95 = dup %tmp.92;
+        %tmp.96 = aputv %tmp.95 4 %tmp.94;
+        symbol [ Weather %tmp.97 30 83 90 ];
+        %tmp.97 = getm $.Toybox.Weather;
+        symbol [ CONDITION_FLURRIES %tmp.98 30 91 109 ];
+        %tmp.98 = getv %tmp.97 :CONDITION_FLURRIES;
+        %tmp.99 = dup %tmp.96;
+        %tmp.100 = aputv %tmp.99 5 %tmp.98;
+        symbol [ Weather %tmp.101 31 8 15 ];
+        %tmp.101 = getm $.Toybox.Weather;
+        symbol [ CONDITION_WINTRY_MIX %tmp.102 31 16 36 ];
+        %tmp.102 = getv %tmp.101 :CONDITION_WINTRY_MIX;
+        %tmp.103 = dup %tmp.100;
+        %tmp.104 = aputv %tmp.103 6 %tmp.102;
+        symbol [ Weather %tmp.105 31 38 45 ];
+        %tmp.105 = getm $.Toybox.Weather;
+        symbol [ CONDITION_RAIN_SNOW %tmp.106 31 46 65 ];
+        %tmp.106 = getv %tmp.105 :CONDITION_RAIN_SNOW;
+        %tmp.107 = dup %tmp.104;
+        %tmp.108 = aputv %tmp.107 7 %tmp.106;
+        symbol [ Weather %tmp.109 31 67 74 ];
+        %tmp.109 = getm $.Toybox.Weather;
+        symbol [ CONDITION_LIGHT_RAIN_SNOW %tmp.110 31 75 100 ];
+        %tmp.110 = getv %tmp.109 :CONDITION_LIGHT_RAIN_SNOW;
+        %tmp.111 = dup %tmp.108;
+        %tmp.112 = aputv %tmp.111 8 %tmp.110;
+        symbol [ Weather %tmp.113 32 8 15 ];
+        %tmp.113 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HEAVY_RAIN_SNOW %tmp.114 32 16 41 ];
+        %tmp.114 = getv %tmp.113 :CONDITION_HEAVY_RAIN_SNOW;
+        %tmp.115 = dup %tmp.112;
+        %tmp.116 = aputv %tmp.115 9 %tmp.114;
+        symbol [ Weather %tmp.117 32 43 50 ];
+        %tmp.117 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CHANCE_OF_RAIN_SNOW %tmp.118 32 51 80 ];
+        %tmp.118 = getv %tmp.117 :CONDITION_CHANCE_OF_RAIN_SNOW;
+        %tmp.119 = dup %tmp.116;
+        %tmp.120 = aputv %tmp.119 10 %tmp.118;
+        symbol [ Weather %tmp.121 33 8 15 ];
+        %tmp.121 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CLOUDY_CHANCE_OF_RAIN_SNOW %tmp.122 33 16 52 ];
+        %tmp.122 = getv %tmp.121 :CONDITION_CLOUDY_CHANCE_OF_RAIN_SNOW;
+        %tmp.123 = dup %tmp.120;
+        %tmp.124 = aputv %tmp.123 11 %tmp.122;
+        symbol [ Weather %tmp.125 33 54 61 ];
+        %tmp.125 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SLEET %tmp.126 33 62 77 ];
+        %tmp.126 = getv %tmp.125 :CONDITION_SLEET;
+        %tmp.127 = dup %tmp.124;
+        %tmp.128 = aputv %tmp.127 12 %tmp.126;
+        symbol [ Weather %tmp.129 33 79 86 ];
+        %tmp.129 = getm $.Toybox.Weather;
+        symbol [ CONDITION_ICE_SNOW %tmp.130 33 87 105 ];
+        %tmp.130 = getv %tmp.129 :CONDITION_ICE_SNOW;
+        %tmp.131 = dup %tmp.128;
+        %tmp.132 = aputv %tmp.131 13 %tmp.130;
+        symbol [ Weather %tmp.133 34 8 15 ];
+        %tmp.133 = getm $.Toybox.Weather;
+        symbol [ CONDITION_ICE %tmp.134 34 16 29 ];
+        %tmp.134 = getv %tmp.133 :CONDITION_ICE;
+        %tmp.135 = dup %tmp.132;
+        %tmp.136 = aputv %tmp.135 14 %tmp.134;
+        symbol [ Weather %tmp.137 34 31 38 ];
+        %tmp.137 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HAIL %tmp.138 34 39 53 ];
+        %tmp.138 = getv %tmp.137 :CONDITION_HAIL;
+        %tmp.139 = dup %tmp.136;
+        %tmp.140 = aputv %tmp.139 15 %tmp.138;
+        putv self :SNOW_CONDITIONS %tmp.140;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 36 10 ]
+        %tmp.141 = newa 7;
+        symbol [ Weather %tmp.142 37 8 15 ];
+        %tmp.142 = getm $.Toybox.Weather;
+        symbol [ CONDITION_THUNDERSTORMS %tmp.143 37 16 39 ];
+        %tmp.143 = getv %tmp.142 :CONDITION_THUNDERSTORMS;
+        %tmp.144 = dup %tmp.141;
+        %tmp.145 = aputv %tmp.144 0 %tmp.143;
+        symbol [ Weather %tmp.146 37 41 48 ];
+        %tmp.146 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SCATTERED_THUNDERSTORMS %tmp.147 37 49 82 ];
+        %tmp.147 = getv %tmp.146 :CONDITION_SCATTERED_THUNDERSTORMS;
+        %tmp.148 = dup %tmp.145;
+        %tmp.149 = aputv %tmp.148 1 %tmp.147;
+        symbol [ Weather %tmp.150 38 8 15 ];
+        %tmp.150 = getm $.Toybox.Weather;
+        symbol [ CONDITION_CHANCE_OF_THUNDERSTORMS %tmp.151 38 16 49 ];
+        %tmp.151 = getv %tmp.150 :CONDITION_CHANCE_OF_THUNDERSTORMS;
+        %tmp.152 = dup %tmp.149;
+        %tmp.153 = aputv %tmp.152 2 %tmp.151;
+        symbol [ Weather %tmp.154 38 51 58 ];
+        %tmp.154 = getm $.Toybox.Weather;
+        symbol [ CONDITION_TORNADO %tmp.155 38 59 76 ];
+        %tmp.155 = getv %tmp.154 :CONDITION_TORNADO;
+        %tmp.156 = dup %tmp.153;
+        %tmp.157 = aputv %tmp.156 3 %tmp.155;
+        symbol [ Weather %tmp.158 38 78 85 ];
+        %tmp.158 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SQUALL %tmp.159 38 86 102 ];
+        %tmp.159 = getv %tmp.158 :CONDITION_SQUALL;
+        %tmp.160 = dup %tmp.157;
+        %tmp.161 = aputv %tmp.160 4 %tmp.159;
+        symbol [ Weather %tmp.162 39 8 15 ];
+        %tmp.162 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HURRICANE %tmp.163 39 16 35 ];
+        %tmp.163 = getv %tmp.162 :CONDITION_HURRICANE;
+        %tmp.164 = dup %tmp.161;
+        %tmp.165 = aputv %tmp.164 5 %tmp.163;
+        symbol [ Weather %tmp.166 39 37 44 ];
+        %tmp.166 = getm $.Toybox.Weather;
+        symbol [ CONDITION_TROPICAL_STORM %tmp.167 39 45 69 ];
+        %tmp.167 = getv %tmp.166 :CONDITION_TROPICAL_STORM;
+        %tmp.168 = dup %tmp.165;
+        %tmp.169 = aputv %tmp.168 6 %tmp.167;
+        putv self :STORM_CONDITIONS %tmp.169;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 41 10 ]
+        %tmp.170 = newa 10;
+        symbol [ Weather %tmp.171 42 8 15 ];
+        %tmp.171 = getm $.Toybox.Weather;
+        symbol [ CONDITION_FOG %tmp.172 42 16 29 ];
+        %tmp.172 = getv %tmp.171 :CONDITION_FOG;
+        %tmp.173 = dup %tmp.170;
+        %tmp.174 = aputv %tmp.173 0 %tmp.172;
+        symbol [ Weather %tmp.175 42 31 38 ];
+        %tmp.175 = getm $.Toybox.Weather;
+        symbol [ CONDITION_MIST %tmp.176 42 39 53 ];
+        %tmp.176 = getv %tmp.175 :CONDITION_MIST;
+        %tmp.177 = dup %tmp.174;
+        %tmp.178 = aputv %tmp.177 1 %tmp.176;
+        symbol [ Weather %tmp.179 42 55 62 ];
+        %tmp.179 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HAZY %tmp.180 42 63 77 ];
+        %tmp.180 = getv %tmp.179 :CONDITION_HAZY;
+        %tmp.181 = dup %tmp.178;
+        %tmp.182 = aputv %tmp.181 2 %tmp.180;
+        symbol [ Weather %tmp.183 42 79 86 ];
+        %tmp.183 = getm $.Toybox.Weather;
+        symbol [ CONDITION_HAZE %tmp.184 42 87 101 ];
+        %tmp.184 = getv %tmp.183 :CONDITION_HAZE;
+        %tmp.185 = dup %tmp.182;
+        %tmp.186 = aputv %tmp.185 3 %tmp.184;
+        symbol [ Weather %tmp.187 43 8 15 ];
+        %tmp.187 = getm $.Toybox.Weather;
+        symbol [ CONDITION_WINDY %tmp.188 43 16 31 ];
+        %tmp.188 = getv %tmp.187 :CONDITION_WINDY;
+        %tmp.189 = dup %tmp.186;
+        %tmp.190 = aputv %tmp.189 4 %tmp.188;
+        symbol [ Weather %tmp.191 43 33 40 ];
+        %tmp.191 = getm $.Toybox.Weather;
+        symbol [ CONDITION_DUST %tmp.192 43 41 55 ];
+        %tmp.192 = getv %tmp.191 :CONDITION_DUST;
+        %tmp.193 = dup %tmp.190;
+        %tmp.194 = aputv %tmp.193 5 %tmp.192;
+        symbol [ Weather %tmp.195 43 57 64 ];
+        %tmp.195 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SMOKE %tmp.196 43 65 80 ];
+        %tmp.196 = getv %tmp.195 :CONDITION_SMOKE;
+        %tmp.197 = dup %tmp.194;
+        %tmp.198 = aputv %tmp.197 6 %tmp.196;
+        symbol [ Weather %tmp.199 43 82 89 ];
+        %tmp.199 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SAND %tmp.200 43 90 104 ];
+        %tmp.200 = getv %tmp.199 :CONDITION_SAND;
+        %tmp.201 = dup %tmp.198;
+        %tmp.202 = aputv %tmp.201 7 %tmp.200;
+        symbol [ Weather %tmp.203 44 8 15 ];
+        %tmp.203 = getm $.Toybox.Weather;
+        symbol [ CONDITION_SANDSTORM %tmp.204 44 16 35 ];
+        %tmp.204 = getv %tmp.203 :CONDITION_SANDSTORM;
+        %tmp.205 = dup %tmp.202;
+        %tmp.206 = aputv %tmp.205 8 %tmp.204;
+        symbol [ Weather %tmp.207 44 37 44 ];
+        %tmp.207 = getm $.Toybox.Weather;
+        symbol [ CONDITION_VOLCANIC_ASH %tmp.208 44 45 67 ];
+        %tmp.208 = getv %tmp.207 :CONDITION_VOLCANIC_ASH;
+        %tmp.209 = dup %tmp.206;
+        %tmp.210 = aputv %tmp.209 9 %tmp.208;
+        putv self :FOG_CONDITIONS %tmp.210;
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 49 10 ]
+        %tmp.211 = newa 8;
+        %tmp.212 = newa 2;
+        %tmp.213 = 0;
+        %tmp.214 = dup %tmp.212;
+        %tmp.215 = aputv %tmp.214 0 %tmp.213;
+        %tmp.216 = -1;
+        %tmp.217 = dup %tmp.215;
+        %tmp.218 = aputv %tmp.217 1 %tmp.216;
+        %tmp.219 = dup %tmp.211;
+        %tmp.220 = aputv %tmp.219 0 %tmp.218;
+        %tmp.221 = newa 2;
+        %tmp.222 = 1;
+        %tmp.223 = dup %tmp.221;
+        %tmp.224 = aputv %tmp.223 0 %tmp.222;
+        %tmp.225 = -1;
+        %tmp.226 = dup %tmp.224;
+        %tmp.227 = aputv %tmp.226 1 %tmp.225;
+        %tmp.228 = dup %tmp.220;
+        %tmp.229 = aputv %tmp.228 1 %tmp.227;
+        %tmp.230 = newa 2;
+        %tmp.231 = 1;
+        %tmp.232 = dup %tmp.230;
+        %tmp.233 = aputv %tmp.232 0 %tmp.231;
+        %tmp.234 = 0;
+        %tmp.235 = dup %tmp.233;
+        %tmp.236 = aputv %tmp.235 1 %tmp.234;
+        %tmp.237 = dup %tmp.229;
+        %tmp.238 = aputv %tmp.237 2 %tmp.236;
+        %tmp.239 = newa 2;
+        %tmp.240 = 1;
+        %tmp.241 = dup %tmp.239;
+        %tmp.242 = aputv %tmp.241 0 %tmp.240;
+        %tmp.243 = 1;
+        %tmp.244 = dup %tmp.242;
+        %tmp.245 = aputv %tmp.244 1 %tmp.243;
+        %tmp.246 = dup %tmp.238;
+        %tmp.247 = aputv %tmp.246 3 %tmp.245;
+        %tmp.248 = newa 2;
+        %tmp.249 = 0;
+        %tmp.250 = dup %tmp.248;
+        %tmp.251 = aputv %tmp.250 0 %tmp.249;
+        %tmp.252 = 1;
+        %tmp.253 = dup %tmp.251;
+        %tmp.254 = aputv %tmp.253 1 %tmp.252;
+        %tmp.255 = dup %tmp.247;
+        %tmp.256 = aputv %tmp.255 4 %tmp.254;
+        %tmp.257 = newa 2;
+        %tmp.258 = -1;
+        %tmp.259 = dup %tmp.257;
+        %tmp.260 = aputv %tmp.259 0 %tmp.258;
+        %tmp.261 = 1;
+        %tmp.262 = dup %tmp.260;
+        %tmp.263 = aputv %tmp.262 1 %tmp.261;
+        %tmp.264 = dup %tmp.256;
+        %tmp.265 = aputv %tmp.264 5 %tmp.263;
+        %tmp.266 = newa 2;
+        %tmp.267 = -1;
+        %tmp.268 = dup %tmp.266;
+        %tmp.269 = aputv %tmp.268 0 %tmp.267;
+        %tmp.270 = 0;
+        %tmp.271 = dup %tmp.269;
+        %tmp.272 = aputv %tmp.271 1 %tmp.270;
+        %tmp.273 = dup %tmp.265;
+        %tmp.274 = aputv %tmp.273 6 %tmp.272;
+        %tmp.275 = newa 2;
+        %tmp.276 = -1;
+        %tmp.277 = dup %tmp.275;
+        %tmp.278 = aputv %tmp.277 0 %tmp.276;
+        %tmp.279 = -1;
+        %tmp.280 = dup %tmp.278;
+        %tmp.281 = aputv %tmp.280 1 %tmp.279;
+        %tmp.282 = dup %tmp.274;
+        %tmp.283 = aputv %tmp.282 7 %tmp.281;
+        putv self :RAYS %tmp.283;
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 11; ]
+    enum {
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 8; @symbol_enumdec = [SUN,12,8,11]; ]
+        SUN,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 13; @symbol_enumdec = [PARTLY,12,13,19]; ]
+        PARTLY,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 21; @symbol_enumdec = [CLOUD,12,21,26]; ]
+        CLOUD,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 28; @symbol_enumdec = [RAIN,12,28,32]; ]
+        RAIN,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 34; @symbol_enumdec = [SNOW,12,34,38]; ]
+        SNOW,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 40; @symbol_enumdec = [STORM,12,40,45]; ]
+        STORM,
+        [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 12; @position = 47; @symbol_enumdec = [FOG,12,47,50]; ]
+        FOG
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 15; @position = 10; @symbol_constdef = [SUN_CONDITIONS,15,10,24]; @symbol_type<0> = [Array,15,28,33]; @symbol_type<1> = [Number,15,34,40]; ]
+    const SUN_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 18; @position = 10; @symbol_constdef = [PARTLY_CONDITIONS,18,10,27]; @symbol_type<0> = [Array,18,31,36]; @symbol_type<1> = [Number,18,37,43]; ]
+    const PARTLY_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 21; @position = 10; @symbol_constdef = [RAIN_CONDITIONS,21,10,25]; @symbol_type<0> = [Array,21,29,34]; @symbol_type<1> = [Number,21,35,41]; ]
+    const RAIN_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 28; @position = 10; @symbol_constdef = [SNOW_CONDITIONS,28,10,25]; @symbol_type<0> = [Array,28,29,34]; @symbol_type<1> = [Number,28,35,41]; ]
+    const SNOW_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 36; @position = 10; @symbol_constdef = [STORM_CONDITIONS,36,10,26]; @symbol_type<0> = [Array,36,30,35]; @symbol_type<1> = [Number,36,36,42]; ]
+    const STORM_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 41; @position = 10; @symbol_constdef = [FOG_CONDITIONS,41,10,24]; @symbol_type<0> = [Array,41,28,33]; @symbol_type<1> = [Number,41,34,40]; ]
+    const FOG_CONDITIONS as Array<Number>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 49; @position = 10; @symbol_constdef = [RAYS,49,10,14]; @symbol_type<0> = [Array,49,18,23]; @symbol_type<1> = [Array,49,24,29]; @symbol_type<2> = [Number,49,30,36]; ]
+    const RAYS as Array<Array<Number>>;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 51; @symbol_functiondef = [kindFor,51,13,20]; @symbol_param<0> = [condition,51,21,30]; @symbol_param<0>_type<0> = [Number,51,34,40]; @symbol_return<0> = [Number,51,53,59]; ]
+    function kindFor(condition as Number or Null) as Number {
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_51_60_60_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 52 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_8_52_47_if_stmt:
+        %tmp.1 = lgetv %condition;
+        symbol [ condition %tmp.1 52 12 21 ];
+        %tmp.2 = null;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bf %tmp.3 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_8_52_47_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_8_52_47_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_31_52_47_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 52 33 ]
+        symbol [ CLOUD %tmp.5 52 40 45 ];
+        %tmp.5 = getv ? :CLOUD;
+        ret %tmp.5;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_31_52_47_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_8_52_47_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_52_8_52_47_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 53 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_8_53_66_if_stmt:
+        symbol [ SUN_CONDITIONS %tmp.7 53 12 26 ];
+        %tmp.7 = getv ? :SUN_CONDITIONS;
+        symbol [ indexOf %tmp.8 53 27 34 ];
+        %tmp.8 = getv function %tmp.7 :indexOf;
+        %tmp.9 = lgetv %condition;
+        symbol [ condition %tmp.9 53 35 44 ];
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        %tmp.11 = 0;
+        %tmp.12 = gte %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_8_53_66_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_8_53_66_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_52_53_66_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 53 54 ]
+        symbol [ SUN %tmp.14 53 61 64 ];
+        %tmp.14 = getv ? :SUN;
+        ret %tmp.14;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_52_53_66_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_8_53_66_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_53_8_53_66_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 54 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_8_54_72_if_stmt:
+        symbol [ PARTLY_CONDITIONS %tmp.16 54 12 29 ];
+        %tmp.16 = getv ? :PARTLY_CONDITIONS;
+        symbol [ indexOf %tmp.17 54 30 37 ];
+        %tmp.17 = getv function %tmp.16 :indexOf;
+        %tmp.18 = lgetv %condition;
+        symbol [ condition %tmp.18 54 38 47 ];
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = 0;
+        %tmp.21 = gte %tmp.19 %tmp.20;
+        bf %tmp.21 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_8_54_72_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_8_54_72_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_55_54_72_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 54 57 ]
+        symbol [ PARTLY %tmp.23 54 64 70 ];
+        %tmp.23 = getv ? :PARTLY;
+        ret %tmp.23;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_55_54_72_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_8_54_72_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_54_8_54_72_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 55 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_8_55_68_if_stmt:
+        symbol [ RAIN_CONDITIONS %tmp.25 55 12 27 ];
+        %tmp.25 = getv ? :RAIN_CONDITIONS;
+        symbol [ indexOf %tmp.26 55 28 35 ];
+        %tmp.26 = getv function %tmp.25 :indexOf;
+        %tmp.27 = lgetv %condition;
+        symbol [ condition %tmp.27 55 36 45 ];
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        %tmp.29 = 0;
+        %tmp.30 = gte %tmp.28 %tmp.29;
+        bf %tmp.30 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_8_55_68_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_8_55_68_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_53_55_68_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 55 55 ]
+        symbol [ RAIN %tmp.32 55 62 66 ];
+        %tmp.32 = getv ? :RAIN;
+        ret %tmp.32;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_53_55_68_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_8_55_68_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_55_8_55_68_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 56 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_8_56_68_if_stmt:
+        symbol [ SNOW_CONDITIONS %tmp.34 56 12 27 ];
+        %tmp.34 = getv ? :SNOW_CONDITIONS;
+        symbol [ indexOf %tmp.35 56 28 35 ];
+        %tmp.35 = getv function %tmp.34 :indexOf;
+        %tmp.36 = lgetv %condition;
+        symbol [ condition %tmp.36 56 36 45 ];
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        %tmp.38 = 0;
+        %tmp.39 = gte %tmp.37 %tmp.38;
+        bf %tmp.39 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_8_56_68_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_8_56_68_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_53_56_68_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 56 55 ]
+        symbol [ SNOW %tmp.41 56 62 66 ];
+        %tmp.41 = getv ? :SNOW;
+        ret %tmp.41;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_53_56_68_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_8_56_68_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_56_8_56_68_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 57 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_8_57_70_if_stmt:
+        symbol [ STORM_CONDITIONS %tmp.43 57 12 28 ];
+        %tmp.43 = getv ? :STORM_CONDITIONS;
+        symbol [ indexOf %tmp.44 57 29 36 ];
+        %tmp.44 = getv function %tmp.43 :indexOf;
+        %tmp.45 = lgetv %condition;
+        symbol [ condition %tmp.45 57 37 46 ];
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = 0;
+        %tmp.48 = gte %tmp.46 %tmp.47;
+        bf %tmp.48 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_8_57_70_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_8_57_70_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_54_57_70_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 57 56 ]
+        symbol [ STORM %tmp.50 57 63 68 ];
+        %tmp.50 = getv ? :STORM;
+        ret %tmp.50;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_54_57_70_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_8_57_70_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_57_8_57_70_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 58 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_8_58_66_if_stmt:
+        symbol [ FOG_CONDITIONS %tmp.52 58 12 26 ];
+        %tmp.52 = getv ? :FOG_CONDITIONS;
+        symbol [ indexOf %tmp.53 58 27 34 ];
+        %tmp.53 = getv function %tmp.52 :indexOf;
+        %tmp.54 = lgetv %condition;
+        symbol [ condition %tmp.54 58 35 44 ];
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = 0;
+        %tmp.57 = gte %tmp.55 %tmp.56;
+        bf %tmp.57 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_8_58_66_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_8_58_66_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_52_58_66_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 58 54 ]
+        symbol [ FOG %tmp.59 58 61 64 ];
+        %tmp.59 = getv ? :FOG;
+        ret %tmp.59;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_52_58_66_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_8_58_66_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_58_8_58_66_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 59 8 ]
+        symbol [ CLOUD %tmp.61 59 15 20 ];
+        %tmp.61 = getv ? :CLOUD;
+        ret %tmp.61;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_51_60_60_4_stop:
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 63; @symbol_functiondef = [drawCloud,63,13,22]; @symbol_param<0> = [dc,63,23,25]; @symbol_param<0>_type<0> = [Dc,63,29,31]; @symbol_param<1> = [x,63,33,34]; @symbol_param<1>_type<0> = [Number,63,38,44]; @symbol_param<2> = [y,63,46,47]; @symbol_param<2>_type<0> = [Number,63,51,57]; ]
+    function drawCloud(dc as Dc, x as Number, y as Number) as Void {
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_63_67_69_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 64 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 64 8 10 ];
+        symbol [ setColor %tmp.2 64 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 64 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 64 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 64 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 64 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 65 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 65 8 10 ];
+        symbol [ fillCircle %tmp.8 65 11 21 ];
+        %tmp.8 = getv function %tmp.7 :fillCircle;
+        %tmp.9 = lgetv %x;
+        symbol [ x %tmp.9 65 22 23 ];
+        %tmp.10 = 4;
+        %tmp.11 = sub %tmp.9 %tmp.10;
+        %tmp.12 = lgetv %y;
+        symbol [ y %tmp.12 65 29 30 ];
+        %tmp.13 = 1;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        %tmp.15 = 4;
+        invoke %tmp.7 %tmp.8(%tmp.11, %tmp.14, %tmp.15);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 66 8 ]
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 66 8 10 ];
+        symbol [ fillCircle %tmp.17 66 11 21 ];
+        %tmp.17 = getv function %tmp.16 :fillCircle;
+        %tmp.18 = lgetv %x;
+        symbol [ x %tmp.18 66 22 23 ];
+        %tmp.19 = 1;
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %y;
+        symbol [ y %tmp.21 66 29 30 ];
+        %tmp.22 = 2;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = 5;
+        invoke %tmp.16 %tmp.17(%tmp.20, %tmp.23, %tmp.24);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 67 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 67 8 10 ];
+        symbol [ fillCircle %tmp.26 67 11 21 ];
+        %tmp.26 = getv function %tmp.25 :fillCircle;
+        %tmp.27 = lgetv %x;
+        symbol [ x %tmp.27 67 22 23 ];
+        %tmp.28 = 5;
+        %tmp.29 = add %tmp.27 %tmp.28;
+        %tmp.30 = lgetv %y;
+        symbol [ y %tmp.30 67 29 30 ];
+        %tmp.31 = 2;
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = 4;
+        invoke %tmp.25 %tmp.26(%tmp.29, %tmp.32, %tmp.33);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 68 8 ]
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 68 8 10 ];
+        symbol [ fillRectangle %tmp.35 68 11 24 ];
+        %tmp.35 = getv function %tmp.34 :fillRectangle;
+        %tmp.36 = lgetv %x;
+        symbol [ x %tmp.36 68 25 26 ];
+        %tmp.37 = 6;
+        %tmp.38 = sub %tmp.36 %tmp.37;
+        %tmp.39 = lgetv %y;
+        symbol [ y %tmp.39 68 32 33 ];
+        %tmp.40 = 2;
+        %tmp.41 = add %tmp.39 %tmp.40;
+        %tmp.42 = 13;
+        %tmp.43 = 4;
+        invoke %tmp.34 %tmp.35(%tmp.38, %tmp.41, %tmp.42, %tmp.43);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_63_67_69_4_stop:
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 72; @symbol_functiondef = [draw,72,13,17]; @symbol_param<0> = [dc,72,18,20]; @symbol_param<0>_type<0> = [Dc,72,24,26]; @symbol_param<1> = [x,72,28,29]; @symbol_param<1>_type<0> = [Number,72,33,39]; @symbol_param<2> = [y,72,41,42]; @symbol_param<2>_type<0> = [Number,72,46,52]; @symbol_param<3> = [kind,72,54,58]; @symbol_param<3>_type<0> = [Number,72,62,68]; ]
+    function draw(dc as Dc, x as Number, y as Number, kind as Number) as Void {
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_72_78_109_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 73 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 73 8 10 ];
+        symbol [ setColor %tmp.2 73 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 73 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 73 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 73 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 73 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 74 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 74 8 10 ];
+        symbol [ setPenWidth %tmp.8 74 11 22 ];
+        %tmp.8 = getv function %tmp.7 :setPenWidth;
+        %tmp.9 = 2;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 75 8 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_stmt:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_12_75_35_begin:
+        %tmp.10 = lgetv %kind;
+        symbol [ kind %tmp.10 75 12 16 ];
+        symbol [ SUN %tmp.12 75 20 23 ];
+        %tmp.12 = getv ? :SUN;
+        %tmp.13 = eq %tmp.10 %tmp.12;
+        bt %tmp.13 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_true;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_27_75_35_false:
+        %tmp.14 = lgetv %kind;
+        symbol [ kind %tmp.14 75 27 31 ];
+        symbol [ PARTLY %tmp.16 75 35 41 ];
+        %tmp.16 = getv ? :PARTLY;
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        push %tmp.17;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_27_75_35_end:
+        %tmp.18 = phi [%tmp.13 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_12_75_35_begin] [%tmp.17 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_27_75_35_false] [%tmp.18 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_27_75_35_end];
+        bf %tmp.18 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 76 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_start" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_stop" ]
+        %sx.1 = local;
+        symbol [ sx %sx.1 76 16 18 ];
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_begin:
+        %tmp.19 = lgetv %kind;
+        symbol [ kind %tmp.19 76 22 26 ];
+        symbol [ SUN %tmp.21 76 30 33 ];
+        %tmp.21 = getv ? :SUN;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_true:
+        %tmp.23 = lgetv %x;
+        symbol [ x %tmp.23 76 37 38 ];
+        push %tmp.23;
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_else_false:
+        %tmp.24 = lgetv %x;
+        symbol [ x %tmp.24 76 41 42 ];
+        %tmp.25 = 4;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        push %tmp.26;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_end:
+        %tmp.27 = phi [%tmp.22 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_begin] [%tmp.23 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_true] [%tmp.26 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_else_false] [%tmp.27 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_76_21_76_45_end];
+        lputv %sx.1 %tmp.27;
+        symbol [ sx %sx.1 76 16 18 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 77 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_start" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_stop" ]
+        %sy.2 = local;
+        symbol [ sy %sy.2 77 16 18 ];
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_begin:
+        %tmp.28 = lgetv %kind;
+        symbol [ kind %tmp.28 77 22 26 ];
+        symbol [ SUN %tmp.30 77 30 33 ];
+        %tmp.30 = getv ? :SUN;
+        %tmp.31 = eq %tmp.28 %tmp.30;
+        bf %tmp.31 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_true:
+        %tmp.32 = lgetv %y;
+        symbol [ y %tmp.32 77 37 38 ];
+        push %tmp.32;
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_else_false:
+        %tmp.33 = lgetv %y;
+        symbol [ y %tmp.33 77 41 42 ];
+        %tmp.34 = 4;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        push %tmp.35;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_end:
+        %tmp.36 = phi [%tmp.31 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_begin] [%tmp.32 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_true] [%tmp.35 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_else_false] [%tmp.36 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_77_21_77_45_end];
+        lputv %sy.2 %tmp.36;
+        symbol [ sy %sy.2 77 16 18 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 78 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_start" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_stop" ]
+        %r.3 = local;
+        symbol [ r %r.3 78 16 17 ];
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_begin:
+        %tmp.37 = lgetv %kind;
+        symbol [ kind %tmp.37 78 21 25 ];
+        symbol [ SUN %tmp.39 78 29 32 ];
+        %tmp.39 = getv ? :SUN;
+        %tmp.40 = eq %tmp.37 %tmp.39;
+        bf %tmp.40 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_true:
+        %tmp.41 = 4;
+        push %tmp.41;
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_else_false:
+        %tmp.42 = 3;
+        push %tmp.42;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_end:
+        %tmp.43 = phi [%tmp.40 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_begin] [%tmp.41 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_true] [%tmp.42 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_else_false] [%tmp.43 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_78_20_78_40_end];
+        lputv %r.3 %tmp.43;
+        symbol [ r %r.3 78 16 17 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 79 12 ]
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 79 12 14 ];
+        symbol [ fillCircle %tmp.45 79 15 25 ];
+        %tmp.45 = getv function %tmp.44 :fillCircle;
+        %tmp.46 = lgetv %sx.1;
+        symbol [ sx %tmp.46 79 26 28 ];
+        %tmp.47 = lgetv %sy.2;
+        symbol [ sy %tmp.47 79 30 32 ];
+        %tmp.48 = lgetv %r.3;
+        symbol [ r %tmp.48 79 34 35 ];
+        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.47, %tmp.48);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 80 12 ]
+        for @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_test @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_incr @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_init:
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_begin" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 80 21 22 ];
+        %tmp.49 = 0;
+        lputv %i.4 %tmp.49;
+        symbol [ i %i.4 80 21 22 ];
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_test:
+        %tmp.50 = lgetv %i.4;
+        symbol [ i %tmp.50 80 28 29 ];
+        symbol [ RAYS %tmp.52 80 32 36 ];
+        %tmp.52 = getv ? :RAYS;
+        symbol [ size %tmp.53 80 37 41 ];
+        %tmp.53 = getv function %tmp.52 :size;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.55 = lt %tmp.50 %tmp.54;
+        bf %tmp.55 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_begin:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 81 16 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_start" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_stop" ]
+        %dx.5 = local;
+        symbol [ dx %dx.5 81 20 22 ];
+        symbol [ RAYS %tmp.57 81 25 29 ];
+        %tmp.57 = getv ? :RAYS;
+        %tmp.58 = lgetv %i.4;
+        symbol [ i %tmp.58 81 30 31 ];
+        %tmp.59 = agetv %tmp.57 %tmp.58;
+        %tmp.60 = 0;
+        %tmp.61 = agetv %tmp.59 %tmp.60;
+        lputv %dx.5 %tmp.61;
+        symbol [ dx %dx.5 81 20 22 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 82 16 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_start" "C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_stop" ]
+        %dy.6 = local;
+        symbol [ dy %dy.6 82 20 22 ];
+        symbol [ RAYS %tmp.63 82 25 29 ];
+        %tmp.63 = getv ? :RAYS;
+        %tmp.64 = lgetv %i.4;
+        symbol [ i %tmp.64 82 30 31 ];
+        %tmp.65 = agetv %tmp.63 %tmp.64;
+        %tmp.66 = 1;
+        %tmp.67 = agetv %tmp.65 %tmp.66;
+        lputv %dy.6 %tmp.67;
+        symbol [ dy %dy.6 82 20 22 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 83 16 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 83 16 18 ];
+        symbol [ drawLine %tmp.69 83 19 27 ];
+        %tmp.69 = getv function %tmp.68 :drawLine;
+        %tmp.70 = lgetv %sx.1;
+        symbol [ sx %tmp.70 83 28 30 ];
+        %tmp.71 = lgetv %dx.5;
+        symbol [ dx %tmp.71 83 33 35 ];
+        %tmp.72 = lgetv %r.3;
+        symbol [ r %tmp.72 83 39 40 ];
+        %tmp.73 = 2;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = mul %tmp.71 %tmp.74;
+        %tmp.76 = add %tmp.70 %tmp.75;
+        %tmp.77 = lgetv %sy.2;
+        symbol [ sy %tmp.77 83 47 49 ];
+        %tmp.78 = lgetv %dy.6;
+        symbol [ dy %tmp.78 83 52 54 ];
+        %tmp.79 = lgetv %r.3;
+        symbol [ r %tmp.79 83 58 59 ];
+        %tmp.80 = 2;
+        %tmp.81 = add %tmp.79 %tmp.80;
+        %tmp.82 = mul %tmp.78 %tmp.81;
+        %tmp.83 = add %tmp.77 %tmp.82;
+        %tmp.84 = lgetv %sx.1;
+        symbol [ sx %tmp.84 83 66 68 ];
+        %tmp.85 = lgetv %dx.5;
+        symbol [ dx %tmp.85 83 71 73 ];
+        %tmp.86 = lgetv %r.3;
+        symbol [ r %tmp.86 83 77 78 ];
+        %tmp.87 = 4;
+        %tmp.88 = add %tmp.86 %tmp.87;
+        %tmp.89 = mul %tmp.85 %tmp.88;
+        %tmp.90 = add %tmp.84 %tmp.89;
+        %tmp.91 = lgetv %sy.2;
+        symbol [ sy %tmp.91 83 85 87 ];
+        %tmp.92 = lgetv %dy.6;
+        symbol [ dy %tmp.92 83 90 92 ];
+        %tmp.93 = lgetv %r.3;
+        symbol [ r %tmp.93 83 96 97 ];
+        %tmp.94 = 4;
+        %tmp.95 = add %tmp.93 %tmp.94;
+        %tmp.96 = mul %tmp.92 %tmp.95;
+        %tmp.97 = add %tmp.91 %tmp.96;
+        invoke %tmp.68 %tmp.69(%tmp.76, %tmp.83, %tmp.90, %tmp.97);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_50_84_12_stop:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_incr:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 80 ]
+        %tmp.100 = lgetv %i.4;
+        symbol [ i %tmp.100 80 45 46 ];
+        %tmp.101 = add %tmp.100 1;
+        lputv %i.4 %tmp.101;
+        symbol [ i %i.4 80 45 46 ];
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_test;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_80_12_84_12_for_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 85 12 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_12_85_63_if_stmt:
+        %tmp.102 = lgetv %kind;
+        symbol [ kind %tmp.102 85 16 20 ];
+        symbol [ PARTLY %tmp.104 85 24 30 ];
+        %tmp.104 = getv ? :PARTLY;
+        %tmp.105 = eq %tmp.102 %tmp.104;
+        bf %tmp.105 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_12_85_63_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_12_85_63_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_32_85_63_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 85 34 ]
+        %tmp.106 = self;
+        symbol [ drawCloud %tmp.107 85 34 43 ];
+        %tmp.107 = getv function %tmp.106 :drawCloud;
+        %tmp.108 = lgetv %dc;
+        symbol [ dc %tmp.108 85 44 46 ];
+        %tmp.109 = lgetv %x;
+        symbol [ x %tmp.109 85 48 49 ];
+        %tmp.110 = 2;
+        %tmp.111 = add %tmp.109 %tmp.110;
+        %tmp.112 = lgetv %y;
+        symbol [ y %tmp.112 85 55 56 ];
+        %tmp.113 = 3;
+        %tmp.114 = add %tmp.112 %tmp.113;
+        invoke %tmp.106 %tmp.107(%tmp.108, %tmp.111, %tmp.114);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_32_85_63_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_12_85_63_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_85_12_85_63_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_43_86_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 86 15 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_stmt:
+        %tmp.115 = lgetv %kind;
+        symbol [ kind %tmp.115 86 19 23 ];
+        symbol [ CLOUD %tmp.117 86 27 32 ];
+        %tmp.117 = getv ? :CLOUD;
+        %tmp.118 = eq %tmp.115 %tmp.117;
+        bf %tmp.118 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_34_88_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 87 12 ]
+        %tmp.119 = self;
+        symbol [ drawCloud %tmp.120 87 12 21 ];
+        %tmp.120 = getv function %tmp.119 :drawCloud;
+        %tmp.121 = lgetv %dc;
+        symbol [ dc %tmp.121 87 22 24 ];
+        %tmp.122 = lgetv %x;
+        symbol [ x %tmp.122 87 26 27 ];
+        %tmp.123 = lgetv %y;
+        symbol [ y %tmp.123 87 29 30 ];
+        %tmp.124 = 1;
+        %tmp.125 = add %tmp.123 %tmp.124;
+        invoke %tmp.119 %tmp.120(%tmp.121, %tmp.122, %tmp.125);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_34_88_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 88 15 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_stmt:
+        %tmp.126 = lgetv %kind;
+        symbol [ kind %tmp.126 88 19 23 ];
+        symbol [ RAIN %tmp.128 88 27 31 ];
+        %tmp.128 = getv ? :RAIN;
+        %tmp.129 = eq %tmp.126 %tmp.128;
+        bf %tmp.129 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_33_93_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 89 12 ]
+        %tmp.130 = self;
+        symbol [ drawCloud %tmp.131 89 12 21 ];
+        %tmp.131 = getv function %tmp.130 :drawCloud;
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 89 22 24 ];
+        %tmp.133 = lgetv %x;
+        symbol [ x %tmp.133 89 26 27 ];
+        %tmp.134 = lgetv %y;
+        symbol [ y %tmp.134 89 29 30 ];
+        %tmp.135 = 3;
+        %tmp.136 = sub %tmp.134 %tmp.135;
+        invoke %tmp.130 %tmp.131(%tmp.132, %tmp.133, %tmp.136);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 90 12 ]
+        %tmp.137 = lgetv %dc;
+        symbol [ dc %tmp.137 90 12 14 ];
+        symbol [ drawLine %tmp.138 90 15 23 ];
+        %tmp.138 = getv function %tmp.137 :drawLine;
+        %tmp.139 = lgetv %x;
+        symbol [ x %tmp.139 90 24 25 ];
+        %tmp.140 = 4;
+        %tmp.141 = sub %tmp.139 %tmp.140;
+        %tmp.142 = lgetv %y;
+        symbol [ y %tmp.142 90 31 32 ];
+        %tmp.143 = 4;
+        %tmp.144 = add %tmp.142 %tmp.143;
+        %tmp.145 = lgetv %x;
+        symbol [ x %tmp.145 90 38 39 ];
+        %tmp.146 = 5;
+        %tmp.147 = sub %tmp.145 %tmp.146;
+        %tmp.148 = lgetv %y;
+        symbol [ y %tmp.148 90 45 46 ];
+        %tmp.149 = 8;
+        %tmp.150 = add %tmp.148 %tmp.149;
+        invoke %tmp.137 %tmp.138(%tmp.141, %tmp.144, %tmp.147, %tmp.150);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 91 12 ]
+        %tmp.151 = lgetv %dc;
+        symbol [ dc %tmp.151 91 12 14 ];
+        symbol [ drawLine %tmp.152 91 15 23 ];
+        %tmp.152 = getv function %tmp.151 :drawLine;
+        %tmp.153 = lgetv %x;
+        symbol [ x %tmp.153 91 24 25 ];
+        %tmp.154 = lgetv %y;
+        symbol [ y %tmp.154 91 27 28 ];
+        %tmp.155 = 4;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        %tmp.157 = lgetv %x;
+        symbol [ x %tmp.157 91 34 35 ];
+        %tmp.158 = 1;
+        %tmp.159 = sub %tmp.157 %tmp.158;
+        %tmp.160 = lgetv %y;
+        symbol [ y %tmp.160 91 41 42 ];
+        %tmp.161 = 8;
+        %tmp.162 = add %tmp.160 %tmp.161;
+        invoke %tmp.151 %tmp.152(%tmp.153, %tmp.156, %tmp.159, %tmp.162);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 92 12 ]
+        %tmp.163 = lgetv %dc;
+        symbol [ dc %tmp.163 92 12 14 ];
+        symbol [ drawLine %tmp.164 92 15 23 ];
+        %tmp.164 = getv function %tmp.163 :drawLine;
+        %tmp.165 = lgetv %x;
+        symbol [ x %tmp.165 92 24 25 ];
+        %tmp.166 = 4;
+        %tmp.167 = add %tmp.165 %tmp.166;
+        %tmp.168 = lgetv %y;
+        symbol [ y %tmp.168 92 31 32 ];
+        %tmp.169 = 4;
+        %tmp.170 = add %tmp.168 %tmp.169;
+        %tmp.171 = lgetv %x;
+        symbol [ x %tmp.171 92 38 39 ];
+        %tmp.172 = 3;
+        %tmp.173 = add %tmp.171 %tmp.172;
+        %tmp.174 = lgetv %y;
+        symbol [ y %tmp.174 92 45 46 ];
+        %tmp.175 = 8;
+        %tmp.176 = add %tmp.174 %tmp.175;
+        invoke %tmp.163 %tmp.164(%tmp.167, %tmp.170, %tmp.173, %tmp.176);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_33_93_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 93 15 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_stmt:
+        %tmp.177 = lgetv %kind;
+        symbol [ kind %tmp.177 93 19 23 ];
+        symbol [ SNOW %tmp.179 93 27 31 ];
+        %tmp.179 = getv ? :SNOW;
+        %tmp.180 = eq %tmp.177 %tmp.179;
+        bf %tmp.180 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_33_98_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 94 12 ]
+        %tmp.181 = self;
+        symbol [ drawCloud %tmp.182 94 12 21 ];
+        %tmp.182 = getv function %tmp.181 :drawCloud;
+        %tmp.183 = lgetv %dc;
+        symbol [ dc %tmp.183 94 22 24 ];
+        %tmp.184 = lgetv %x;
+        symbol [ x %tmp.184 94 26 27 ];
+        %tmp.185 = lgetv %y;
+        symbol [ y %tmp.185 94 29 30 ];
+        %tmp.186 = 3;
+        %tmp.187 = sub %tmp.185 %tmp.186;
+        invoke %tmp.181 %tmp.182(%tmp.183, %tmp.184, %tmp.187);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 95 12 ]
+        %tmp.188 = lgetv %dc;
+        symbol [ dc %tmp.188 95 12 14 ];
+        symbol [ fillCircle %tmp.189 95 15 25 ];
+        %tmp.189 = getv function %tmp.188 :fillCircle;
+        %tmp.190 = lgetv %x;
+        symbol [ x %tmp.190 95 26 27 ];
+        %tmp.191 = 4;
+        %tmp.192 = sub %tmp.190 %tmp.191;
+        %tmp.193 = lgetv %y;
+        symbol [ y %tmp.193 95 33 34 ];
+        %tmp.194 = 6;
+        %tmp.195 = add %tmp.193 %tmp.194;
+        %tmp.196 = 1;
+        invoke %tmp.188 %tmp.189(%tmp.192, %tmp.195, %tmp.196);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 96 12 ]
+        %tmp.197 = lgetv %dc;
+        symbol [ dc %tmp.197 96 12 14 ];
+        symbol [ fillCircle %tmp.198 96 15 25 ];
+        %tmp.198 = getv function %tmp.197 :fillCircle;
+        %tmp.199 = lgetv %x;
+        symbol [ x %tmp.199 96 26 27 ];
+        %tmp.200 = lgetv %y;
+        symbol [ y %tmp.200 96 29 30 ];
+        %tmp.201 = 8;
+        %tmp.202 = add %tmp.200 %tmp.201;
+        %tmp.203 = 1;
+        invoke %tmp.197 %tmp.198(%tmp.199, %tmp.202, %tmp.203);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 97 12 ]
+        %tmp.204 = lgetv %dc;
+        symbol [ dc %tmp.204 97 12 14 ];
+        symbol [ fillCircle %tmp.205 97 15 25 ];
+        %tmp.205 = getv function %tmp.204 :fillCircle;
+        %tmp.206 = lgetv %x;
+        symbol [ x %tmp.206 97 26 27 ];
+        %tmp.207 = 4;
+        %tmp.208 = add %tmp.206 %tmp.207;
+        %tmp.209 = lgetv %y;
+        symbol [ y %tmp.209 97 33 34 ];
+        %tmp.210 = 6;
+        %tmp.211 = add %tmp.209 %tmp.210;
+        %tmp.212 = 1;
+        invoke %tmp.204 %tmp.205(%tmp.208, %tmp.211, %tmp.212);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_33_98_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_false:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 98 15 ]
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_stmt:
+        %tmp.213 = lgetv %kind;
+        symbol [ kind %tmp.213 98 19 23 ];
+        symbol [ STORM %tmp.215 98 27 32 ];
+        %tmp.215 = getv ? :STORM;
+        %tmp.216 = eq %tmp.213 %tmp.215;
+        bf %tmp.216 @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_else_false;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_34_103_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 99 12 ]
+        %tmp.217 = self;
+        symbol [ drawCloud %tmp.218 99 12 21 ];
+        %tmp.218 = getv function %tmp.217 :drawCloud;
+        %tmp.219 = lgetv %dc;
+        symbol [ dc %tmp.219 99 22 24 ];
+        %tmp.220 = lgetv %x;
+        symbol [ x %tmp.220 99 26 27 ];
+        %tmp.221 = lgetv %y;
+        symbol [ y %tmp.221 99 29 30 ];
+        %tmp.222 = 3;
+        %tmp.223 = sub %tmp.221 %tmp.222;
+        invoke %tmp.217 %tmp.218(%tmp.219, %tmp.220, %tmp.223);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 100 12 ]
+        %tmp.224 = lgetv %dc;
+        symbol [ dc %tmp.224 100 12 14 ];
+        symbol [ drawLine %tmp.225 100 15 23 ];
+        %tmp.225 = getv function %tmp.224 :drawLine;
+        %tmp.226 = lgetv %x;
+        symbol [ x %tmp.226 100 24 25 ];
+        %tmp.227 = 1;
+        %tmp.228 = add %tmp.226 %tmp.227;
+        %tmp.229 = lgetv %y;
+        symbol [ y %tmp.229 100 31 32 ];
+        %tmp.230 = 3;
+        %tmp.231 = add %tmp.229 %tmp.230;
+        %tmp.232 = lgetv %x;
+        symbol [ x %tmp.232 100 38 39 ];
+        %tmp.233 = 2;
+        %tmp.234 = sub %tmp.232 %tmp.233;
+        %tmp.235 = lgetv %y;
+        symbol [ y %tmp.235 100 45 46 ];
+        %tmp.236 = 6;
+        %tmp.237 = add %tmp.235 %tmp.236;
+        invoke %tmp.224 %tmp.225(%tmp.228, %tmp.231, %tmp.234, %tmp.237);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 101 12 ]
+        %tmp.238 = lgetv %dc;
+        symbol [ dc %tmp.238 101 12 14 ];
+        symbol [ drawLine %tmp.239 101 15 23 ];
+        %tmp.239 = getv function %tmp.238 :drawLine;
+        %tmp.240 = lgetv %x;
+        symbol [ x %tmp.240 101 24 25 ];
+        %tmp.241 = 2;
+        %tmp.242 = sub %tmp.240 %tmp.241;
+        %tmp.243 = lgetv %y;
+        symbol [ y %tmp.243 101 31 32 ];
+        %tmp.244 = 6;
+        %tmp.245 = add %tmp.243 %tmp.244;
+        %tmp.246 = lgetv %x;
+        symbol [ x %tmp.246 101 38 39 ];
+        %tmp.247 = 2;
+        %tmp.248 = add %tmp.246 %tmp.247;
+        %tmp.249 = lgetv %y;
+        symbol [ y %tmp.249 101 45 46 ];
+        %tmp.250 = 6;
+        %tmp.251 = add %tmp.249 %tmp.250;
+        invoke %tmp.238 %tmp.239(%tmp.242, %tmp.245, %tmp.248, %tmp.251);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 102 12 ]
+        %tmp.252 = lgetv %dc;
+        symbol [ dc %tmp.252 102 12 14 ];
+        symbol [ drawLine %tmp.253 102 15 23 ];
+        %tmp.253 = getv function %tmp.252 :drawLine;
+        %tmp.254 = lgetv %x;
+        symbol [ x %tmp.254 102 24 25 ];
+        %tmp.255 = 2;
+        %tmp.256 = add %tmp.254 %tmp.255;
+        %tmp.257 = lgetv %y;
+        symbol [ y %tmp.257 102 31 32 ];
+        %tmp.258 = 6;
+        %tmp.259 = add %tmp.257 %tmp.258;
+        %tmp.260 = lgetv %x;
+        symbol [ x %tmp.260 102 38 39 ];
+        %tmp.261 = 1;
+        %tmp.262 = sub %tmp.260 %tmp.261;
+        %tmp.263 = lgetv %y;
+        symbol [ y %tmp.263 102 45 46 ];
+        %tmp.264 = 10;
+        %tmp.265 = add %tmp.263 %tmp.264;
+        invoke %tmp.252 %tmp.253(%tmp.256, %tmp.259, %tmp.262, %tmp.265);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_34_103_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_else_false:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_103_15_107_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 104 12 ]
+        %tmp.266 = lgetv %dc;
+        symbol [ dc %tmp.266 104 12 14 ];
+        symbol [ drawLine %tmp.267 104 15 23 ];
+        %tmp.267 = getv function %tmp.266 :drawLine;
+        %tmp.268 = lgetv %x;
+        symbol [ x %tmp.268 104 24 25 ];
+        %tmp.269 = 7;
+        %tmp.270 = sub %tmp.268 %tmp.269;
+        %tmp.271 = lgetv %y;
+        symbol [ y %tmp.271 104 31 32 ];
+        %tmp.272 = 4;
+        %tmp.273 = sub %tmp.271 %tmp.272;
+        %tmp.274 = lgetv %x;
+        symbol [ x %tmp.274 104 38 39 ];
+        %tmp.275 = 7;
+        %tmp.276 = add %tmp.274 %tmp.275;
+        %tmp.277 = lgetv %y;
+        symbol [ y %tmp.277 104 45 46 ];
+        %tmp.278 = 4;
+        %tmp.279 = sub %tmp.277 %tmp.278;
+        invoke %tmp.266 %tmp.267(%tmp.270, %tmp.273, %tmp.276, %tmp.279);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 105 12 ]
+        %tmp.280 = lgetv %dc;
+        symbol [ dc %tmp.280 105 12 14 ];
+        symbol [ drawLine %tmp.281 105 15 23 ];
+        %tmp.281 = getv function %tmp.280 :drawLine;
+        %tmp.282 = lgetv %x;
+        symbol [ x %tmp.282 105 24 25 ];
+        %tmp.283 = 7;
+        %tmp.284 = sub %tmp.282 %tmp.283;
+        %tmp.285 = lgetv %y;
+        symbol [ y %tmp.285 105 31 32 ];
+        %tmp.286 = lgetv %x;
+        symbol [ x %tmp.286 105 34 35 ];
+        %tmp.287 = 7;
+        %tmp.288 = add %tmp.286 %tmp.287;
+        %tmp.289 = lgetv %y;
+        symbol [ y %tmp.289 105 41 42 ];
+        invoke %tmp.280 %tmp.281(%tmp.284, %tmp.285, %tmp.288, %tmp.289);
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 106 12 ]
+        %tmp.290 = lgetv %dc;
+        symbol [ dc %tmp.290 106 12 14 ];
+        symbol [ drawLine %tmp.291 106 15 23 ];
+        %tmp.291 = getv function %tmp.290 :drawLine;
+        %tmp.292 = lgetv %x;
+        symbol [ x %tmp.292 106 24 25 ];
+        %tmp.293 = 7;
+        %tmp.294 = sub %tmp.292 %tmp.293;
+        %tmp.295 = lgetv %y;
+        symbol [ y %tmp.295 106 31 32 ];
+        %tmp.296 = 4;
+        %tmp.297 = add %tmp.295 %tmp.296;
+        %tmp.298 = lgetv %x;
+        symbol [ x %tmp.298 106 38 39 ];
+        %tmp.299 = 7;
+        %tmp.300 = add %tmp.298 %tmp.299;
+        %tmp.301 = lgetv %y;
+        symbol [ y %tmp.301 106 45 46 ];
+        %tmp.302 = 4;
+        %tmp.303 = add %tmp.301 %tmp.302;
+        invoke %tmp.290 %tmp.291(%tmp.294, %tmp.297, %tmp.300, %tmp.303);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_103_15_107_8_stop:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_98_15_107_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_93_15_107_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_88_15_107_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_86_15_107_8_if_end:
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_75_8_107_8_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc" 108 8 ]
+        %tmp.304 = lgetv %dc;
+        symbol [ dc %tmp.304 108 8 10 ];
+        symbol [ setPenWidth %tmp.305 108 11 22 ];
+        %tmp.305 = getv function %tmp.304 :setPenWidth;
+        %tmp.306 = 1;
+        invoke %tmp.304 %tmp.305(%tmp.306);
+C__Users_manon_cedric_poke_watch_face_source_view_WxIcon_mc_72_78_109_4_stop:
+    }
+}
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\view\WxIcon.mc"; @line = 1; ]
+<init> {
+}

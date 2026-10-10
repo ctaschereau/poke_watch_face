@@ -13,7 +13,7 @@ class StepsPanel {
     hidden const BAR_CENTER_Y = 138;   // centre y of the bar
     hidden const BAR_H = 12;
     hidden const BAR_RIGHT = 162;      // right end of the bar
-    hidden const BAR_ORIGIN_X = 6;     // see layout()
+    hidden const BAR_X = 74;           // left end of the bar (room for a 3-digit heart rate in the big font)
     hidden const BAR_PEN = 2;          // outline thickness
     hidden const BAR_INSET = 3;        // gap between the outline and the fill
     // ---- "steps/goal" numbers under the bar ----
@@ -23,10 +23,9 @@ class StepsPanel {
     hidden const STEPS_DIVISOR = 100;  // shown steps and goal are divided by this (the bar still shows the real progress)
     hidden const DEFAULT_GOAL = 10000; // if the watch reports no step goal
     // ---- heart rate (icon + number), left of the bar ----
-    hidden const HR_LEFT = 6;          // the number must start right of this, else the small font is used
     hidden const HEART_W = 14;         // width of resources/drawables/heart.png
     hidden const HEART_H = 12;         // height of resources/drawables/heart.png
-    hidden const HEART_BAR_GAP = 6;    // gap between the heart icon and the bar
+    hidden const HEART_BAR_GAP = 4;    // gap between the heart icon and the bar
     hidden const HR_GAP = 3;           // gap between the number and the heart icon
     // ---- frame: line under the steps, arrow on the left, vertical line on the right ----
     hidden const FRAME_LEFT = 45;      // left end of the bottom line (arrow included)
@@ -35,17 +34,9 @@ class StepsPanel {
     hidden const FRAME_LINE_Y = 168;   // top of the bottom line (3px: 168-170)
 
     hidden var _assets as Assets;
-    hidden var _barX as Number = 0;    // left end of the bar, set in layout()
 
     function initialize(assets as Assets) {
         _assets = assets;
-    }
-
-    // call from onLayout (needs a Dc)
-    function layout(dc as Dc) as Void {
-        // The bar starts where the "STEPS:" label used to end (the label is no longer drawn).
-        // Once you know the resulting x in the simulator you can replace this by a plain constant.
-        _barX = BAR_ORIGIN_X + dc.getTextWidthInPixels("STEPS:", Graphics.FONT_XTINY) + 4;
     }
 
     function draw(dc as Dc) as Void {
@@ -75,11 +66,11 @@ class StepsPanel {
 
     // rounded outline with a fill inset inside it
     hidden function drawBar(dc as Dc, frac as Float) as Void {
-        var barW = BAR_RIGHT - _barX;
+        var barW = BAR_RIGHT - BAR_X;
         var barTop = BAR_CENTER_Y - BAR_H / 2;
 
         dc.setPenWidth(BAR_PEN);
-        dc.drawRoundedRectangle(_barX, barTop, barW, BAR_H, BAR_H / 2);
+        dc.drawRoundedRectangle(BAR_X, barTop, barW, BAR_H, BAR_H / 2);
         dc.setPenWidth(1);
 
         var innerW = barW - 2 * BAR_INSET;
@@ -90,7 +81,7 @@ class StepsPanel {
             if (fillW < 2 * radius) {
                 radius = fillW / 2;
             }
-            dc.fillRoundedRectangle(_barX + BAR_INSET, barTop + BAR_INSET, fillW, fillH, radius);
+            dc.fillRoundedRectangle(BAR_X + BAR_INSET, barTop + BAR_INSET, fillW, fillH, radius);
         }
     }
 
@@ -119,17 +110,16 @@ class StepsPanel {
         return null;
     }
 
-    // number + heart icon, vertically centred on the bar. The number is right-aligned against the icon;
-    // everything must fit between HR_LEFT and the bar, so 3-digit values drop to the small font.
+    // number + heart icon, vertically centred on the bar. The number is right-aligned against the icon, always in
+    // the big font: BAR_X leaves room for 3 digits (3 x 16 px) between the battery bar and the icon.
     hidden function drawHeartRate(dc as Dc) as Void {
         var hr = currentHeartRate();
         var text = (hr != null) ? hr.format("%d") : "--";
-        var iconLeft = _barX - HEART_W - HEART_BAR_GAP;
+        var iconLeft = BAR_X - HEART_W - HEART_BAR_GAP;
         var textRight = iconLeft - HR_GAP;
-        var font = _assets.fitStepFont(dc, text, textRight - HR_LEFT);
 
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(textRight, BAR_CENTER_Y, font, text,
+        dc.drawText(textRight, BAR_CENTER_Y, _assets.stepFont, text,
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.drawBitmap(iconLeft, BAR_CENTER_Y - HEART_H / 2, _assets.heartIcon);
     }

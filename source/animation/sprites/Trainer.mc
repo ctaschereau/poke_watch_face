@@ -1,13 +1,17 @@
 import Toybox.Graphics;
 import Toybox.Lang;
 
-// The Pokemon trainer, 16x16 monochrome. Each sprite is 16 row masks; bit 15 = leftmost pixel,
+// The Pokemon trainer, 32x32 on screen: the original 16x16 monochrome sprites drawn at 2x (nearest neighbour,
+// so every sprite pixel becomes a 2x2 block). Each sprite is 16 row masks; bit 15 = leftmost pixel,
 // a set bit = black pixel (white / transparent pixels are simply not drawn, the face background is white).
 // Walking while the watch is awake (the two walk frames alternate each second),
 // fishing while it sleeps.
 module Trainer {
 
-    const SIZE = 16;
+    const SIZE = 32;          // size on screen
+    const SPRITE = 16;        // size of the sprite data below
+    const SCALE = 2;          // SIZE / SPRITE
+    const RIGHT_BLANK = 4;    // empty pixels at the right of the 32x32 box (sprite columns 14-15 are never used)
 
     // walk frame 1
     const WALK_A as Array<Number> = [
@@ -76,16 +80,16 @@ module Trainer {
             sprite = (tick % 2 == 0) ? WALK_A : WALK_B;
         }
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        for (var row = 0; row < SIZE; row++) {
+        for (var row = 0; row < SPRITE; row++) {
             var bits = sprite[row];
             var col = 0;
-            while (col < SIZE) {
+            while (col < SPRITE) {
                 if ((bits & (0x8000 >> col)) != 0) {
                     var start = col;                       // horizontal run of black pixels -> one rectangle
-                    while (col < SIZE && (bits & (0x8000 >> col)) != 0) {
+                    while (col < SPRITE && (bits & (0x8000 >> col)) != 0) {
                         col++;
                     }
-                    dc.fillRectangle(x + start, y + row, col - start, 1);
+                    dc.fillRectangle(x + start * SCALE, y + row * SCALE, (col - start) * SCALE, SCALE);
                 } else {
                     col++;
                 }

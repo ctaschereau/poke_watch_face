@@ -1,0 +1,457 @@
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 4; @symbol_moduledef = [Squirtle,4,7,15]; ]
+module Squirtle {
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 6; @symbol_functiondef = [draw,6,13,17]; @symbol_param<0> = [dc,6,18,20]; @symbol_param<0>_type<0> = [Dc,6,24,26]; @symbol_param<1> = [px,6,28,30]; @symbol_param<1>_type<0> = [Number,6,34,40]; @symbol_param<2> = [py,6,42,44]; @symbol_param<2>_type<0> = [Number,6,48,54]; @symbol_param<3> = [look,6,56,60]; @symbol_param<3>_type<0> = [Number,6,64,70]; @symbol_param<4> = [tick,6,72,76]; @symbol_param<4>_type<0> = [Number,6,80,86]; ]
+    function draw(dc as Dc, px as Number, py as Number, look as Number, tick as Number) as Void {
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 7 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_stop" ]
+        %ox.1 = local;
+        symbol [ ox %ox.1 7 12 14 ];
+        %tmp.1 = lgetv %look;
+        symbol [ look %tmp.1 7 17 21 ];
+        %tmp.2 = 5;
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        lputv %ox.1 %tmp.3;
+        symbol [ ox %ox.1 7 12 14 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 8 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_stop" ]
+        %black.2 = local;
+        symbol [ black %black.2 8 12 17 ];
+        symbol [ Graphics %tmp.4 8 20 28 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.5 8 29 40 ];
+        %tmp.5 = getv %tmp.4 :COLOR_BLACK;
+        lputv %black.2 %tmp.5;
+        symbol [ black %black.2 8 12 17 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 9 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_stop" ]
+        %blink.3 = local;
+        symbol [ blink %blink.3 9 12 17 ];
+        %tmp.6 = lgetv %tick;
+        symbol [ tick %tmp.6 9 21 25 ];
+        %tmp.7 = 3;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        lputv %blink.3 %tmp.8;
+        symbol [ blink %blink.3 9 12 17 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 12 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 12 8 10 ];
+        symbol [ setColor %tmp.10 12 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        %tmp.11 = lgetv %black.2;
+        symbol [ black %tmp.11 12 20 25 ];
+        symbol [ Graphics %tmp.12 12 27 35 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.13 12 36 53 ];
+        %tmp.13 = getv %tmp.12 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 13 8 ]
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 13 8 10 ];
+        symbol [ setPenWidth %tmp.15 13 11 22 ];
+        %tmp.15 = getv function %tmp.14 :setPenWidth;
+        %tmp.16 = 4;
+        invoke %tmp.14 %tmp.15(%tmp.16);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 14 8 ]
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 14 8 10 ];
+        symbol [ drawArc %tmp.18 14 11 18 ];
+        %tmp.18 = getv function %tmp.17 :drawArc;
+        %tmp.19 = lgetv %px;
+        symbol [ px %tmp.19 14 19 21 ];
+        %tmp.20 = 30;
+        %tmp.21 = add %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %py;
+        symbol [ py %tmp.22 14 28 30 ];
+        %tmp.23 = 36;
+        %tmp.24 = add %tmp.22 %tmp.23;
+        %tmp.25 = 9;
+        symbol [ Graphics %tmp.26 14 40 48 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.27 14 49 70 ];
+        %tmp.27 = getv %tmp.26 :ARC_COUNTER_CLOCKWISE;
+        %tmp.28 = 90;
+        %tmp.29 = 340;
+        invoke %tmp.17 %tmp.18(%tmp.21, %tmp.24, %tmp.25, %tmp.27, %tmp.28, %tmp.29);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 15 8 ]
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 15 8 10 ];
+        symbol [ setPenWidth %tmp.31 15 11 22 ];
+        %tmp.31 = getv function %tmp.30 :setPenWidth;
+        %tmp.32 = 2;
+        invoke %tmp.30 %tmp.31(%tmp.32);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 18 8 ]
+        symbol [ Gfx %tmp.34 18 8 11 ];
+        %tmp.34 = getv ? :Gfx;
+        symbol [ blob %tmp.35 18 12 16 ];
+        %tmp.35 = getv function %tmp.34 :blob;
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 18 17 19 ];
+        %tmp.37 = lgetv %px;
+        symbol [ px %tmp.37 18 21 23 ];
+        %tmp.38 = 12;
+        %tmp.39 = sub %tmp.37 %tmp.38;
+        %tmp.40 = lgetv %py;
+        symbol [ py %tmp.40 18 30 32 ];
+        %tmp.41 = 50;
+        %tmp.42 = add %tmp.40 %tmp.41;
+        %tmp.43 = 9;
+        %tmp.44 = 4;
+        invoke %tmp.34 %tmp.35(%tmp.36, %tmp.39, %tmp.42, %tmp.43, %tmp.44);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 19 8 ]
+        symbol [ Gfx %tmp.46 19 8 11 ];
+        %tmp.46 = getv ? :Gfx;
+        symbol [ blob %tmp.47 19 12 16 ];
+        %tmp.47 = getv function %tmp.46 :blob;
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 19 17 19 ];
+        %tmp.49 = lgetv %px;
+        symbol [ px %tmp.49 19 21 23 ];
+        %tmp.50 = 12;
+        %tmp.51 = add %tmp.49 %tmp.50;
+        %tmp.52 = lgetv %py;
+        symbol [ py %tmp.52 19 30 32 ];
+        %tmp.53 = 50;
+        %tmp.54 = add %tmp.52 %tmp.53;
+        %tmp.55 = 9;
+        %tmp.56 = 4;
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.51, %tmp.54, %tmp.55, %tmp.56);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 20 8 ]
+        %tmp.57 = lgetv %dc;
+        symbol [ dc %tmp.57 20 8 10 ];
+        symbol [ setColor %tmp.58 20 11 19 ];
+        %tmp.58 = getv function %tmp.57 :setColor;
+        %tmp.59 = lgetv %black.2;
+        symbol [ black %tmp.59 20 20 25 ];
+        symbol [ Graphics %tmp.60 20 27 35 ];
+        %tmp.60 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.61 20 36 53 ];
+        %tmp.61 = getv %tmp.60 :COLOR_TRANSPARENT;
+        invoke %tmp.57 %tmp.58(%tmp.59, %tmp.61);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 21 8 ]
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 21 8 10 ];
+        symbol [ fillEllipse %tmp.63 21 11 22 ];
+        %tmp.63 = getv function %tmp.62 :fillEllipse;
+        %tmp.64 = lgetv %px;
+        symbol [ px %tmp.64 21 23 25 ];
+        %tmp.65 = lgetv %py;
+        symbol [ py %tmp.65 21 27 29 ];
+        %tmp.66 = 30;
+        %tmp.67 = add %tmp.65 %tmp.66;
+        %tmp.68 = 26;
+        %tmp.69 = 22;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.67, %tmp.68, %tmp.69);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 22 8 ]
+        symbol [ Gfx %tmp.71 22 8 11 ];
+        %tmp.71 = getv ? :Gfx;
+        symbol [ blob %tmp.72 22 12 16 ];
+        %tmp.72 = getv function %tmp.71 :blob;
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 22 17 19 ];
+        %tmp.74 = lgetv %px;
+        symbol [ px %tmp.74 22 21 23 ];
+        %tmp.75 = lgetv %py;
+        symbol [ py %tmp.75 22 25 27 ];
+        %tmp.76 = 32;
+        %tmp.77 = add %tmp.75 %tmp.76;
+        %tmp.78 = 17;
+        %tmp.79 = 18;
+        invoke %tmp.71 %tmp.72(%tmp.73, %tmp.74, %tmp.77, %tmp.78, %tmp.79);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 23 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 23 8 10 ];
+        symbol [ setPenWidth %tmp.81 23 11 22 ];
+        %tmp.81 = getv function %tmp.80 :setPenWidth;
+        %tmp.82 = 1;
+        invoke %tmp.80 %tmp.81(%tmp.82);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 24 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 24 8 10 ];
+        symbol [ drawLine %tmp.84 24 11 19 ];
+        %tmp.84 = getv function %tmp.83 :drawLine;
+        %tmp.85 = lgetv %px;
+        symbol [ px %tmp.85 24 20 22 ];
+        %tmp.86 = 14;
+        %tmp.87 = sub %tmp.85 %tmp.86;
+        %tmp.88 = lgetv %py;
+        symbol [ py %tmp.88 24 29 31 ];
+        %tmp.89 = 26;
+        %tmp.90 = add %tmp.88 %tmp.89;
+        %tmp.91 = lgetv %px;
+        symbol [ px %tmp.91 24 38 40 ];
+        %tmp.92 = 14;
+        %tmp.93 = add %tmp.91 %tmp.92;
+        %tmp.94 = lgetv %py;
+        symbol [ py %tmp.94 24 47 49 ];
+        %tmp.95 = 26;
+        %tmp.96 = add %tmp.94 %tmp.95;
+        invoke %tmp.83 %tmp.84(%tmp.87, %tmp.90, %tmp.93, %tmp.96);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 25 8 ]
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 25 8 10 ];
+        symbol [ drawLine %tmp.98 25 11 19 ];
+        %tmp.98 = getv function %tmp.97 :drawLine;
+        %tmp.99 = lgetv %px;
+        symbol [ px %tmp.99 25 20 22 ];
+        %tmp.100 = 16;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        %tmp.102 = lgetv %py;
+        symbol [ py %tmp.102 25 29 31 ];
+        %tmp.103 = 32;
+        %tmp.104 = add %tmp.102 %tmp.103;
+        %tmp.105 = lgetv %px;
+        symbol [ px %tmp.105 25 38 40 ];
+        %tmp.106 = 16;
+        %tmp.107 = add %tmp.105 %tmp.106;
+        %tmp.108 = lgetv %py;
+        symbol [ py %tmp.108 25 47 49 ];
+        %tmp.109 = 32;
+        %tmp.110 = add %tmp.108 %tmp.109;
+        invoke %tmp.97 %tmp.98(%tmp.101, %tmp.104, %tmp.107, %tmp.110);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 26 8 ]
+        %tmp.111 = lgetv %dc;
+        symbol [ dc %tmp.111 26 8 10 ];
+        symbol [ drawLine %tmp.112 26 11 19 ];
+        %tmp.112 = getv function %tmp.111 :drawLine;
+        %tmp.113 = lgetv %px;
+        symbol [ px %tmp.113 26 20 22 ];
+        %tmp.114 = 14;
+        %tmp.115 = sub %tmp.113 %tmp.114;
+        %tmp.116 = lgetv %py;
+        symbol [ py %tmp.116 26 29 31 ];
+        %tmp.117 = 38;
+        %tmp.118 = add %tmp.116 %tmp.117;
+        %tmp.119 = lgetv %px;
+        symbol [ px %tmp.119 26 38 40 ];
+        %tmp.120 = 14;
+        %tmp.121 = add %tmp.119 %tmp.120;
+        %tmp.122 = lgetv %py;
+        symbol [ py %tmp.122 26 47 49 ];
+        %tmp.123 = 38;
+        %tmp.124 = add %tmp.122 %tmp.123;
+        invoke %tmp.111 %tmp.112(%tmp.115, %tmp.118, %tmp.121, %tmp.124);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 27 8 ]
+        %tmp.125 = lgetv %dc;
+        symbol [ dc %tmp.125 27 8 10 ];
+        symbol [ drawLine %tmp.126 27 11 19 ];
+        %tmp.126 = getv function %tmp.125 :drawLine;
+        %tmp.127 = lgetv %px;
+        symbol [ px %tmp.127 27 20 22 ];
+        %tmp.128 = lgetv %py;
+        symbol [ py %tmp.128 27 24 26 ];
+        %tmp.129 = 20;
+        %tmp.130 = add %tmp.128 %tmp.129;
+        %tmp.131 = lgetv %px;
+        symbol [ px %tmp.131 27 33 35 ];
+        %tmp.132 = lgetv %py;
+        symbol [ py %tmp.132 27 37 39 ];
+        %tmp.133 = 44;
+        %tmp.134 = add %tmp.132 %tmp.133;
+        invoke %tmp.125 %tmp.126(%tmp.127, %tmp.130, %tmp.131, %tmp.134);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 28 8 ]
+        %tmp.135 = lgetv %dc;
+        symbol [ dc %tmp.135 28 8 10 ];
+        symbol [ setPenWidth %tmp.136 28 11 22 ];
+        %tmp.136 = getv function %tmp.135 :setPenWidth;
+        %tmp.137 = 2;
+        invoke %tmp.135 %tmp.136(%tmp.137);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 31 8 ]
+        symbol [ Gfx %tmp.139 31 8 11 ];
+        %tmp.139 = getv ? :Gfx;
+        symbol [ blob %tmp.140 31 12 16 ];
+        %tmp.140 = getv function %tmp.139 :blob;
+        %tmp.141 = lgetv %dc;
+        symbol [ dc %tmp.141 31 17 19 ];
+        %tmp.142 = lgetv %px;
+        symbol [ px %tmp.142 31 21 23 ];
+        %tmp.143 = 24;
+        %tmp.144 = sub %tmp.142 %tmp.143;
+        %tmp.145 = lgetv %py;
+        symbol [ py %tmp.145 31 30 32 ];
+        %tmp.146 = 26;
+        %tmp.147 = add %tmp.145 %tmp.146;
+        %tmp.148 = 5;
+        %tmp.149 = 8;
+        invoke %tmp.139 %tmp.140(%tmp.141, %tmp.144, %tmp.147, %tmp.148, %tmp.149);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 32 8 ]
+        symbol [ Gfx %tmp.151 32 8 11 ];
+        %tmp.151 = getv ? :Gfx;
+        symbol [ blob %tmp.152 32 12 16 ];
+        %tmp.152 = getv function %tmp.151 :blob;
+        %tmp.153 = lgetv %dc;
+        symbol [ dc %tmp.153 32 17 19 ];
+        %tmp.154 = lgetv %px;
+        symbol [ px %tmp.154 32 21 23 ];
+        %tmp.155 = 24;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        %tmp.157 = lgetv %py;
+        symbol [ py %tmp.157 32 30 32 ];
+        %tmp.158 = 26;
+        %tmp.159 = add %tmp.157 %tmp.158;
+        %tmp.160 = 5;
+        %tmp.161 = 8;
+        invoke %tmp.151 %tmp.152(%tmp.153, %tmp.156, %tmp.159, %tmp.160, %tmp.161);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 35 8 ]
+        symbol [ Gfx %tmp.163 35 8 11 ];
+        %tmp.163 = getv ? :Gfx;
+        symbol [ blob %tmp.164 35 12 16 ];
+        %tmp.164 = getv function %tmp.163 :blob;
+        %tmp.165 = lgetv %dc;
+        symbol [ dc %tmp.165 35 17 19 ];
+        %tmp.166 = lgetv %px;
+        symbol [ px %tmp.166 35 21 23 ];
+        %tmp.167 = lgetv %ox.1;
+        symbol [ ox %tmp.167 35 26 28 ];
+        %tmp.168 = add %tmp.166 %tmp.167;
+        %tmp.169 = lgetv %py;
+        symbol [ py %tmp.169 35 30 32 ];
+        %tmp.170 = 6;
+        %tmp.171 = sub %tmp.169 %tmp.170;
+        %tmp.172 = 24;
+        %tmp.173 = 22;
+        invoke %tmp.163 %tmp.164(%tmp.165, %tmp.168, %tmp.171, %tmp.172, %tmp.173);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 36 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_stop" ]
+        %ex.4 = local;
+        symbol [ ex %ex.4 36 12 14 ];
+        %tmp.174 = lgetv %px;
+        symbol [ px %tmp.174 36 17 19 ];
+        %tmp.175 = lgetv %ox.1;
+        symbol [ ox %tmp.175 36 22 24 ];
+        %tmp.176 = add %tmp.174 %tmp.175;
+        %tmp.177 = lgetv %look;
+        symbol [ look %tmp.177 36 27 31 ];
+        %tmp.178 = 2;
+        %tmp.179 = mul %tmp.177 %tmp.178;
+        %tmp.180 = add %tmp.176 %tmp.179;
+        lputv %ex.4 %tmp.180;
+        symbol [ ex %ex.4 36 12 14 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 37 8 ]
+        symbol [ Gfx %tmp.182 37 8 11 ];
+        %tmp.182 = getv ? :Gfx;
+        symbol [ eye %tmp.183 37 12 15 ];
+        %tmp.183 = getv function %tmp.182 :eye;
+        %tmp.184 = lgetv %dc;
+        symbol [ dc %tmp.184 37 16 18 ];
+        %tmp.185 = lgetv %ex.4;
+        symbol [ ex %tmp.185 37 20 22 ];
+        %tmp.186 = 11;
+        %tmp.187 = sub %tmp.185 %tmp.186;
+        %tmp.188 = lgetv %py;
+        symbol [ py %tmp.188 37 29 31 ];
+        %tmp.189 = 8;
+        %tmp.190 = sub %tmp.188 %tmp.189;
+        %tmp.191 = 4;
+        %tmp.192 = lgetv %blink.3;
+        symbol [ blink %tmp.192 37 40 45 ];
+        invoke %tmp.182 %tmp.183(%tmp.184, %tmp.187, %tmp.190, %tmp.191, %tmp.192);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 38 8 ]
+        symbol [ Gfx %tmp.194 38 8 11 ];
+        %tmp.194 = getv ? :Gfx;
+        symbol [ eye %tmp.195 38 12 15 ];
+        %tmp.195 = getv function %tmp.194 :eye;
+        %tmp.196 = lgetv %dc;
+        symbol [ dc %tmp.196 38 16 18 ];
+        %tmp.197 = lgetv %ex.4;
+        symbol [ ex %tmp.197 38 20 22 ];
+        %tmp.198 = 11;
+        %tmp.199 = add %tmp.197 %tmp.198;
+        %tmp.200 = lgetv %py;
+        symbol [ py %tmp.200 38 29 31 ];
+        %tmp.201 = 8;
+        %tmp.202 = sub %tmp.200 %tmp.201;
+        %tmp.203 = 4;
+        %tmp.204 = lgetv %blink.3;
+        symbol [ blink %tmp.204 38 40 45 ];
+        invoke %tmp.194 %tmp.195(%tmp.196, %tmp.199, %tmp.202, %tmp.203, %tmp.204);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 41 8 ]
+        %tmp.205 = lgetv %dc;
+        symbol [ dc %tmp.205 41 8 10 ];
+        symbol [ setColor %tmp.206 41 11 19 ];
+        %tmp.206 = getv function %tmp.205 :setColor;
+        %tmp.207 = lgetv %black.2;
+        symbol [ black %tmp.207 41 20 25 ];
+        symbol [ Graphics %tmp.208 41 27 35 ];
+        %tmp.208 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.209 41 36 53 ];
+        %tmp.209 = getv %tmp.208 :COLOR_TRANSPARENT;
+        invoke %tmp.205 %tmp.206(%tmp.207, %tmp.209);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 42 8 ]
+        %tmp.210 = lgetv %dc;
+        symbol [ dc %tmp.210 42 8 10 ];
+        symbol [ fillCircle %tmp.211 42 11 21 ];
+        %tmp.211 = getv function %tmp.210 :fillCircle;
+        %tmp.212 = lgetv %px;
+        symbol [ px %tmp.212 42 22 24 ];
+        %tmp.213 = lgetv %ox.1;
+        symbol [ ox %tmp.213 42 27 29 ];
+        %tmp.214 = add %tmp.212 %tmp.213;
+        %tmp.215 = 2;
+        %tmp.216 = sub %tmp.214 %tmp.215;
+        %tmp.217 = lgetv %py;
+        symbol [ py %tmp.217 42 35 37 ];
+        %tmp.218 = 1;
+        %tmp.219 = sub %tmp.217 %tmp.218;
+        %tmp.220 = 1;
+        invoke %tmp.210 %tmp.211(%tmp.216, %tmp.219, %tmp.220);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 43 8 ]
+        %tmp.221 = lgetv %dc;
+        symbol [ dc %tmp.221 43 8 10 ];
+        symbol [ fillCircle %tmp.222 43 11 21 ];
+        %tmp.222 = getv function %tmp.221 :fillCircle;
+        %tmp.223 = lgetv %px;
+        symbol [ px %tmp.223 43 22 24 ];
+        %tmp.224 = lgetv %ox.1;
+        symbol [ ox %tmp.224 43 27 29 ];
+        %tmp.225 = add %tmp.223 %tmp.224;
+        %tmp.226 = 2;
+        %tmp.227 = add %tmp.225 %tmp.226;
+        %tmp.228 = lgetv %py;
+        symbol [ py %tmp.228 43 35 37 ];
+        %tmp.229 = 1;
+        %tmp.230 = sub %tmp.228 %tmp.229;
+        %tmp.231 = 1;
+        invoke %tmp.221 %tmp.222(%tmp.227, %tmp.230, %tmp.231);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 44 8 ]
+        %tmp.232 = lgetv %dc;
+        symbol [ dc %tmp.232 44 8 10 ];
+        symbol [ setPenWidth %tmp.233 44 11 22 ];
+        %tmp.233 = getv function %tmp.232 :setPenWidth;
+        %tmp.234 = 1;
+        invoke %tmp.232 %tmp.233(%tmp.234);
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc" 45 8 ]
+        %tmp.235 = lgetv %dc;
+        symbol [ dc %tmp.235 45 8 10 ];
+        symbol [ drawArc %tmp.236 45 11 18 ];
+        %tmp.236 = getv function %tmp.235 :drawArc;
+        %tmp.237 = lgetv %px;
+        symbol [ px %tmp.237 45 19 21 ];
+        %tmp.238 = lgetv %ox.1;
+        symbol [ ox %tmp.238 45 24 26 ];
+        %tmp.239 = add %tmp.237 %tmp.238;
+        %tmp.240 = lgetv %py;
+        symbol [ py %tmp.240 45 28 30 ];
+        %tmp.241 = 1;
+        %tmp.242 = add %tmp.240 %tmp.241;
+        %tmp.243 = 10;
+        symbol [ Graphics %tmp.244 45 40 48 ];
+        %tmp.244 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.245 45 49 70 ];
+        %tmp.245 = getv %tmp.244 :ARC_COUNTER_CLOCKWISE;
+        %tmp.246 = 205;
+        %tmp.247 = 335;
+        invoke %tmp.235 %tmp.236(%tmp.239, %tmp.242, %tmp.243, %tmp.245, %tmp.246, %tmp.247);
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Squirtle_mc_6_96_46_4_stop:
+    }
+}
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Squirtle.mc"; @line = 1; ]
+<init> {
+}

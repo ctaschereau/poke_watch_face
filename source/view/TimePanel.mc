@@ -9,7 +9,7 @@ class TimePanel {
     hidden const CENTER_X = 74;     // centre x of the time (88 = screen centre; lower = further left)
     hidden const CENTER_Y = 96;     // centre y of the time digits
     hidden const TRAINER_GAP = 4;   // gap between the time and the trainer sprite
-    hidden const EDGE_MARGIN = 2;   // the trainer never gets closer than this to the right edge
+    hidden const EDGE_MARGIN = 2;   // the trainer's last drawn pixel never gets closer than this to the right edge
 
     hidden var _assets as Assets;
     hidden var _asleep as Boolean = false;   // low-power mode: the trainer fishes instead of walking
@@ -44,7 +44,8 @@ class TimePanel {
     hidden function drawTrainer(dc as Dc, text as String, sec as Number) as Void {
         var timeRight = CENTER_X + dc.getTextWidthInPixels(text, _assets.timeFont) / 2;
         var x = timeRight + TRAINER_GAP;
-        var maxX = dc.getWidth() - Trainer.SIZE - EDGE_MARGIN;
+        // the 32x32 box may overlap the screen edge by its empty right columns
+        var maxX = dc.getWidth() - Trainer.SIZE + Trainer.RIGHT_BLANK - EDGE_MARGIN;
         if (x > maxX) {
             x = maxX;
         }
