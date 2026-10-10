@@ -62,9 +62,6 @@ class DatePanel {
     // envelope with the count underneath, both centred on cx; y = centre of the weather line
     hidden function drawNotifications(dc as Dc, cx as Number, y as Number) as Void {
         var count = System.getDeviceSettings().notificationCount;
-        if (count == null) {
-            count = 0;
-        }
         if (count <= 0 && !NOTIF_SHOW_ZERO) {
             return;
         }
