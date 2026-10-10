@@ -1,3 +1,24 @@
 <strings>
     <string id="AppName">PokeFace</string>
+    <!-- date line: $1$ = day name, $2$ = month, $3$ = day of month (caps only: the Gen 1 date font has A-Z and digits) -->
+    <string id="DateFormat">$1$ $2$ $3$</string>
+    <string id="Day1">SUN</string>
+    <string id="Day2">MON</string>
+    <string id="Day3">TUE</string>
+    <string id="Day4">WED</string>
+    <string id="Day5">THU</string>
+    <string id="Day6">FRI</string>
+    <string id="Day7">SAT</string>
+    <string id="Month1">JAN</string>
+    <string id="Month2">FEB</string>
+    <string id="Month3">MAR</string>
+    <string id="Month4">APR</string>
+    <string id="Month5">MAY</string>
+    <string id="Month6">JUN</string>
+    <string id="Month7">JUL</string>
+    <string id="Month8">AUG</string>
+    <string id="Month9">SEP</string>
+    <string id="Month10">OCT</string>
+    <string id="Month11">NOV</string>
+    <string id="Month12">DEC</string>
 </strings>
