@@ -3,13 +3,12 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 // Fonts and the heart / notification icons, loaded once and shared by the panels (memory is tight on a watch face).
-// The four fonts are the Gen 1 Pokemon pixel font at different scales (see resources/fonts).
+// The three fonts are the Gen 1 Pokemon pixel font at different scales (see resources/fonts).
 class Assets {
 
     var timeFont as Graphics.FontType;       // 4x - the big clock digits
     var stepFont as Graphics.FontType;       // 2x - steps, heart rate, temperature
     var stepFontSmall as Graphics.FontType;  // 1x - used when the 2x text would be too wide
-    var dateFont as Graphics.FontType;       // 1x - capital letters + digits, for the date line
     var heartIcon as WatchUi.BitmapResource; // resources/drawables/heart.png (14 x 12)
     var notifIcon as WatchUi.BitmapResource; // resources/drawables/notif.png (12 x 9, envelope)
 
@@ -17,7 +16,6 @@ class Assets {
         timeFont = WatchUi.loadResource(Rez.Fonts.TimeFont) as Graphics.FontType;
         stepFont = WatchUi.loadResource(Rez.Fonts.StepFont) as Graphics.FontType;
         stepFontSmall = WatchUi.loadResource(Rez.Fonts.StepFontSmall) as Graphics.FontType;
-        dateFont = WatchUi.loadResource(Rez.Fonts.DateFont) as Graphics.FontType;
         heartIcon = WatchUi.loadResource(Rez.Drawables.HeartIcon) as WatchUi.BitmapResource;
         notifIcon = WatchUi.loadResource(Rez.Drawables.NotifIcon) as WatchUi.BitmapResource;
     }

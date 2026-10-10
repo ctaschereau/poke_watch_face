@@ -7,8 +7,7 @@ class TimePanel {
 
     // ---- layout knobs (176x176 screen) ----
     hidden const CENTER_X = 74;     // centre x of the time (88 = screen centre; lower = further left)
-    hidden const CENTER_Y = 94;     // centre y of the time digits
-    hidden const DIGIT_HALF_H = 12; // the 4x digits are 24 px tall, so their bottom edge is CENTER_Y + this
+    hidden const CENTER_Y = 96;     // centre y of the time digits
     hidden const TRAINER_GAP = 4;   // gap between the time and the trainer sprite
     hidden const EDGE_MARGIN = 2;   // the trainer's last drawn pixel never gets closer than this to the right edge
 
@@ -50,7 +49,6 @@ class TimePanel {
         if (x > maxX) {
             x = maxX;
         }
-        // the trainer's feet stand on the same baseline as the digits (every sprite frame ends on its last row)
-        Trainer.draw(dc, x, CENTER_Y + DIGIT_HALF_H - Trainer.SIZE, _asleep, sec);
+        Trainer.draw(dc, x, CENTER_Y - Trainer.SIZE / 2, _asleep, sec);
     }
 }

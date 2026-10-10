@@ -2,14 +2,14 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 
-// Thin battery level bar on the left edge (kept inside the round bezel opening: the display corners are hidden).
+// Thin battery level bar on the left edge (kept away from the corners).
 module BatteryBar {
 
-    const X = 2;
+    const X = 1;
     const TRACK_W = 2;    // thin track (full height)
     const LEVEL_W = 3;    // level bar (fills from the bottom)
-    const TOP = 44;
-    const BOTTOM = 132;
+    const TOP = 40;
+    const BOTTOM = 136;
 
     function draw(dc as Dc) as Void {
         var percent = System.getSystemStats().battery;

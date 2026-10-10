@@ -4,7 +4,7 @@ import Toybox.Weather;
 
 // Weather icons for the date block.
 // Garmin gives a watch face the condition as an enum (Weather.CONDITION_*) and the temperature,
-// but no icon graphics, so the 7 little 8x8 pixel-art icons are defined here and every CONDITION_* is grouped by name.
+// but no icon graphics, so the 7 little icons are drawn here and every CONDITION_* is grouped by name.
 // Used by DatePanel.
 module WxIcon {
 
@@ -45,19 +45,8 @@ module WxIcon {
     ];
     // everything else (cloudy, mostly cloudy, unknown) -> CLOUD
 
-    // One 8x8 tile per icon, drawn at 2x (16x16 px, same grid as the pixel fonts and the trainer sprite).
-    // 8 row masks per icon, bit 7 = leftmost pixel, a set bit = black. Order matches the enum above.
-    const ICONS as Array<Array<Number> > = [
-        [0x18, 0x42, 0x3C, 0xBD, 0xBD, 0x3C, 0x42, 0x18],   // SUN
-        [0xA8, 0x70, 0xF6, 0x67, 0x1F, 0x1F, 0x0E, 0x00],   // PARTLY
-        [0x00, 0x18, 0x3D, 0x7F, 0xFF, 0xFF, 0x7E, 0x00],   // CLOUD
-        [0x38, 0x7D, 0xFF, 0x7E, 0x00, 0x49, 0x92, 0x00],   // RAIN
-        [0x38, 0x7D, 0xFF, 0x7E, 0x00, 0x49, 0x00, 0x92],   // SNOW
-        [0x38, 0x7D, 0xFF, 0x7E, 0x18, 0x30, 0x78, 0x10],   // STORM
-        [0x00, 0xFF, 0x00, 0x7F, 0x00, 0xFE, 0x00, 0xFF]    // FOG
-    ];
-    const UNIT = 2;   // screen pixels per icon pixel
-    const SIZE = 16;  // icon size on screen
+    // the 8 directions of the sun's rays
+    const RAYS as Array<Array<Number> > = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1]];
 
     function kindFor(condition as Number or Null) as Number {
         if (condition == null) { return CLOUD; }
@@ -70,26 +59,52 @@ module WxIcon {
         return CLOUD;
     }
 
-    // icon of the given kind, 16 x 16 px, centred on x,y (horizontal runs of set bits are drawn as one rectangle)
-    function draw(dc as Dc, x as Number, y as Number, kind as Number) as Void {
-        var rows = ICONS[kind];
-        var left = x - SIZE / 2;
-        var top = y - SIZE / 2;
+    // little cloud, about 13 x 11 px, centred on x,y
+    function drawCloud(dc as Dc, x as Number, y as Number) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        for (var r = 0; r < 8; r++) {
-            var mask = rows[r];
-            var c = 0;
-            while (c < 8) {
-                if ((mask & (0x80 >> c)) != 0) {
-                    var start = c;
-                    while (c < 8 && (mask & (0x80 >> c)) != 0) {
-                        c++;
-                    }
-                    dc.fillRectangle(left + start * UNIT, top + r * UNIT, (c - start) * UNIT, UNIT);
-                } else {
-                    c++;
-                }
+        dc.fillCircle(x - 4, y + 1, 4);
+        dc.fillCircle(x + 1, y - 2, 5);
+        dc.fillCircle(x + 5, y + 2, 4);
+        dc.fillRectangle(x - 6, y + 2, 13, 4);
+    }
+
+    // icon of the given kind, about 16 x 16 px, centred on x,y
+    function draw(dc as Dc, x as Number, y as Number, kind as Number) as Void {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        if (kind == SUN || kind == PARTLY) {
+            var sx = (kind == SUN) ? x : x - 4;
+            var sy = (kind == SUN) ? y : y - 4;
+            var r = (kind == SUN) ? 4 : 3;
+            dc.fillCircle(sx, sy, r);
+            for (var i = 0; i < RAYS.size(); i++) {
+                var dx = RAYS[i][0];
+                var dy = RAYS[i][1];
+                dc.drawLine(sx + dx * (r + 2), sy + dy * (r + 2), sx + dx * (r + 4), sy + dy * (r + 4));
             }
+            if (kind == PARTLY) { drawCloud(dc, x + 2, y + 3); }
+        } else if (kind == CLOUD) {
+            drawCloud(dc, x, y + 1);
+        } else if (kind == RAIN) {
+            drawCloud(dc, x, y - 3);
+            dc.drawLine(x - 4, y + 4, x - 5, y + 8);
+            dc.drawLine(x, y + 4, x - 1, y + 8);
+            dc.drawLine(x + 4, y + 4, x + 3, y + 8);
+        } else if (kind == SNOW) {
+            drawCloud(dc, x, y - 3);
+            dc.fillCircle(x - 4, y + 6, 1);
+            dc.fillCircle(x, y + 8, 1);
+            dc.fillCircle(x + 4, y + 6, 1);
+        } else if (kind == STORM) {
+            drawCloud(dc, x, y - 3);
+            dc.drawLine(x + 1, y + 3, x - 2, y + 6);
+            dc.drawLine(x - 2, y + 6, x + 2, y + 6);
+            dc.drawLine(x + 2, y + 6, x - 1, y + 10);
+        } else {
+            dc.drawLine(x - 7, y - 4, x + 7, y - 4);
+            dc.drawLine(x - 7, y, x + 7, y);
+            dc.drawLine(x - 7, y + 4, x + 7, y + 4);
         }
+        dc.setPenWidth(1);
     }
 }

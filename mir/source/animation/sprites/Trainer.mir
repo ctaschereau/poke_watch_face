@@ -2,11 +2,11 @@
 import Toybox.Graphics;
 [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 8; @symbol_moduledef = [Trainer,8,7,14]; ]
+[ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 9; @symbol_moduledef = [Trainer,9,7,14]; ]
 module Trainer {
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 8; ]
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 9; ]
     <init> {
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 13 10 ]
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 17 10 ]
         %tmp.1 = newa 16;
         %tmp.2 = 0x07E0;
         %tmp.3 = dup %tmp.1;
@@ -57,7 +57,7 @@ module Trainer {
         %tmp.48 = dup %tmp.46;
         %tmp.49 = aputv %tmp.48 15 %tmp.47;
         putv self :WALK_A %tmp.49;
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 33 10 ]
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 37 10 ]
         %tmp.50 = newa 16;
         %tmp.51 = 0x0000;
         %tmp.52 = dup %tmp.50;
@@ -108,7 +108,7 @@ module Trainer {
         %tmp.97 = dup %tmp.95;
         %tmp.98 = aputv %tmp.97 15 %tmp.96;
         putv self :WALK_B %tmp.98;
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 53 10 ]
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 57 10 ]
         %tmp.99 = newa 16;
         %tmp.100 = 0x07E0;
         %tmp.101 = dup %tmp.99;
@@ -160,226 +160,242 @@ module Trainer {
         %tmp.147 = aputv %tmp.146 15 %tmp.145;
         putv self :FISH %tmp.147;
     }
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 10; @position = 10; @symbol_constdef = [SIZE,10,10,14]; ]
-    const SIZE = 16;
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 13; @position = 10; @symbol_constdef = [WALK_A,13,10,16]; @symbol_type<0> = [Array,13,20,25]; @symbol_type<1> = [Number,13,26,32]; ]
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 11; @position = 10; @symbol_constdef = [SIZE,11,10,14]; ]
+    const SIZE = 32;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 12; @position = 10; @symbol_constdef = [SPRITE,12,10,16]; ]
+    const SPRITE = 16;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 13; @position = 10; @symbol_constdef = [SCALE,13,10,15]; ]
+    const SCALE = 2;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 14; @position = 10; @symbol_constdef = [RIGHT_BLANK,14,10,21]; ]
+    const RIGHT_BLANK = 4;
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 17; @position = 10; @symbol_constdef = [WALK_A,17,10,16]; @symbol_type<0> = [Array,17,20,25]; @symbol_type<1> = [Number,17,26,32]; ]
     const WALK_A as Array<Number>;
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 33; @position = 10; @symbol_constdef = [WALK_B,33,10,16]; @symbol_type<0> = [Array,33,20,25]; @symbol_type<1> = [Number,33,26,32]; ]
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 37; @position = 10; @symbol_constdef = [WALK_B,37,10,16]; @symbol_type<0> = [Array,37,20,25]; @symbol_type<1> = [Number,37,26,32]; ]
     const WALK_B as Array<Number>;
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 53; @position = 10; @symbol_constdef = [FISH,53,10,14]; @symbol_type<0> = [Array,53,18,23]; @symbol_type<1> = [Number,53,24,30]; ]
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 57; @position = 10; @symbol_constdef = [FISH,57,10,14]; @symbol_type<0> = [Array,57,18,23]; @symbol_type<1> = [Number,57,24,30]; ]
     const FISH as Array<Number>;
-    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 73; @symbol_functiondef = [draw,73,13,17]; @symbol_param<0> = [dc,73,18,20]; @symbol_param<0>_type<0> = [Dc,73,24,26]; @symbol_param<1> = [x,73,28,29]; @symbol_param<1>_type<0> = [Number,73,33,39]; @symbol_param<2> = [y,73,41,42]; @symbol_param<2>_type<0> = [Number,73,46,52]; @symbol_param<3> = [asleep,73,54,60]; @symbol_param<3>_type<0> = [Boolean,73,64,71]; @symbol_param<4> = [tick,73,73,77]; @symbol_param<4>_type<0> = [Number,73,81,87]; ]
+    [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 77; @symbol_functiondef = [draw,77,13,17]; @symbol_param<0> = [dc,77,18,20]; @symbol_param<0>_type<0> = [Dc,77,24,26]; @symbol_param<1> = [x,77,28,29]; @symbol_param<1>_type<0> = [Number,77,33,39]; @symbol_param<2> = [y,77,41,42]; @symbol_param<2>_type<0> = [Number,77,46,52]; @symbol_param<3> = [asleep,77,54,60]; @symbol_param<3>_type<0> = [Boolean,77,64,71]; @symbol_param<4> = [tick,77,73,77]; @symbol_param<4>_type<0> = [Number,77,81,87]; ]
     function draw(dc as Dc, x as Number, y as Number, asleep as Boolean, tick as Number) as Void {
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_73_97_94_4_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 74 8 ]
-        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_73_97_94_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_73_97_94_4_stop" ]
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_77_97_98_4_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 78 8 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_77_97_98_4_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_77_97_98_4_stop" ]
         %sprite.1 = local;
-        symbol [ sprite %sprite.1 74 12 18 ];
-        symbol [ FISH %tmp.2 74 21 25 ];
+        symbol [ sprite %sprite.1 78 12 18 ];
+        symbol [ FISH %tmp.2 78 21 25 ];
         %tmp.2 = getv ? :FISH;
         lputv %sprite.1 %tmp.2;
-        symbol [ sprite %sprite.1 74 12 18 ];
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 75 8 ]
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_8_77_8_if_stmt:
+        symbol [ sprite %sprite.1 78 12 18 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 79 8 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_81_8_if_stmt:
         %tmp.3 = lgetv %asleep;
-        symbol [ asleep %tmp.3 75 13 19 ];
+        symbol [ asleep %tmp.3 79 13 19 ];
         %tmp.4 = not %tmp.3;
-        bf %tmp.4 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_8_77_8_if_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_8_77_8_if_true:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_21_77_8_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 76 12 ]
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_begin:
+        bf %tmp.4 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_81_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_81_8_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_21_81_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 80 12 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_begin:
         %tmp.5 = lgetv %tick;
-        symbol [ tick %tmp.5 76 22 26 ];
+        symbol [ tick %tmp.5 80 22 26 ];
         %tmp.6 = 2;
         %tmp.7 = mod %tmp.5 %tmp.6;
         %tmp.8 = 0;
         %tmp.9 = eq %tmp.7 %tmp.8;
-        bf %tmp.9 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_else_false;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_true:
-        symbol [ WALK_A %tmp.11 76 39 45 ];
+        bf %tmp.9 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_else_false;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_true:
+        symbol [ WALK_A %tmp.11 80 39 45 ];
         %tmp.11 = getv ? :WALK_A;
         push %tmp.11;
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_else_false:
-        symbol [ WALK_B %tmp.13 76 48 54 ];
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_else_false:
+        symbol [ WALK_B %tmp.13 80 48 54 ];
         %tmp.13 = getv ? :WALK_B;
         push %tmp.13;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_end:
-        %tmp.14 = phi [%tmp.9 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_begin] [%tmp.11 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_true] [%tmp.13 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_else_false] [%tmp.14 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_76_21_76_48_end];
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_end:
+        %tmp.14 = phi [%tmp.9 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_begin] [%tmp.11 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_true] [%tmp.13 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_else_false] [%tmp.14 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_80_21_80_48_end];
         lputv %sprite.1 %tmp.14;
-        symbol [ sprite %sprite.1 76 12 18 ];
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_21_77_8_stop:
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_8_77_8_if_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_75_8_77_8_if_end:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 78 8 ]
+        symbol [ sprite %sprite.1 80 12 18 ];
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_21_81_8_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_81_8_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_81_8_if_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 82 8 ]
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 78 8 10 ];
-        symbol [ setColor %tmp.16 78 11 19 ];
+        symbol [ dc %tmp.15 82 8 10 ];
+        symbol [ setColor %tmp.16 82 11 19 ];
         %tmp.16 = getv function %tmp.15 :setColor;
-        symbol [ Graphics %tmp.17 78 20 28 ];
+        symbol [ Graphics %tmp.17 82 20 28 ];
         %tmp.17 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.18 78 29 40 ];
+        symbol [ COLOR_BLACK %tmp.18 82 29 40 ];
         %tmp.18 = getv %tmp.17 :COLOR_BLACK;
-        symbol [ Graphics %tmp.19 78 42 50 ];
+        symbol [ Graphics %tmp.19 82 42 50 ];
         %tmp.19 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.20 78 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.20 82 51 68 ];
         %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
         invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 79 8 ]
-        for @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_incr @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_init:
-        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_begin" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_end" ]
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 83 8 ]
+        for @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_incr @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_init:
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_begin" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_end" ]
         %row.2 = local;
-        symbol [ row %row.2 79 17 20 ];
+        symbol [ row %row.2 83 17 20 ];
         %tmp.21 = 0;
         lputv %row.2 %tmp.21;
-        symbol [ row %row.2 79 17 20 ];
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_test:
+        symbol [ row %row.2 83 17 20 ];
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_test:
         %tmp.22 = lgetv %row.2;
-        symbol [ row %tmp.22 79 26 29 ];
-        symbol [ SIZE %tmp.24 79 32 36 ];
-        %tmp.24 = getv ? :SIZE;
+        symbol [ row %tmp.22 83 26 29 ];
+        symbol [ SPRITE %tmp.24 83 32 38 ];
+        %tmp.24 = getv ? :SPRITE;
         %tmp.25 = lt %tmp.22 %tmp.24;
-        bf %tmp.25 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_begin:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 80 12 ]
-        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_stop" ]
+        bf %tmp.25 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_begin:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 84 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_stop" ]
         %bits.3 = local;
-        symbol [ bits %bits.3 80 16 20 ];
+        symbol [ bits %bits.3 84 16 20 ];
         %tmp.26 = lgetv %sprite.1;
-        symbol [ sprite %tmp.26 80 23 29 ];
+        symbol [ sprite %tmp.26 84 23 29 ];
         %tmp.27 = lgetv %row.2;
-        symbol [ row %tmp.27 80 30 33 ];
+        symbol [ row %tmp.27 84 30 33 ];
         %tmp.28 = agetv %tmp.26 %tmp.27;
         lputv %bits.3 %tmp.28;
-        symbol [ bits %bits.3 80 16 20 ];
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 81 12 ]
-        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_stop" ]
+        symbol [ bits %bits.3 84 16 20 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 85 12 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_stop" ]
         %col.4 = local;
-        symbol [ col %col.4 81 16 19 ];
+        symbol [ col %col.4 85 16 19 ];
         %tmp.29 = 0;
         lputv %col.4 %tmp.29;
-        symbol [ col %col.4 81 16 19 ];
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 82 12 ]
-        while @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_test:
+        symbol [ col %col.4 85 16 19 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 86 12 ]
+        while @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_test:
         %tmp.30 = lgetv %col.4;
-        symbol [ col %tmp.30 82 19 22 ];
-        symbol [ SIZE %tmp.32 82 25 29 ];
-        %tmp.32 = getv ? :SIZE;
+        symbol [ col %tmp.30 86 19 22 ];
+        symbol [ SPRITE %tmp.32 86 25 31 ];
+        %tmp.32 = getv ? :SPRITE;
         %tmp.33 = lt %tmp.30 %tmp.32;
-        bf %tmp.33 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_begin:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_31_92_12_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 83 16 ]
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_stmt:
+        bf %tmp.33 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_begin:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_33_96_12_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 87 16 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_stmt:
         %tmp.34 = lgetv %bits.3;
-        symbol [ bits %tmp.34 83 21 25 ];
+        symbol [ bits %tmp.34 87 21 25 ];
         %tmp.35 = 0x8000;
         %tmp.36 = lgetv %col.4;
-        symbol [ col %tmp.36 83 39 42 ];
+        symbol [ col %tmp.36 87 39 42 ];
         %tmp.37 = shr %tmp.35 %tmp.36;
         %tmp.38 = bitand %tmp.34 %tmp.37;
         %tmp.39 = 0;
         %tmp.40 = ne %tmp.38 %tmp.39;
-        bf %tmp.40 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_else_false;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_true:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_51_89_16_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 84 20 ]
-        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_51_89_16_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_51_89_16_stop" ]
+        bf %tmp.40 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_else_false;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_true:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_51_93_16_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 88 20 ]
+        [ "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_51_93_16_start" "C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_51_93_16_stop" ]
         %start.5 = local;
-        symbol [ start %start.5 84 24 29 ];
+        symbol [ start %start.5 88 24 29 ];
         %tmp.41 = lgetv %col.4;
-        symbol [ col %tmp.41 84 32 35 ];
+        symbol [ col %tmp.41 88 32 35 ];
         lputv %start.5 %tmp.41;
-        symbol [ start %start.5 84 24 29 ];
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 85 20 ]
-        while @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_test:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_27_85_69_begin:
+        symbol [ start %start.5 88 24 29 ];
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 89 20 ]
+        while @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_test @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_test:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_27_89_71_begin:
         %tmp.42 = lgetv %col.4;
-        symbol [ col %tmp.42 85 27 30 ];
-        symbol [ SIZE %tmp.44 85 33 37 ];
-        %tmp.44 = getv ? :SIZE;
+        symbol [ col %tmp.42 89 27 30 ];
+        symbol [ SPRITE %tmp.44 89 33 39 ];
+        %tmp.44 = getv ? :SPRITE;
         %tmp.45 = lt %tmp.42 %tmp.44;
         %tmp.46 = dup %tmp.45;
-        bf %tmp.46 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_41_85_69_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_41_85_69_true:
+        bf %tmp.46 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_43_89_71_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_43_89_71_true:
         %tmp.47 = lgetv %bits.3;
-        symbol [ bits %tmp.47 85 42 46 ];
+        symbol [ bits %tmp.47 89 44 48 ];
         %tmp.48 = 0x8000;
         %tmp.49 = lgetv %col.4;
-        symbol [ col %tmp.49 85 60 63 ];
+        symbol [ col %tmp.49 89 62 65 ];
         %tmp.50 = shr %tmp.48 %tmp.49;
         %tmp.51 = bitand %tmp.47 %tmp.50;
         %tmp.52 = 0;
         %tmp.53 = ne %tmp.51 %tmp.52;
         %tmp.54 = and %tmp.45 %tmp.53;
         push %tmp.54;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_41_85_69_end:
-        %tmp.55 = phi [%tmp.46 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_27_85_69_begin] [%tmp.54 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_41_85_69_true] [%tmp.55 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_41_85_69_end];
-        bf %tmp.55 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_begin:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_72_87_20_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 86 24 ]
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_43_89_71_end:
+        %tmp.55 = phi [%tmp.46 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_27_89_71_begin] [%tmp.54 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_43_89_71_true] [%tmp.55 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_43_89_71_end];
+        bf %tmp.55 @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_begin:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_74_91_20_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 90 24 ]
         %tmp.58 = lgetv %col.4;
-        symbol [ col %tmp.58 86 24 27 ];
+        symbol [ col %tmp.58 90 24 27 ];
         %tmp.59 = add %tmp.58 1;
         lputv %col.4 %tmp.59;
-        symbol [ col %col.4 86 24 27 ];
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_72_87_20_stop:
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_test;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_85_20_87_20_while_end:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 88 20 ]
+        symbol [ col %col.4 90 24 27 ];
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_74_91_20_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_test;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_20_91_20_while_end:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 92 20 ]
         %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 88 20 22 ];
-        symbol [ fillRectangle %tmp.61 88 23 36 ];
+        symbol [ dc %tmp.60 92 20 22 ];
+        symbol [ fillRectangle %tmp.61 92 23 36 ];
         %tmp.61 = getv function %tmp.60 :fillRectangle;
         %tmp.62 = lgetv %x;
-        symbol [ x %tmp.62 88 37 38 ];
+        symbol [ x %tmp.62 92 37 38 ];
         %tmp.63 = lgetv %start.5;
-        symbol [ start %tmp.63 88 41 46 ];
-        %tmp.64 = add %tmp.62 %tmp.63;
-        %tmp.65 = lgetv %y;
-        symbol [ y %tmp.65 88 48 49 ];
-        %tmp.66 = lgetv %row.2;
-        symbol [ row %tmp.66 88 52 55 ];
-        %tmp.67 = add %tmp.65 %tmp.66;
-        %tmp.68 = lgetv %col.4;
-        symbol [ col %tmp.68 88 57 60 ];
-        %tmp.69 = lgetv %start.5;
-        symbol [ start %tmp.69 88 63 68 ];
-        %tmp.70 = sub %tmp.68 %tmp.69;
-        %tmp.71 = 1;
-        invoke %tmp.60 %tmp.61(%tmp.64, %tmp.67, %tmp.70, %tmp.71);
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_51_89_16_stop:
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_end;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_else_false:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_23_91_16_start:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 90 20 ]
+        symbol [ start %tmp.63 92 41 46 ];
+        symbol [ SCALE %tmp.65 92 49 54 ];
+        %tmp.65 = getv ? :SCALE;
+        %tmp.66 = mul %tmp.63 %tmp.65;
+        %tmp.67 = add %tmp.62 %tmp.66;
+        %tmp.68 = lgetv %y;
+        symbol [ y %tmp.68 92 56 57 ];
+        %tmp.69 = lgetv %row.2;
+        symbol [ row %tmp.69 92 60 63 ];
+        symbol [ SCALE %tmp.71 92 66 71 ];
+        %tmp.71 = getv ? :SCALE;
+        %tmp.72 = mul %tmp.69 %tmp.71;
+        %tmp.73 = add %tmp.68 %tmp.72;
         %tmp.74 = lgetv %col.4;
-        symbol [ col %tmp.74 90 20 23 ];
-        %tmp.75 = add %tmp.74 1;
-        lputv %col.4 %tmp.75;
-        symbol [ col %col.4 90 20 23 ];
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_89_23_91_16_stop:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_16_91_16_if_end:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_31_92_12_stop:
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_test;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_82_12_92_12_while_end:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_45_93_8_stop:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_incr:
-[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 79 ]
-        %tmp.78 = lgetv %row.2;
-        symbol [ row %tmp.78 79 38 41 ];
-        %tmp.79 = add %tmp.78 1;
-        lputv %row.2 %tmp.79;
-        symbol [ row %row.2 79 38 41 ];
-        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_test;
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_79_8_93_8_for_end:
-C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_73_97_94_4_stop:
+        symbol [ col %tmp.74 92 74 77 ];
+        %tmp.75 = lgetv %start.5;
+        symbol [ start %tmp.75 92 80 85 ];
+        %tmp.76 = sub %tmp.74 %tmp.75;
+        symbol [ SCALE %tmp.78 92 89 94 ];
+        %tmp.78 = getv ? :SCALE;
+        %tmp.79 = mul %tmp.76 %tmp.78;
+        symbol [ SCALE %tmp.81 92 96 101 ];
+        %tmp.81 = getv ? :SCALE;
+        invoke %tmp.60 %tmp.61(%tmp.67, %tmp.73, %tmp.79, %tmp.81);
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_51_93_16_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_end;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_else_false:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_93_23_95_16_start:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 94 20 ]
+        %tmp.84 = lgetv %col.4;
+        symbol [ col %tmp.84 94 20 23 ];
+        %tmp.85 = add %tmp.84 1;
+        lputv %col.4 %tmp.85;
+        symbol [ col %col.4 94 20 23 ];
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_93_23_95_16_stop:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_87_16_95_16_if_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_33_96_12_stop:
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_test;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_86_12_96_12_while_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_47_97_8_stop:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_incr:
+[ "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc" 83 ]
+        %tmp.88 = lgetv %row.2;
+        symbol [ row %tmp.88 83 40 43 ];
+        %tmp.89 = add %tmp.88 1;
+        lputv %row.2 %tmp.89;
+        symbol [ row %row.2 83 40 43 ];
+        goto @C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_test;
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_83_8_97_8_for_end:
+C__Users_manon_cedric_poke_watch_face_source_animation_sprites_Trainer_mc_77_97_98_4_stop:
     }
 }
 [ @file = "C:\Users\manon\cedric\poke_watch_face\source\animation\sprites\Trainer.mc"; @line = 1; ]

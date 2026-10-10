@@ -7,6 +7,7 @@ using Toybox.Graphics as Gfx;
 module Rez {
     module Drawables {
         (:initialized) var HeartIcon as ResourceId;
+        (:initialized) var NotifIcon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -17,7 +18,27 @@ module Rez {
     } // Fonts
 
     module Strings {
+        (:initialized) var Month5 as ResourceId;
+        (:initialized) var Month4 as ResourceId;
+        (:initialized) var Month7 as ResourceId;
+        (:initialized) var Month6 as ResourceId;
+        (:initialized) var Month1 as ResourceId;
+        (:initialized) var Month3 as ResourceId;
+        (:initialized) var Month2 as ResourceId;
+        (:initialized) var Month9 as ResourceId;
+        (:initialized) var Month8 as ResourceId;
+        (:initialized) var Month11 as ResourceId;
+        (:initialized) var Month12 as ResourceId;
         (:initialized) var AppName as ResourceId;
+        (:initialized) var Month10 as ResourceId;
+        (:initialized) var Day1 as ResourceId;
+        (:initialized) var Day2 as ResourceId;
+        (:initialized) var DateFormat as ResourceId;
+        (:initialized) var Day3 as ResourceId;
+        (:initialized) var Day4 as ResourceId;
+        (:initialized) var Day5 as ResourceId;
+        (:initialized) var Day6 as ResourceId;
+        (:initialized) var Day7 as ResourceId;
     } // Strings
 
     module Styles {
